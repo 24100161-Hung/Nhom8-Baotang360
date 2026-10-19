@@ -10,7 +10,7 @@ Bảo tàng ảo và tour tham quan 360° trên nền web cho Naturalis Biodiver
 | Windows (Docker Desktop) | nháy đúp `chay.bat` | `dung.bat` | `nap-lai-du-lieu.bat` |
 | macOS / Linux | `./chay.sh` | `./dung.sh` | `docker compose down -v && ./chay.sh` |
 
-Script tự tạo `.env` từ `.env.example`, dựng 4 dịch vụ (db, analytics, app, web), chờ `/healthz` và mở trình duyệt tại http://localhost:8080. Mẫu biến môi trường cho Railway nằm ở `deploy/`.
+Script tự tạo `.env` từ `.env.example`, dựng 3 dịch vụ (db, analytics, app), chờ `/healthz` và mở trình duyệt tại http://localhost:8080. Mẫu biến môi trường cho Railway nằm ở `deploy/`.
 
 ## 1. Giới thiệu
 
@@ -84,7 +84,7 @@ docker compose up -d --build         # lần đầu khoảng 5–10 phút
   - đồng bộ `public/` cho Nginx;
   - gọi Python dựng chỉ mục và sinh tiles cho các phòng chưa có;
   - chạy scheduler.
-- Kiểm tra: `docker compose ps` (cả 4 dịch vụ ở trạng thái `running`/`healthy`); `curl http://localhost:8080/healthz` trả `{"status":"ok","db":"ok","analytics":"ok"}`.
+- Kiểm tra: `docker compose ps` (cả 3 dịch vụ ở trạng thái `running`/`healthy`); `curl http://localhost:8080/healthz` trả `{"status":"ok","db":"ok","analytics":"ok"}`.
 - Trùng cổng: đặt `APP_FORWARD_PORT`, `DB_FORWARD_PORT`, `ANALYTICS_FORWARD_PORT` và `APP_URL` trong `.env`. Ví dụ:
   ```bash
   DB_FORWARD_PORT=3327 APP_FORWARD_PORT=8090 ANALYTICS_FORWARD_PORT=8021 APP_URL=http://localhost:8090 docker compose up -d
