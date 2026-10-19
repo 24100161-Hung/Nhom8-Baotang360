@@ -22,7 +22,7 @@ const props = defineProps({
     mode: { type: String, default: 'free' },
     visited: { type: Array, default: () => [] },
     sessionKey: { type: String, default: null },
-    // Danh sách tour để chọn khi đang ở chế độ tự do (yêu cầu bổ sung hợp đồng, xem _workspace/requests)
+    // Danh sách tour để chọn khi đang ở chế độ tự do (yêu cầu bổ sung hợp đồng)
     tours: { type: Array, default: () => [] },
 });
 const { t } = useT();
