@@ -167,7 +167,7 @@
    "source_url": null,
    "author": "Nhóm 08 – BaoTang360",
    "license": "simulated",
-   "note": "Ảnh equirectangular mô phỏng 4096×2048 sinh bằng .claude/skills/bt360-content/scripts/make_panorama.py"
+   "note": "Ảnh equirectangular mô phỏng 4096×2048 sinh bằng script Python (Pillow) của nhóm"
   },
   "preview": "seed-assets/scenes/seduction-preview.jpg",
   "preview_source": {
@@ -243,7 +243,7 @@
    "source_url": null,
    "author": "Nhóm 08 – BaoTang360",
    "license": "simulated",
-   "note": "Ảnh equirectangular mô phỏng 4096×2048 sinh bằng .claude/skills/bt360-content/scripts/make_panorama.py"
+   "note": "Ảnh equirectangular mô phỏng 4096×2048 sinh bằng script Python (Pillow) của nhóm"
   },
   "preview": "seed-assets/scenes/death-preview.jpg",
   "preview_source": {
@@ -553,7 +553,7 @@
    "source_url": null,
    "author": "Nhóm 08 – BaoTang360",
    "license": "simulated",
-   "note": "Ảnh equirectangular mô phỏng 4096×2048 sinh bằng .claude/skills/bt360-content/scripts/make_panorama.py"
+   "note": "Ảnh equirectangular mô phỏng 4096×2048 sinh bằng script Python (Pillow) của nhóm"
   },
   "preview": "seed-assets/scenes/ice_age-preview.jpg",
   "preview_source": {
