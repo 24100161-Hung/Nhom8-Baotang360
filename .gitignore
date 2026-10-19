@@ -1,0 +1,64 @@
+# Kho Git chỉ chứa mã nguồn 02_SourceCode (hồ sơ 00–07 nộp riêng dạng zip, như DiSanSo)
+/00_INFO.md
+/01_BaoCao/
+/03_Database/
+/04_HuongDanSuDung/
+/05_KiemThu/
+/06_Demo/
+/07_QuanTriDuAn/
+/scripts/
+/_workspace/
+/.claude/
+/CLAUDE.md
+/.gitignore.src
+
+# --- PHP / Laravel ---
+02_SourceCode/app/node_modules/
+02_SourceCode/app/vendor/
+02_SourceCode/app/public/build/
+02_SourceCode/app/public/storage
+02_SourceCode/app/storage/app/public/*
+02_SourceCode/app/storage/app/private/*
+02_SourceCode/app/storage/app/backups/
+02_SourceCode/app/storage/app/.appkey
+02_SourceCode/app/storage/app/.payment_secret
+02_SourceCode/app/storage/app/.analytics_token
+02_SourceCode/app/storage/logs/*
+02_SourceCode/app/storage/framework/cache/*
+02_SourceCode/app/storage/framework/sessions/*
+02_SourceCode/app/storage/framework/views/*
+02_SourceCode/app/bootstrap/cache/*.php
+02_SourceCode/app/.phpunit.result.cache
+02_SourceCode/app/database/seed-assets/cache/
+02_SourceCode/app/database/database.sqlite
+02_SourceCode/app/playwright-report/
+02_SourceCode/app/test-results/
+02_SourceCode/app/tests/e2e/report/
+02_SourceCode/app/tests/e2e/.auth/
+02_SourceCode/app/tests/e2e/test-results/
+02_SourceCode/app/tests/e2e/run-*.log
+
+# --- Python ---
+02_SourceCode/python-service/.venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- Bí mật, chứng thư, tệp cục bộ (Tài liệu kỹ thuật Mục 3.3) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.key
+auth.json
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# --- Dữ liệu lớn và kết xuất ---
+*.zip
+*.mp4
+01_BaoCao/~$*

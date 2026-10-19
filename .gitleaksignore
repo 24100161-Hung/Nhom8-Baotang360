@@ -1,0 +1,10 @@
+# gitleaks – các phát hiện đã rà soát là DƯƠNG TÍNH GIẢ (không phải bí mật thật):
+# mật khẩu MySQL mặc định cho môi trường học tập trong Docker nội bộ (không publish ra ngoài 127.0.0.1),
+# trùng giá trị mặc định công khai của docker-compose.yml. Commit 19da3e8 là lịch sử; .env.example hiện để trống.
+19da3e871d7d4f27ab314a91b9d67229efe8cf26:.env.example:generic-api-key:11
+19da3e871d7d4f27ab314a91b9d67229efe8cf26:python-service/kiem_dinh_du_lieu.py:generic-api-key:9
+
+# Dương tính giả khi quét cây làm việc (gitleaks detect --no-git): cờ Chromium, MIME vendor, mật khẩu mẫu .env.example
+02_SourceCode/app/tests/e2e/helpers.js:generic-api-key:103
+02_SourceCode/python-service/kiem_dinh_du_lieu.py:generic-api-key:9
+02_SourceCode/app/vendor/symfony/mime/MimeTypes.php:generic-api-key:2838

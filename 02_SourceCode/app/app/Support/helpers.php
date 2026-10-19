@@ -1,0 +1,50 @@
+<?php
+
+if (! function_exists('localized_route')) {
+    /**
+     * Sinh URL tuyệt đối có tiền tố locale (mặc định locale hiện tại).
+     * Tham số `locale` trong $params ghi đè locale hiện tại.
+     */
+    function localized_route(string $name, mixed $params = [], bool $absolute = true): string
+    {
+        $params = is_array($params) ? $params : [$params];
+        $locale = $params['locale'] ?? app()->getLocale();
+        unset($params['locale']);
+        if (! in_array($locale, ['vi', 'en'], true)) {
+            $locale = config('app.locale', 'vi');
+        }
+
+        return route($name, array_merge(['locale' => $locale], $params), $absolute);
+    }
+}
+
+if (! function_exists('like_escape')) {
+    /** Thoát ký tự đại diện của LIKE (\ % _) để chuỗi người dùng chỉ khớp nguyên văn. */
+    function like_escape(string $value): string
+    {
+        return str_replace(['\\', '%', '_'], ['\\\\', '\\%', '\\_'], $value);
+    }
+}
+
+if (! function_exists('like_contains')) {
+    /** Mẫu LIKE "chứa chuỗi" đã thoát ký tự đại diện. */
+    function like_contains(string $value): string
+    {
+        return '%'.like_escape($value).'%';
+    }
+}
+
+if (! function_exists('storage_url')) {
+    /** URL công khai của tệp trên disk public; giữ nguyên URL tuyệt đối http(s); rỗng → null. */
+    function storage_url(?string $path): ?string
+    {
+        if ($path === null || trim($path) === '') {
+            return null;
+        }
+        if (preg_match('#^https?://#i', $path)) {
+            return $path;
+        }
+
+        return \Illuminate\Support\Facades\Storage::disk('public')->url(ltrim($path, '/'));
+    }
+}

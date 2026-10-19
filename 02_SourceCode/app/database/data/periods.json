@@ -1,0 +1,212 @@
+[
+ {
+  "code": "precambrian",
+  "start_mya": 4600,
+  "end_mya": 538.8,
+  "sort_order": 1,
+  "vi": {
+   "name": "Tiền Cambri",
+   "description": "Siêu liên đại dài nhất lịch sử Trái Đất, từ khi hành tinh hình thành đến khi sự sống đa bào bùng nổ; xuất hiện vi khuẩn lam và những sinh vật đa bào đầu tiên."
+  },
+  "en": {
+   "name": "Precambrian",
+   "description": "The longest stretch of Earth history, from the planet's formation to the rise of complex multicellular life; home to cyanobacteria and the first multicellular organisms."
+  }
+ },
+ {
+  "code": "cambrian",
+  "start_mya": 538.8,
+  "end_mya": 485.4,
+  "sort_order": 2,
+  "vi": {
+   "name": "Kỷ Cambri",
+   "description": "Kỷ đầu tiên của đại Cổ sinh, nổi tiếng với 'bùng nổ Cambri' khi hầu hết các ngành động vật lớn xuất hiện, như ở đá phiến Burgess."
+  },
+  "en": {
+   "name": "Cambrian",
+   "description": "First period of the Palaeozoic, famous for the 'Cambrian explosion' in which most major animal phyla appear, as seen in the Burgess Shale."
+  }
+ },
+ {
+  "code": "ordovician",
+  "start_mya": 485.4,
+  "end_mya": 443.8,
+  "sort_order": 3,
+  "vi": {
+   "name": "Kỷ Ordovic",
+   "description": "Biển ấm bao phủ nhiều lục địa; tay cuộn, bọ ba thùy và san hô phát triển mạnh; kết thúc bằng một đợt tuyệt chủng lớn."
+  },
+  "en": {
+   "name": "Ordovician",
+   "description": "Warm seas flooded the continents; brachiopods, trilobites and corals flourished; the period ended with a major mass extinction."
+  }
+ },
+ {
+  "code": "silurian",
+  "start_mya": 443.8,
+  "end_mya": 419.2,
+  "sort_order": 4,
+  "vi": {
+   "name": "Kỷ Silur",
+   "description": "Thực vật có mạch đầu tiên lên cạn, cá có hàm xuất hiện và rạn san hô mở rộng."
+  },
+  "en": {
+   "name": "Silurian",
+   "description": "The first vascular plants colonised land, jawed fishes appeared and reefs expanded."
+  }
+ },
+ {
+  "code": "devonian",
+  "start_mya": 419.2,
+  "end_mya": 358.9,
+  "sort_order": 5,
+  "vi": {
+   "name": "Kỷ Devon",
+   "description": "'Thời đại của cá'; rừng cây đầu tiên hình thành và những động vật bốn chân đầu tiên như Tiktaalik tiến dần lên cạn."
+  },
+  "en": {
+   "name": "Devonian",
+   "description": "The 'Age of Fishes'; the first forests grew and early tetrapod relatives such as Tiktaalik moved towards land."
+  }
+ },
+ {
+  "code": "carboniferous",
+  "start_mya": 358.9,
+  "end_mya": 298.9,
+  "sort_order": 6,
+  "vi": {
+   "name": "Kỷ Than đá",
+   "description": "Rừng đầm lầy rộng lớn tạo nên các mỏ than; côn trùng khổng lồ và bò sát đầu tiên xuất hiện."
+  },
+  "en": {
+   "name": "Carboniferous",
+   "description": "Vast swamp forests formed today's coal; giant insects and the first reptiles appeared."
+  }
+ },
+ {
+  "code": "permian",
+  "start_mya": 298.9,
+  "end_mya": 251.9,
+  "sort_order": 7,
+  "vi": {
+   "name": "Kỷ Permi",
+   "description": "Siêu lục địa Pangaea hình thành; thú dạng bò sát như Dicynodon phổ biến; kết thúc bằng đại tuyệt chủng lớn nhất lịch sử."
+  },
+  "en": {
+   "name": "Permian",
+   "description": "The supercontinent Pangaea assembled; mammal-like reptiles such as Dicynodon thrived; it ended with the largest mass extinction ever."
+  }
+ },
+ {
+  "code": "triassic",
+  "start_mya": 251.9,
+  "end_mya": 201.4,
+  "sort_order": 8,
+  "vi": {
+   "name": "Kỷ Tam Điệp",
+   "description": "Sự sống phục hồi sau đại tuyệt chủng; khủng long, thằn lằn bay và thú có vú đầu tiên xuất hiện."
+  },
+  "en": {
+   "name": "Triassic",
+   "description": "Life recovered after the great extinction; the first dinosaurs, pterosaurs and mammals appeared."
+  }
+ },
+ {
+  "code": "jurassic",
+  "start_mya": 201.4,
+  "end_mya": 145.0,
+  "sort_order": 9,
+  "vi": {
+   "name": "Kỷ Jura",
+   "description": "Khủng long chân thằn lằn khổng lồ thống trị đất liền; Archaeopteryx và thằn lằn cá sống ở vùng biển nông châu Âu."
+  },
+  "en": {
+   "name": "Jurassic",
+   "description": "Giant sauropods ruled the land; Archaeopteryx and ichthyosaurs lived around Europe's shallow seas."
+  }
+ },
+ {
+  "code": "cretaceous",
+  "start_mya": 145.0,
+  "end_mya": 66.0,
+  "sort_order": 10,
+  "vi": {
+   "name": "Kỷ Phấn trắng",
+   "description": "Thời kỳ của T. rex, Triceratops và thương long; thực vật có hoa lan rộng; kết thúc bằng thiên thạch Chicxulub."
+  },
+  "en": {
+   "name": "Cretaceous",
+   "description": "The age of T. rex, Triceratops and mosasaurs; flowering plants spread; it ended with the Chicxulub impact."
+  }
+ },
+ {
+  "code": "paleogene",
+  "start_mya": 66.0,
+  "end_mya": 23.03,
+  "sort_order": 11,
+  "vi": {
+   "name": "Kỷ Paleogen",
+   "description": "Thú có vú đa dạng hóa nhanh sau khi khủng long biến mất; xuất hiện cá voi cổ và nhiều nhóm thú móng guốc."
+  },
+  "en": {
+   "name": "Paleogene",
+   "description": "Mammals diversified rapidly after the dinosaurs vanished; early whales and many hoofed mammals appeared."
+  }
+ },
+ {
+  "code": "neogene",
+  "start_mya": 23.03,
+  "end_mya": 2.58,
+  "sort_order": 12,
+  "vi": {
+   "name": "Kỷ Neogen",
+   "description": "Khí hậu nguội dần, đồng cỏ mở rộng; cá mập megalodon và tổ tiên loài người xuất hiện."
+  },
+  "en": {
+   "name": "Neogene",
+   "description": "Climate cooled and grasslands spread; the megalodon shark and early hominins appeared."
+  }
+ },
+ {
+  "code": "pleistocene",
+  "start_mya": 2.58,
+  "end_mya": 0.012,
+  "sort_order": 13,
+  "vi": {
+   "name": "Thế Pleistocen (Kỷ Băng Hà)",
+   "description": "Các chu kỳ băng hà luân phiên; voi ma mút, tê giác lông và hươu khổng lồ sống trên vùng đồng cỏ lạnh, nay là đáy Biển Bắc."
+  },
+  "en": {
+   "name": "Pleistocene (Ice Age)",
+   "description": "Repeated glacial cycles; mammoths, woolly rhinos and giant deer roamed cold steppes that are now the floor of the North Sea."
+  }
+ },
+ {
+  "code": "holocene",
+  "start_mya": 0.012,
+  "end_mya": 0.0,
+  "sort_order": 14,
+  "vi": {
+   "name": "Thế Holocen",
+   "description": "Giai đoạn ấm sau băng hà cuối cùng; nông nghiệp và văn minh loài người phát triển."
+  },
+  "en": {
+   "name": "Holocene",
+   "description": "The warm interval since the last glaciation, during which agriculture and human civilisation developed."
+  }
+ },
+ {
+  "code": "modern",
+  "start_mya": 0.001,
+  "end_mya": 0.0,
+  "sort_order": 15,
+  "vi": {
+   "name": "Hiện đại",
+   "description": "Mẫu vật sinh vật đang sống hoặc mới tuyệt chủng, được thu thập trong khoảng năm thế kỷ gần đây."
+  },
+  "en": {
+   "name": "Modern",
+   "description": "Specimens of living or recently extinct organisms collected over roughly the past five centuries."
+  }
+ }
+]

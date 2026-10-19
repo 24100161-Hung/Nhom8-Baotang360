@@ -1,0 +1,698 @@
+[
+ {
+  "slug": "chat-lieu-hoa-thach",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Hóa thạch",
+   "description": "Thẻ nhóm 'chat_lieu': Hóa thạch."
+  },
+  "en": {
+   "name": "Fossil",
+   "description": "Tag (chat_lieu): Fossil."
+  }
+ },
+ {
+  "slug": "chat-lieu-ban-duc",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Bản đúc/phục dựng",
+   "description": "Thẻ nhóm 'chat_lieu': Bản đúc/phục dựng."
+  },
+  "en": {
+   "name": "Cast/replica",
+   "description": "Tag (chat_lieu): Cast/replica."
+  }
+ },
+ {
+  "slug": "chat-lieu-tieu-ban-nhoi",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Tiêu bản nhồi",
+   "description": "Thẻ nhóm 'chat_lieu': Tiêu bản nhồi."
+  },
+  "en": {
+   "name": "Taxidermy mount",
+   "description": "Tag (chat_lieu): Taxidermy mount."
+  }
+ },
+ {
+  "slug": "chat-lieu-da-chim",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Tiêu bản da",
+   "description": "Thẻ nhóm 'chat_lieu': Tiêu bản da."
+  },
+  "en": {
+   "name": "Study skin",
+   "description": "Tag (chat_lieu): Study skin."
+  }
+ },
+ {
+  "slug": "chat-lieu-bo-xuong",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Bộ xương",
+   "description": "Thẻ nhóm 'chat_lieu': Bộ xương."
+  },
+  "en": {
+   "name": "Skeleton",
+   "description": "Tag (chat_lieu): Skeleton."
+  }
+ },
+ {
+  "slug": "chat-lieu-hop-so",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Hộp sọ",
+   "description": "Thẻ nhóm 'chat_lieu': Hộp sọ."
+  },
+  "en": {
+   "name": "Skull",
+   "description": "Tag (chat_lieu): Skull."
+  }
+ },
+ {
+  "slug": "chat-lieu-vo",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Vỏ/mai",
+   "description": "Thẻ nhóm 'chat_lieu': Vỏ/mai."
+  },
+  "en": {
+   "name": "Shell",
+   "description": "Tag (chat_lieu): Shell."
+  }
+ },
+ {
+  "slug": "chat-lieu-khoang-vat",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Khoáng vật",
+   "description": "Thẻ nhóm 'chat_lieu': Khoáng vật."
+  },
+  "en": {
+   "name": "Mineral",
+   "description": "Tag (chat_lieu): Mineral."
+  }
+ },
+ {
+  "slug": "chat-lieu-da",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Đá",
+   "description": "Thẻ nhóm 'chat_lieu': Đá."
+  },
+  "en": {
+   "name": "Rock",
+   "description": "Tag (chat_lieu): Rock."
+  }
+ },
+ {
+  "slug": "chat-lieu-tieu-ban-kho",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Tiêu bản côn trùng ghim",
+   "description": "Thẻ nhóm 'chat_lieu': Tiêu bản côn trùng ghim."
+  },
+  "en": {
+   "name": "Pinned insect",
+   "description": "Tag (chat_lieu): Pinned insect."
+  }
+ },
+ {
+  "slug": "chat-lieu-ngam-dung-dich",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Ngâm dung dịch bảo quản",
+   "description": "Thẻ nhóm 'chat_lieu': Ngâm dung dịch bảo quản."
+  },
+  "en": {
+   "name": "Wet specimen",
+   "description": "Tag (chat_lieu): Wet specimen."
+  }
+ },
+ {
+  "slug": "chat-lieu-tieu-ban-thuc-vat",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Tiêu bản thực vật",
+   "description": "Thẻ nhóm 'chat_lieu': Tiêu bản thực vật."
+  },
+  "en": {
+   "name": "Herbarium/botanical specimen",
+   "description": "Tag (chat_lieu): Herbarium/botanical specimen."
+  }
+ },
+ {
+  "slug": "chat-lieu-tranh-ve",
+  "group": "chat_lieu",
+  "vi": {
+   "name": "Tranh vẽ/tư liệu",
+   "description": "Thẻ nhóm 'chat_lieu': Tranh vẽ/tư liệu."
+  },
+  "en": {
+   "name": "Artwork/document",
+   "description": "Tag (chat_lieu): Artwork/document."
+  }
+ },
+ {
+  "slug": "nguon-goc-chau-au",
+  "group": "nguon_goc",
+  "vi": {
+   "name": "Châu Âu",
+   "description": "Thẻ nhóm 'nguon_goc': Châu Âu."
+  },
+  "en": {
+   "name": "Europe",
+   "description": "Tag (nguon_goc): Europe."
+  }
+ },
+ {
+  "slug": "nguon-goc-chau-a",
+  "group": "nguon_goc",
+  "vi": {
+   "name": "Châu Á",
+   "description": "Thẻ nhóm 'nguon_goc': Châu Á."
+  },
+  "en": {
+   "name": "Asia",
+   "description": "Tag (nguon_goc): Asia."
+  }
+ },
+ {
+  "slug": "nguon-goc-chau-phi",
+  "group": "nguon_goc",
+  "vi": {
+   "name": "Châu Phi",
+   "description": "Thẻ nhóm 'nguon_goc': Châu Phi."
+  },
+  "en": {
+   "name": "Africa",
+   "description": "Tag (nguon_goc): Africa."
+  }
+ },
+ {
+  "slug": "nguon-goc-bac-my",
+  "group": "nguon_goc",
+  "vi": {
+   "name": "Bắc Mỹ",
+   "description": "Thẻ nhóm 'nguon_goc': Bắc Mỹ."
+  },
+  "en": {
+   "name": "North America",
+   "description": "Tag (nguon_goc): North America."
+  }
+ },
+ {
+  "slug": "nguon-goc-nam-my",
+  "group": "nguon_goc",
+  "vi": {
+   "name": "Nam Mỹ",
+   "description": "Thẻ nhóm 'nguon_goc': Nam Mỹ."
+  },
+  "en": {
+   "name": "South America",
+   "description": "Tag (nguon_goc): South America."
+  }
+ },
+ {
+  "slug": "nguon-goc-chau-dai-duong",
+  "group": "nguon_goc",
+  "vi": {
+   "name": "Châu Đại Dương",
+   "description": "Thẻ nhóm 'nguon_goc': Châu Đại Dương."
+  },
+  "en": {
+   "name": "Oceania",
+   "description": "Tag (nguon_goc): Oceania."
+  }
+ },
+ {
+  "slug": "nguon-goc-ha-lan",
+  "group": "nguon_goc",
+  "vi": {
+   "name": "Hà Lan",
+   "description": "Thẻ nhóm 'nguon_goc': Hà Lan."
+  },
+  "en": {
+   "name": "Netherlands",
+   "description": "Tag (nguon_goc): Netherlands."
+  }
+ },
+ {
+  "slug": "nguon-goc-indonesia",
+  "group": "nguon_goc",
+  "vi": {
+   "name": "Indonesia",
+   "description": "Thẻ nhóm 'nguon_goc': Indonesia."
+  },
+  "en": {
+   "name": "Indonesia",
+   "description": "Tag (nguon_goc): Indonesia."
+  }
+ },
+ {
+  "slug": "nguon-goc-hoa-ky",
+  "group": "nguon_goc",
+  "vi": {
+   "name": "Hoa Kỳ",
+   "description": "Thẻ nhóm 'nguon_goc': Hoa Kỳ."
+  },
+  "en": {
+   "name": "United States",
+   "description": "Tag (nguon_goc): United States."
+  }
+ },
+ {
+  "slug": "nguon-goc-bien-bac",
+  "group": "nguon_goc",
+  "vi": {
+   "name": "Biển Bắc",
+   "description": "Thẻ nhóm 'nguon_goc': Biển Bắc."
+  },
+  "en": {
+   "name": "North Sea",
+   "description": "Tag (nguon_goc): North Sea."
+  }
+ },
+ {
+  "slug": "nguon-goc-khong-ro",
+  "group": "nguon_goc",
+  "vi": {
+   "name": "Chưa rõ nơi thu",
+   "description": "Thẻ nhóm 'nguon_goc': Chưa rõ nơi thu."
+  },
+  "en": {
+   "name": "Locality unknown",
+   "description": "Tag (nguon_goc): Locality unknown."
+  }
+ },
+ {
+  "slug": "nhom-khung-long",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Khủng long",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Khủng long."
+  },
+  "en": {
+   "name": "Dinosaurs",
+   "description": "Tag (nhom_sinh_vat): Dinosaurs."
+  }
+ },
+ {
+  "slug": "nhom-bo-sat-co",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Bò sát cổ và thằn lằn bay",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Bò sát cổ và thằn lằn bay."
+  },
+  "en": {
+   "name": "Ancient reptiles & pterosaurs",
+   "description": "Tag (nhom_sinh_vat): Ancient reptiles & pterosaurs."
+  }
+ },
+ {
+  "slug": "nhom-thu",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Thú",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Thú."
+  },
+  "en": {
+   "name": "Mammals",
+   "description": "Tag (nhom_sinh_vat): Mammals."
+  }
+ },
+ {
+  "slug": "nhom-chim",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Chim",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Chim."
+  },
+  "en": {
+   "name": "Birds",
+   "description": "Tag (nhom_sinh_vat): Birds."
+  }
+ },
+ {
+  "slug": "nhom-bo-sat-luong-cu",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Bò sát và lưỡng cư",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Bò sát và lưỡng cư."
+  },
+  "en": {
+   "name": "Reptiles & amphibians",
+   "description": "Tag (nhom_sinh_vat): Reptiles & amphibians."
+  }
+ },
+ {
+  "slug": "nhom-ca",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Cá",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Cá."
+  },
+  "en": {
+   "name": "Fishes",
+   "description": "Tag (nhom_sinh_vat): Fishes."
+  }
+ },
+ {
+  "slug": "nhom-con-trung",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Côn trùng",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Côn trùng."
+  },
+  "en": {
+   "name": "Insects",
+   "description": "Tag (nhom_sinh_vat): Insects."
+  }
+ },
+ {
+  "slug": "nhom-than-mem",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Thân mềm",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Thân mềm."
+  },
+  "en": {
+   "name": "Molluscs",
+   "description": "Tag (nhom_sinh_vat): Molluscs."
+  }
+ },
+ {
+  "slug": "nhom-giap-xac",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Giáp xác",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Giáp xác."
+  },
+  "en": {
+   "name": "Crustaceans",
+   "description": "Tag (nhom_sinh_vat): Crustaceans."
+  }
+ },
+ {
+  "slug": "nhom-thuc-vat",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Thực vật và nấm",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Thực vật và nấm."
+  },
+  "en": {
+   "name": "Plants & fungi",
+   "description": "Tag (nhom_sinh_vat): Plants & fungi."
+  }
+ },
+ {
+  "slug": "nhom-khoang-vat-da",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Khoáng vật và đá",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Khoáng vật và đá."
+  },
+  "en": {
+   "name": "Minerals & rocks",
+   "description": "Tag (nhom_sinh_vat): Minerals & rocks."
+  }
+ },
+ {
+  "slug": "nhom-nguoi-co",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Người cổ",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Người cổ."
+  },
+  "en": {
+   "name": "Early humans",
+   "description": "Tag (nhom_sinh_vat): Early humans."
+  }
+ },
+ {
+  "slug": "nhom-khong-xuong-song-khac",
+  "group": "nhom_sinh_vat",
+  "vi": {
+   "name": "Động vật không xương sống khác",
+   "description": "Thẻ nhóm 'nhom_sinh_vat': Động vật không xương sống khác."
+  },
+  "en": {
+   "name": "Other invertebrates",
+   "description": "Tag (nhom_sinh_vat): Other invertebrates."
+  }
+ },
+ {
+  "slug": "chu-de-khung-long",
+  "group": "chu_de",
+  "vi": {
+   "name": "Thế giới khủng long",
+   "description": "Thẻ nhóm 'chu_de': Thế giới khủng long."
+  },
+  "en": {
+   "name": "World of dinosaurs",
+   "description": "Tag (chu_de): World of dinosaurs."
+  }
+ },
+ {
+  "slug": "chu-de-tuyet-chung",
+  "group": "chu_de",
+  "vi": {
+   "name": "Tuyệt chủng",
+   "description": "Thẻ nhóm 'chu_de': Tuyệt chủng."
+  },
+  "en": {
+   "name": "Extinction",
+   "description": "Tag (chu_de): Extinction."
+  }
+ },
+ {
+  "slug": "chu-de-sinh-san",
+  "group": "chu_de",
+  "vi": {
+   "name": "Sinh sản và tán tỉnh",
+   "description": "Thẻ nhóm 'chu_de': Sinh sản và tán tỉnh."
+  },
+  "en": {
+   "name": "Reproduction & courtship",
+   "description": "Tag (chu_de): Reproduction & courtship."
+  }
+ },
+ {
+  "slug": "chu-de-tien-hoa",
+  "group": "chu_de",
+  "vi": {
+   "name": "Tiến hóa",
+   "description": "Thẻ nhóm 'chu_de': Tiến hóa."
+  },
+  "en": {
+   "name": "Evolution",
+   "description": "Tag (chu_de): Evolution."
+  }
+ },
+ {
+  "slug": "chu-de-dia-chat",
+  "group": "chu_de",
+  "vi": {
+   "name": "Địa chất",
+   "description": "Thẻ nhóm 'chu_de': Địa chất."
+  },
+  "en": {
+   "name": "Geology",
+   "description": "Tag (chu_de): Geology."
+  }
+ },
+ {
+  "slug": "chu-de-bien",
+  "group": "chu_de",
+  "vi": {
+   "name": "Đại dương",
+   "description": "Thẻ nhóm 'chu_de': Đại dương."
+  },
+  "en": {
+   "name": "Oceans",
+   "description": "Tag (chu_de): Oceans."
+  }
+ },
+ {
+  "slug": "chu-de-nghien-cuu",
+  "group": "chu_de",
+  "vi": {
+   "name": "Nghiên cứu khoa học",
+   "description": "Thẻ nhóm 'chu_de': Nghiên cứu khoa học."
+  },
+  "en": {
+   "name": "Scientific research",
+   "description": "Tag (chu_de): Scientific research."
+  }
+ },
+ {
+  "slug": "chu-de-bang-ha",
+  "group": "chu_de",
+  "vi": {
+   "name": "Kỷ Băng Hà",
+   "description": "Thẻ nhóm 'chu_de': Kỷ Băng Hà."
+  },
+  "en": {
+   "name": "Ice Age",
+   "description": "Tag (chu_de): Ice Age."
+  }
+ },
+ {
+  "slug": "chu-de-san-moi",
+  "group": "chu_de",
+  "vi": {
+   "name": "Săn mồi và nọc độc",
+   "description": "Thẻ nhóm 'chu_de': Săn mồi và nọc độc."
+  },
+  "en": {
+   "name": "Predation & venom",
+   "description": "Tag (chu_de): Predation & venom."
+  }
+ },
+ {
+  "slug": "chu-de-xam-lan",
+  "group": "chu_de",
+  "vi": {
+   "name": "Loài ngoại lai xâm lấn",
+   "description": "Thẻ nhóm 'chu_de': Loài ngoại lai xâm lấn."
+  },
+  "en": {
+   "name": "Invasive species",
+   "description": "Tag (chu_de): Invasive species."
+  }
+ },
+ {
+  "slug": "chu-de-gia-dinh",
+  "group": "chu_de",
+  "vi": {
+   "name": "Phù hợp gia đình",
+   "description": "Thẻ nhóm 'chu_de': Phù hợp gia đình."
+  },
+  "en": {
+   "name": "Family-friendly",
+   "description": "Tag (chu_de): Family-friendly."
+  }
+ },
+ {
+  "slug": "chu-de-bao-ton",
+  "group": "chu_de",
+  "vi": {
+   "name": "Bảo tồn",
+   "description": "Thẻ nhóm 'chu_de': Bảo tồn."
+  },
+  "en": {
+   "name": "Conservation",
+   "description": "Tag (chu_de): Conservation."
+  }
+ },
+ {
+  "slug": "chu-de-dubois",
+  "group": "chu_de",
+  "vi": {
+   "name": "Bộ sưu tập Dubois (Java)",
+   "description": "Thẻ nhóm 'chu_de': Bộ sưu tập Dubois (Java)."
+  },
+  "en": {
+   "name": "Dubois collection (Java)",
+   "description": "Tag (chu_de): Dubois collection (Java)."
+  }
+ },
+ {
+  "slug": "phong-main-hall",
+  "group": "phong",
+  "vi": {
+   "name": "Phòng Sảnh chính",
+   "description": "Thẻ nhóm 'phong': Phòng Sảnh chính."
+  },
+  "en": {
+   "name": "Main Hall gallery",
+   "description": "Tag (phong): Main Hall gallery."
+  }
+ },
+ {
+  "slug": "phong-dinosaur",
+  "group": "phong",
+  "vi": {
+   "name": "Phòng Thời đại khủng long",
+   "description": "Thẻ nhóm 'phong': Phòng Thời đại khủng long."
+  },
+  "en": {
+   "name": "Dinosaur Era gallery",
+   "description": "Tag (phong): Dinosaur Era gallery."
+  }
+ },
+ {
+  "slug": "phong-seduction",
+  "group": "phong",
+  "vi": {
+   "name": "Phòng Quyến rũ",
+   "description": "Thẻ nhóm 'phong': Phòng Quyến rũ."
+  },
+  "en": {
+   "name": "Seduction gallery",
+   "description": "Tag (phong): Seduction gallery."
+  }
+ },
+ {
+  "slug": "phong-death",
+  "group": "phong",
+  "vi": {
+   "name": "Phòng Cái chết",
+   "description": "Thẻ nhóm 'phong': Phòng Cái chết."
+  },
+  "en": {
+   "name": "Death gallery",
+   "description": "Tag (phong): Death gallery."
+  }
+ },
+ {
+  "slug": "phong-live-science",
+  "group": "phong",
+  "vi": {
+   "name": "Phòng LiveScience",
+   "description": "Thẻ nhóm 'phong': Phòng LiveScience."
+  },
+  "en": {
+   "name": "LiveScience gallery",
+   "description": "Tag (phong): LiveScience gallery."
+  }
+ },
+ {
+  "slug": "phong-earth",
+  "group": "phong",
+  "vi": {
+   "name": "Phòng Trái Đất",
+   "description": "Thẻ nhóm 'phong': Phòng Trái Đất."
+  },
+  "en": {
+   "name": "Earth gallery",
+   "description": "Tag (phong): Earth gallery."
+  }
+ },
+ {
+  "slug": "phong-life",
+  "group": "phong",
+  "vi": {
+   "name": "Phòng Sự sống",
+   "description": "Thẻ nhóm 'phong': Phòng Sự sống."
+  },
+  "en": {
+   "name": "Life gallery",
+   "description": "Tag (phong): Life gallery."
+  }
+ },
+ {
+  "slug": "phong-ice-age",
+  "group": "phong",
+  "vi": {
+   "name": "Phòng Kỷ Băng Hà",
+   "description": "Thẻ nhóm 'phong': Phòng Kỷ Băng Hà."
+  },
+  "en": {
+   "name": "Ice Age gallery",
+   "description": "Tag (phong): Ice Age gallery."
+  }
+ }
+]

@@ -1,0 +1,620 @@
+[
+ {
+  "code": "main_hall",
+  "slug": "main-hall",
+  "floor": 1,
+  "sort_order": 1,
+  "panorama": "seed-assets/panoramas/main_hall.jpg",
+  "is_simulated": false,
+  "panorama_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Exhibition_Nature_theatre_30_-_Panorama_360_3D.jpg",
+   "file_title": "File:Naturalis Biodiversity Center - Museum - Exhibition Nature theatre 30 - Panorama 360 3D.jpg",
+   "author": "Henk Caspers/Naturalis Biodiversity Center",
+   "license": "cc_by_sa_3",
+   "captured_at": "2016-04-06",
+   "note": "Ảnh gốc 360° 3D (stereo trên–dưới 8192×8192); đã cắt nửa trên (mắt trái) thành equirectangular 2:1 và thu về 6144×3072, JPEG q85. Ảnh tư liệu năm 2016, trước khi Naturalis cải tạo."
+  },
+  "preview": "seed-assets/scenes/main_hall-preview.jpg",
+  "preview_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis-Leiden-2019-1.jpg",
+   "file_title": "File:Naturalis-Leiden-2019-1.jpg",
+   "author": "Hay Kranen",
+   "license": "cc_by_4"
+  },
+  "hfov_default": 100,
+  "pitch_default": 0,
+  "yaw_default": 0,
+  "north_offset": 0,
+  "minimap": {
+   "x": 0.14,
+   "y": 0.33
+  },
+  "status": "published",
+  "interp": {
+   "vi": {
+    "1": {
+     "title": "Sảnh chính",
+     "summary": "Không gian đón khách dẫn tới mọi phòng trưng bày, trong tòa nhà mới do Neutelings Riedijk Architects thiết kế, mở cửa năm 2019.",
+     "body": "Sảnh chính là điểm khởi đầu của chuyến tham quan Naturalis Biodiversity Center ở Leiden. Tòa nhà mới do văn phòng kiến trúc Neutelings Riedijk Architects thiết kế và mở cửa đón khách năm 2019, nối liền với tháp lưu trữ bộ sưu tập và khu Pesthuis có từ thế kỷ XVII. Từ sảnh, những cầu thang lớn và giếng trời đưa khách lên các phòng trưng bày theo chủ đề: khủng long, kỷ băng hà, sự sống, Trái Đất, sự quyến rũ, cái chết và phòng thí nghiệm mở LiveScience. Naturalis quản lý một trong những bộ sưu tập lịch sử tự nhiên lớn nhất thế giới, với hàng chục triệu mẫu vật phục vụ nghiên cứu đa dạng sinh học. Ảnh 360° của phòng này là ảnh tư liệu năm 2016 do Naturalis chụp tại không gian trưng bày cũ (Natuurtheater) trước khi cải tạo, được dùng để minh họa và ghi rõ nguồn.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Exhibition Nature theatre 30 - Panorama 360 3D.jpg"
+     ]
+    }
+   },
+   "en": {
+    "1": {
+     "title": "Main Hall",
+     "summary": "The welcome space leading to every gallery, inside the new building by Neutelings Riedijk Architects that opened in 2019.",
+     "body": "The Main Hall is the starting point of a visit to Naturalis Biodiversity Center in Leiden. The new building, designed by Neutelings Riedijk Architects and opened to the public in 2019, is joined to the collection tower and to the seventeenth-century Pesthuis. From the hall, broad staircases and an atrium lead visitors to themed galleries: dinosaurs, the Ice Age, life, the Earth, seduction, death and the open laboratory LiveScience. Naturalis looks after one of the largest natural history collections in the world, tens of millions of specimens used for biodiversity research. The 360° image for this room is an archival 2016 photograph taken by Naturalis in the former exhibition space (Nature Theatre) before the renovation; it is used for illustration and fully credited.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Exhibition Nature theatre 30 - Panorama 360 3D.jpg"
+     ]
+    }
+   }
+  },
+  "audio": {
+   "vi": {
+    "transcript": "Xin chào và chào mừng bạn đến với Bảo tàng 360 độ, chuyến tham quan ảo Naturalis Biodiversity Center ở thành phố Leiden, Hà Lan. Bạn đang đứng ở sảnh chính. Tòa nhà mới của Naturalis do văn phòng Neutelings Riedijk Architects thiết kế và mở cửa năm 2019, nối với tháp lưu trữ hàng chục triệu mẫu vật và ngôi nhà Pesthuis xây từ thế kỷ mười bảy. Hãy xoay màn hình để nhìn quanh. Các mũi tên trên ảnh sẽ đưa bạn tới tám không gian: thời đại khủng long với bộ xương Trix, kỷ băng hà với voi ma mút, phòng Sự sống, phòng Trái Đất, phòng Quyến rũ, phòng Cái chết và phòng thí nghiệm mở LiveScience. Biểu tượng chữ i cho bạn thêm thông tin, còn biểu tượng hiện vật mở trang chi tiết. Bạn có thể đi tự do hoặc chọn một tour có hướng dẫn. Ảnh toàn cảnh tại đây là ảnh tư liệu do Naturalis chụp năm 2016, trước khi cải tạo. Chúc bạn một chuyến tham quan thú vị.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   },
+   "en": {
+    "transcript": "Hello and welcome to Museum 360, a virtual visit to Naturalis Biodiversity Center in Leiden, the Netherlands. You are standing in the main hall. The new Naturalis building was designed by Neutelings Riedijk Architects and opened in 2019. It is linked to a collection tower holding tens of millions of specimens and to the Pesthuis, a building from the seventeenth century. Turn your screen to look around. The arrows in the image lead to eight spaces: the Dinosaur Era with the skeleton of Trix, the Ice Age with its mammoths, Life, Earth, Seduction, Death and the open laboratory LiveScience. The letter i icons give extra information, and the specimen icons open a detail page. You can wander freely or follow a guided tour. The panorama shown here is an archival photograph taken by Naturalis in 2016, before the renovation. Enjoy your visit.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   }
+  },
+  "tags": [
+   "phong-main-hall",
+   "chu-de-gia-dinh"
+  ]
+ },
+ {
+  "code": "dinosaur",
+  "slug": "dinosaur-era",
+  "floor": 2,
+  "sort_order": 2,
+  "panorama": "seed-assets/panoramas/dinosaur.jpg",
+  "is_simulated": false,
+  "panorama_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Exhibition_Primeval_parade_33_-_Overview_room_with_skeletons_-_Panorama_360_3D.jpg",
+   "file_title": "File:Naturalis Biodiversity Center - Museum - Exhibition Primeval parade 33 - Overview room with skeletons - Panorama 360 3D.jpg",
+   "author": "Henk Caspers/Naturalis Biodiversity Center",
+   "license": "cc_by_sa_3",
+   "captured_at": "2016-05-10",
+   "note": "Ảnh gốc 360° 3D (stereo trên–dưới 8192×8192); đã cắt nửa trên (mắt trái) thành equirectangular 2:1 và thu về 6144×3072, JPEG q85. Ảnh tư liệu năm 2016, trước khi Naturalis cải tạo."
+  },
+  "preview": "seed-assets/scenes/dinosaur-preview.jpg",
+  "preview_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Kopie_van_Dinotijd_Trex_Mike_Bink_Fotografie.jpg",
+   "file_title": "File:Kopie van Dinotijd Trex Mike Bink Fotografie.jpg",
+   "author": "Museum Naturalis",
+   "license": "cc_by_sa_4"
+  },
+  "hfov_default": 100,
+  "pitch_default": 0,
+  "yaw_default": 0,
+  "north_offset": 0,
+  "minimap": {
+   "x": 0.63,
+   "y": 0.33
+  },
+  "status": "published",
+  "interp": {
+   "vi": {
+    "1": {
+     "title": "Thời đại khủng long",
+     "summary": "Phòng trưng bày khủng long và bò sát Trung sinh, nổi bật với Trix – bộ xương Tyrannosaurus rex do Naturalis khai quật ở Montana.",
+     "body": "Phòng Thời đại khủng long (Dinotijd) đưa khách về đại Trung sinh, cách đây khoảng 252 đến 66 triệu năm. Ngôi sao của phòng là Trix, bộ xương Tyrannosaurus rex do đội của Naturalis khai quật ở Montana (Hoa Kỳ) trong các năm 2013–2015 và là một trong những bộ xương T. rex được bảo tồn tốt nhất từng tìm thấy. Quanh Trix là Triceratops, khủng long mỏ vịt Edmontosaurus, khủng long cổ dài Camarasaurus, Stegosaurus cùng các bò sát biển như thương long và rùa biển từ vùng Maastricht của Hà Lan. Những hóa thạch đá vôi Solnhofen như Archaeopteryx và Pterodactylus kể câu chuyện về sự bay lượn. Ảnh 360° của phòng là ảnh tư liệu năm 2016 chụp gian cổ sinh vật cũ của Naturalis (Oertijdparade), trước khi trưng bày được làm mới năm 2019.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Exhibition Primeval parade 33 - Overview room with skeletons - Panorama 360 3D.jpg"
+     ]
+    }
+   },
+   "en": {
+    "1": {
+     "title": "Dinosaur Era",
+     "summary": "The gallery of dinosaurs and Mesozoic reptiles, starring Trix – the Tyrannosaurus rex skeleton excavated by Naturalis in Montana.",
+     "body": "The Dinosaur Era gallery (Dinotijd) takes visitors back to the Mesozoic, roughly 252 to 66 million years ago. Its star is Trix, a Tyrannosaurus rex skeleton excavated by a Naturalis team in Montana, USA, between 2013 and 2015 and one of the best-preserved T. rex skeletons ever found. Around Trix stand Triceratops, the duck-billed Edmontosaurus, the long-necked Camarasaurus, Stegosaurus and marine reptiles such as mosasaurs and sea turtles from the Maastricht area of the Netherlands. Fossils from the Solnhofen limestone, including Archaeopteryx and Pterodactylus, tell the story of flight. The 360° image is an archival 2016 photograph of the former Naturalis palaeontology hall (Primeval Parade), taken before the displays were renewed in 2019.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Exhibition Primeval parade 33 - Overview room with skeletons - Panorama 360 3D.jpg"
+     ]
+    }
+   }
+  },
+  "audio": {
+   "vi": {
+    "transcript": "Bạn đang bước vào Thời đại khủng long. Hãy nhìn về phía bộ xương lớn nhất: đó là Trix, một con Tyrannosaurus rex sống vào cuối kỷ Phấn trắng, khoảng sáu mươi sáu triệu năm trước. Đội khai quật của Naturalis tìm thấy Trix ở bang Montana, Hoa Kỳ, và đưa bộ xương về Leiden. Trước khi về phòng này, Trix từng được trưng bày lưu động ở nhiều thành phố châu Âu. Xung quanh là những người hàng xóm cùng thời: Triceratops với ba chiếc sừng và diềm cổ, Edmontosaurus mỏ vịt với hàng trăm chiếc răng, và Camarasaurus cổ dài từ kỷ Jura. Ở các tủ kính, bạn sẽ gặp thằn lằn bay Pterodactylus và chim cổ Archaeopteryx từ đá vôi Solnhofen ở Đức, cùng rùa biển Allopleuron và cá sấu Thoracosaurus từ vùng Maastricht. Những hóa thạch này cho thấy Hà Lan từng là một vùng biển ấm. Hãy chạm vào các biểu tượng để xem chi tiết từng mẫu vật.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   },
+   "en": {
+    "transcript": "You are entering the Dinosaur Era. Look towards the largest skeleton: this is Trix, a Tyrannosaurus rex that lived at the end of the Cretaceous, about sixty-six million years ago. A Naturalis excavation team found Trix in Montana in the United States and brought the skeleton to Leiden. Before settling in this gallery, Trix travelled to several European cities as a touring exhibition. Around her are neighbours from the same world: Triceratops with its three horns and neck frill, the duck-billed Edmontosaurus with hundreds of teeth, and the long-necked Camarasaurus from the Jurassic. In the display cases you will meet the pterosaur Pterodactylus and the early bird Archaeopteryx from the Solnhofen limestone in Germany, together with the sea turtle Allopleuron and the crocodile relative Thoracosaurus from the Maastricht area. These fossils show that the Netherlands was once covered by a warm sea. Tap the icons to see each specimen in detail.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   }
+  },
+  "tags": [
+   "phong-dinosaur",
+   "chu-de-khung-long"
+  ]
+ },
+ {
+  "code": "seduction",
+  "slug": "seduction",
+  "floor": 2,
+  "sort_order": 3,
+  "panorama": "seed-assets/panoramas/seduction.jpg",
+  "is_simulated": true,
+  "panorama_source": {
+   "source_name": "BaoTang360 – make_panorama.py",
+   "source_url": null,
+   "author": "Nhóm 08 – BaoTang360",
+   "license": "simulated",
+   "note": "Ảnh equirectangular mô phỏng 4096×2048 sinh bằng .claude/skills/bt360-content/scripts/make_panorama.py"
+  },
+  "preview": "seed-assets/scenes/seduction-preview.jpg",
+  "preview_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_RMNH.AVES.15365_1_-_Paradisaea_apoda_subsp._-_Paradisaeidae_-_bird_skin_specimen.jpeg",
+   "file_title": "File:Naturalis Biodiversity Center - RMNH.AVES.15365 1 - Paradisaea apoda subsp. - Paradisaeidae - bird skin specimen.jpeg",
+   "author": "Naturalis Biodiversity Center",
+   "license": "cc0"
+  },
+  "hfov_default": 100,
+  "pitch_default": 0,
+  "yaw_default": 0,
+  "north_offset": 0,
+  "minimap": {
+   "x": 0.63,
+   "y": 0.75
+  },
+  "status": "published",
+  "interp": {
+   "vi": {
+    "1": {
+     "title": "Quyến rũ",
+     "summary": "Phòng về sinh sản: màu sắc, điệu nhảy, mùi hương và những chiến lược mà sinh vật dùng để tìm bạn đời và truyền gen.",
+     "body": "Phòng Quyến rũ (Verleiding) kể câu chuyện quan trọng bậc nhất của sự sống: sinh sản. Để truyền gen cho thế hệ sau, sinh vật phải tìm và thuyết phục bạn đời hoặc nhờ trung gian như côn trùng thụ phấn. Chim thiên đường đực ở New Guinea khoe bộ lông rực rỡ và điệu múa cầu kỳ; trĩ, chim thiên đường và chim quetzal là ví dụ kinh điển về chọn lọc giới tính mà Darwin từng phân tích. Bọ cánh cứng đực mọc sừng để tranh giành con cái, ve sầu gọi bạn bằng tiếng kêu, còn hoa lan và hoa Rafflesia dùng màu sắc, hình dáng và mùi hương để thu hút loài thụ phấn. Phòng cũng giới thiệu cách chăm sóc trứng, từ vỏ trứng của bạch tuộc giấy Argonauta tới cóc Pipa ấp trứng trên lưng. Ảnh 360° của phòng là ảnh mô phỏng; ảnh xem trước là mẫu da chim thiên đường của Naturalis.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - RMNH.AVES.15365 1 - Paradisaea apoda subsp. - Paradisaeidae - bird skin specimen.jpeg"
+     ]
+    }
+   },
+   "en": {
+    "1": {
+     "title": "Seduction",
+     "summary": "A gallery about reproduction: colours, dances, scents and the strategies organisms use to find a mate and pass on their genes.",
+     "body": "The Seduction gallery (Verleiding) tells one of life's most important stories: reproduction. To pass their genes to the next generation, organisms must find and win over a partner, or recruit go-betweens such as pollinating insects. Male birds-of-paradise in New Guinea show off brilliant plumage and elaborate dances; pheasants, birds-of-paradise and the resplendent quetzal are classic examples of the sexual selection Darwin analysed. Male beetles grow horns to fight over females, cicadas call with song, and orchids and Rafflesia use colour, shape and scent to attract pollinators. The gallery also covers parental care, from the egg case of the paper nautilus Argonauta to the Surinam toad that carries its eggs in its back. The 360° image of this room is simulated; the preview shows a Naturalis bird-of-paradise skin.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - RMNH.AVES.15365 1 - Paradisaea apoda subsp. - Paradisaeidae - bird skin specimen.jpeg"
+     ]
+    }
+   }
+  },
+  "audio": {
+   "vi": {
+    "transcript": "Chào mừng bạn đến phòng Quyến rũ. Ở đây mọi thứ đều xoay quanh một câu hỏi: làm sao để có con cháu? Hãy nhìn những tiêu bản chim thiên đường từ New Guinea. Chim trống có bộ lông dài, màu sắc rực rỡ và biểu diễn những điệu múa phức tạp để gây ấn tượng với chim mái. Charles Darwin gọi hiện tượng này là chọn lọc giới tính: con cái chọn bạn đời, và qua nhiều thế hệ, những đặc điểm được ưa thích trở nên nổi bật. Tiếp theo là bọ cánh cứng Atlas với chiếc sừng dùng để đấu nhau, và loài ve sầu định kỳ mà con đực gọi bạn bằng tiếng kêu vang. Thực vật cũng biết quyến rũ: hoa lan, hoa vani và hoa Rafflesia khổng lồ lôi kéo côn trùng bằng màu sắc và mùi hương. Cuối cùng, hãy ghé xem vỏ trứng tinh xảo của bạch tuộc giấy Argonauta do chính con cái tiết ra. Lưu ý: ảnh toàn cảnh của phòng này là ảnh mô phỏng.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   },
+   "en": {
+    "transcript": "Welcome to Seduction. Everything here revolves around one question: how do you produce offspring? Look at the bird-of-paradise specimens from New Guinea. The males carry long, brilliantly coloured plumes and perform complicated dances to impress the females. Charles Darwin called this sexual selection: females choose their partners, and over many generations the favoured traits become ever more striking. Next you will find the Atlas beetle, whose horns are used in fights between males, and the periodical cicada, whose males call for partners with a loud song. Plants can seduce too: orchids, vanilla flowers and the giant Rafflesia lure insects with colour and scent. Finally, have a look at the delicate egg case of the paper nautilus Argonauta, secreted by the female herself. Please note that the panorama of this room is a simulated image.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   }
+  },
+  "tags": [
+   "phong-seduction",
+   "chu-de-sinh-san"
+  ]
+ },
+ {
+  "code": "death",
+  "slug": "death",
+  "floor": 2,
+  "sort_order": 4,
+  "panorama": "seed-assets/panoramas/death.jpg",
+  "is_simulated": true,
+  "panorama_source": {
+   "source_name": "BaoTang360 – make_panorama.py",
+   "source_url": null,
+   "author": "Nhóm 08 – BaoTang360",
+   "license": "simulated",
+   "note": "Ảnh equirectangular mô phỏng 4096×2048 sinh bằng .claude/skills/bt360-content/scripts/make_panorama.py"
+  },
+  "preview": "seed-assets/scenes/death-preview.jpg",
+  "preview_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Exhibition_Research_in_Progress_11_-_Reconstruction_of_the_Dodo_Raphus_cucculatus.jpg",
+   "file_title": "File:Naturalis Biodiversity Center - Museum - Exhibition Research in Progress 11 - Reconstruction of the Dodo Raphus cucculatus.jpg",
+   "author": "Henk Caspers/Naturalis",
+   "license": "cc_by_sa_3"
+  },
+  "hfov_default": 100,
+  "pitch_default": 0,
+  "yaw_default": 0,
+  "north_offset": 0,
+  "minimap": {
+   "x": 0.86,
+   "y": 0.75
+  },
+  "status": "published",
+  "interp": {
+   "vi": {
+    "1": {
+     "title": "Cái chết",
+     "summary": "Phòng về cái chết trong tự nhiên: săn mồi, nọc độc, ký sinh, phân hủy và tuyệt chủng – những quá trình giữ cho vòng đời vận hành.",
+     "body": "Phòng Cái chết (De Dood) nhìn thẳng vào một sự thật: mọi sinh vật rồi sẽ chết, và cái chết là một phần thiết yếu của tự nhiên. Khách sẽ gặp những kẻ săn mồi và loài có nọc độc như cá mặt quỷ, rắn hổ mang và ốc cối địa lý; những ký sinh trùng như ruồi giòi da bò; và những “người dọn dẹp” như kền kền giúp trả chất dinh dưỡng về đất. Phòng cũng kể về cái chết của cả một loài: chim dodo ở Mauritius, chim anca lớn, bồ câu viễn khách, vẹt Carolina, sói Tasmania và ngựa quagga đều biến mất do con người. Các bộ xương cá voi mắc cạn trên bờ biển Hà Lan cho thấy bảo tàng còn học được nhiều điều sau khi một con vật chết. Ảnh 360° của phòng là ảnh mô phỏng; ảnh xem trước là mô hình phục dựng chim dodo ở Naturalis.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Exhibition Research in Progress 11 - Reconstruction of the Dodo Raphus cucculatus.jpg"
+     ]
+    }
+   },
+   "en": {
+    "1": {
+     "title": "Death",
+     "summary": "A gallery about death in nature: predation, venom, parasites, decay and extinction – the processes that keep the cycle of life turning.",
+     "body": "The Death gallery (De Dood) faces a simple truth: every organism dies, and death is an essential part of nature. Visitors meet predators and venomous animals such as the stonefish, the cobra and the geographic cone snail; parasites such as the cattle warble fly; and clean-up crews such as vultures that return nutrients to the soil. The gallery also tells of the death of entire species: the dodo of Mauritius, the great auk, the passenger pigeon, the Carolina parakeet, the thylacine and the quagga all disappeared because of humans. Skeletons of whales stranded on the Dutch coast show how much a museum can still learn after an animal has died. The 360° image of this room is simulated; the preview shows the dodo reconstruction at Naturalis.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Exhibition Research in Progress 11 - Reconstruction of the Dodo Raphus cucculatus.jpg"
+     ]
+    }
+   }
+  },
+  "audio": {
+   "vi": {
+    "transcript": "Bạn đang ở phòng Cái chết. Nghe có vẻ u ám, nhưng ở đây bạn sẽ thấy cái chết nuôi dưỡng sự sống ra sao. Hãy bắt đầu với những kẻ săn mồi: cá mặt quỷ ngụy trang dưới đáy biển, rắn hổ mang và ốc cối địa lý có nọc độc đủ mạnh để gây nguy hiểm cho con người. Rồi đến những kẻ dọn dẹp như kền kền, chúng ăn xác động vật và giúp đưa chất dinh dưỡng trở lại hệ sinh thái. Phía bên kia là góc tuyệt chủng. Chim dodo ở đảo Mauritius biến mất vào cuối thế kỷ mười bảy, chưa đầy một trăm năm sau khi thủy thủ châu Âu đặt chân lên đảo. Bồ câu viễn khách từng bay thành đàn hàng tỷ con ở Bắc Mỹ, nhưng con cuối cùng chết năm 1914. Sói Tasmania và ngựa quagga cũng chịu chung số phận. Những câu chuyện này nhắc chúng ta rằng bảo tồn là việc của hôm nay. Lưu ý: ảnh toàn cảnh phòng này là ảnh mô phỏng.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   },
+   "en": {
+    "transcript": "You are in the Death gallery. It may sound gloomy, but here you will discover how death feeds life. Start with the predators: the stonefish camouflaged on the sea floor, and the cobra and the geographic cone snail, whose venom is strong enough to endanger people. Then come the clean-up crews such as vultures, which feed on carcasses and help return nutrients to the ecosystem. On the other side is the extinction corner. The dodo of Mauritius vanished in the late seventeenth century, less than a hundred years after European sailors reached the island. The passenger pigeon once flew in flocks of billions over North America, yet the last one died in 1914. The thylacine and the quagga met the same fate. These stories remind us that conservation is a task for today. Please note that the panorama of this room is a simulated image.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   }
+  },
+  "tags": [
+   "phong-death",
+   "chu-de-tuyet-chung"
+  ]
+ },
+ {
+  "code": "live_science",
+  "slug": "live-science",
+  "floor": 1,
+  "sort_order": 5,
+  "panorama": "seed-assets/panoramas/live_science.jpg",
+  "is_simulated": false,
+  "panorama_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Life_Science_11_-_Panorama_360_3D.jpg",
+   "file_title": "File:Naturalis Biodiversity Center - Museum - Life Science 11 - Panorama 360 3D.jpg",
+   "author": "Henk Caspers/Naturalis Biodiversity Center",
+   "license": "cc_by_sa_3",
+   "captured_at": "2016-06-29",
+   "note": "Ảnh gốc 360° 3D (stereo trên–dưới 8192×8192); đã cắt nửa trên (mắt trái) thành equirectangular 2:1 và thu về 6144×3072, JPEG q85. Ảnh tư liệu năm 2016, trước khi Naturalis cải tạo."
+  },
+  "preview": "seed-assets/scenes/live_science-preview.jpg",
+  "preview_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Life_Science_03_-_Wooden_amphitheater.jpg",
+   "file_title": "File:Naturalis Biodiversity Center - Museum - Life Science 03 - Wooden amphitheater.jpg",
+   "author": "Henk Caspers/Naturalis",
+   "license": "cc_by_sa_3"
+  },
+  "hfov_default": 100,
+  "pitch_default": 0,
+  "yaw_default": 0,
+  "north_offset": 0,
+  "minimap": {
+   "x": 0.14,
+   "y": 0.75
+  },
+  "status": "published",
+  "interp": {
+   "vi": {
+    "1": {
+     "title": "LiveScience – Phòng thí nghiệm mở",
+     "summary": "Không gian nơi khách quan sát các nhà nghiên cứu và người xử lý mẫu của Naturalis làm việc với mẫu vật thật.",
+     "body": "LiveScience là phòng thí nghiệm mở của Naturalis, nơi khách tham quan có thể nhìn qua vách kính để thấy các nhà khoa học, kỹ thuật viên và tình nguyện viên làm việc với mẫu vật: làm sạch hóa thạch, chuẩn bị tiêu bản, chụp ảnh số hóa và ghi nhãn. Naturalis là viện nghiên cứu đa dạng sinh học, nên mỗi mẫu vật đều là dữ liệu khoa học: một tiêu bản thực vật khô, một con ong ghim kim hay một bản đúc hộp sọ người cổ đều giúp trả lời câu hỏi về phân loại, tiến hóa và biến đổi môi trường. Bộ sưu tập được số hóa quy mô lớn và công bố mở qua cổng BioPortal và Netherlands Biodiversity API, chính là nguồn dữ liệu của bảo tàng ảo này. Ảnh 360° là ảnh tư liệu năm 2016 do Naturalis chụp tại không gian Life Science cũ, có bàn làm việc và khán đài gỗ.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Life Science 11 - Panorama 360 3D.jpg"
+     ]
+    }
+   },
+   "en": {
+    "1": {
+     "title": "LiveScience – Open Lab",
+     "summary": "A space where visitors watch Naturalis researchers and preparators at work on real specimens.",
+     "body": "LiveScience is Naturalis's open laboratory, where visitors can look through glass walls at scientists, technicians and volunteers working on specimens: cleaning fossils, preparing specimens, photographing them for digitisation and writing labels. Naturalis is a biodiversity research institute, so every specimen is scientific data: a dried plant sheet, a pinned bee or the cast of an early human skull all help answer questions about classification, evolution and environmental change. The collection has been digitised on a large scale and is openly published through the BioPortal and the Netherlands Biodiversity API, which is also the data source of this virtual museum. The 360° image is an archival 2016 photograph by Naturalis of the former Life Science space, with its workbenches and wooden tiers.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Life Science 11 - Panorama 360 3D.jpg"
+     ]
+    }
+   }
+  },
+  "audio": {
+   "vi": {
+    "transcript": "Chào mừng bạn đến LiveScience, phòng thí nghiệm mở của Naturalis. Ở bảo tàng thật, bạn có thể đứng sau vách kính và quan sát các nhà nghiên cứu, kỹ thuật viên và tình nguyện viên đang làm việc. Họ làm sạch hóa thạch bằng dụng cụ nhỏ, chuẩn bị tiêu bản côn trùng, chụp ảnh từng mẫu vật để số hóa và nhập dữ liệu vào hệ thống. Vì sao việc này quan trọng? Bởi mỗi mẫu vật trong bộ sưu tập là một bằng chứng khoa học. Một tờ tiêu bản cây cà phê cho biết loài cây ấy từng mọc ở đâu, một mẫu ong ghim kim giúp xác định loài mới, còn bản đúc hộp sọ người cổ giúp sinh viên so sánh các giai đoạn tiến hóa của loài người. Naturalis công bố dữ liệu số hóa miễn phí trên mạng, và chính những dữ liệu đó đã được dùng để xây dựng bảo tàng ảo bạn đang xem. Hãy thử mở các hiện vật để xem số đăng ký thật của từng mẫu.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   },
+   "en": {
+    "transcript": "Welcome to LiveScience, the open laboratory of Naturalis. In the real museum you can stand behind a glass wall and watch researchers, technicians and volunteers at work. They clean fossils with tiny tools, prepare insect specimens, photograph each object for digitisation and enter the data into the collection system. Why does this matter? Because every specimen in the collection is a piece of scientific evidence. A herbarium sheet of a coffee plant tells us where the species once grew, a pinned bee can help to recognise a new species, and the cast of an early human skull lets students compare stages of human evolution. Naturalis publishes its digitised data freely online, and that very data was used to build the virtual museum you are exploring now. Try opening the specimens to see the real registration number of each one.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   }
+  },
+  "tags": [
+   "phong-live-science",
+   "chu-de-nghien-cuu"
+  ]
+ },
+ {
+  "code": "earth",
+  "slug": "earth",
+  "floor": 1,
+  "sort_order": 6,
+  "panorama": "seed-assets/panoramas/earth.jpg",
+  "is_simulated": false,
+  "panorama_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Exhibition_Earth_12_-_Huge_globes_-_panorama_-_360_3D.jpg",
+   "file_title": "File:Naturalis Biodiversity Center - Museum - Exhibition Earth 12 - Huge globes - panorama - 360 3D.jpg",
+   "author": "Henk Caspers/Naturalis Biodiversity Center",
+   "license": "cc_by_sa_3",
+   "captured_at": "2016-05-13",
+   "note": "Ảnh gốc 360° 3D (stereo trên–dưới 8192×8192); đã cắt nửa trên (mắt trái) thành equirectangular 2:1 và thu về 6144×3072, JPEG q85. Ảnh tư liệu năm 2016, trước khi Naturalis cải tạo."
+  },
+  "preview": "seed-assets/scenes/earth-preview.jpg",
+  "preview_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Exhibition_Earth_01_-_Huge_globe,_structure_of_the_Earth.jpg",
+   "file_title": "File:Naturalis Biodiversity Center - Museum - Exhibition Earth 01 - Huge globe, structure of the Earth.jpg",
+   "author": "Henk Caspers/Naturalis Biodiversity Center",
+   "license": "cc_by_sa_3"
+  },
+  "hfov_default": 100,
+  "pitch_default": 0,
+  "yaw_default": 0,
+  "north_offset": 0,
+  "minimap": {
+   "x": 0.37,
+   "y": 0.75
+  },
+  "status": "published",
+  "interp": {
+   "vi": {
+    "1": {
+     "title": "Trái Đất",
+     "summary": "Phòng về hành tinh sống động: khoáng vật, đá núi lửa, kiến tạo mảng và những sinh vật cổ ghi lại lịch sử Trái Đất.",
+     "body": "Phòng Trái Đất (De Aarde) giới thiệu hành tinh của chúng ta như một hệ thống luôn chuyển động. Núi lửa phun trào tạo ra đá bazan và đá bọt, các mảng kiến tạo dịch chuyển làm mở rộng đại dương và nâng các dãy núi, còn nước và băng bào mòn đá thành trầm tích. Những khoáng vật kết tinh như thạch anh, thạch cao và các quặng đồng cho thấy nguyên tử tự sắp xếp thành hình học hoàn hảo trong lòng đất. Đá và hóa thạch cũng là “trang sách” ghi lại lịch sử sự sống: cá vây thùy Tiktaalik ở kỷ Devon, cá voi cổ Basilosaurus của Ai Cập, răng cá mập megalodon khổng lồ. Hiểu Trái Đất giúp chúng ta hiểu tài nguyên, thiên tai và khí hậu. Ảnh 360° là ảnh tư liệu năm 2016 do Naturalis chụp tại gian Trái Đất cũ với các quả địa cầu cỡ lớn.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Exhibition Earth 12 - Huge globes - panorama - 360 3D.jpg"
+     ]
+    }
+   },
+   "en": {
+    "1": {
+     "title": "Earth",
+     "summary": "A gallery about a living planet: minerals, volcanic rocks, plate tectonics and ancient creatures that record Earth's history.",
+     "body": "The Earth gallery (De Aarde) presents our planet as a system in constant motion. Volcanic eruptions create basalt and pumice, moving tectonic plates widen oceans and raise mountain ranges, and water and ice wear rocks down into sediment. Crystallised minerals such as quartz, gypsum and copper ores show how atoms arrange themselves into perfect geometry deep underground. Rocks and fossils are also pages in the history of life: the lobe-finned fish Tiktaalik from the Devonian, the early whale Basilosaurus from Egypt and the giant teeth of the megalodon shark. Understanding the Earth helps us understand resources, natural hazards and climate. The 360° image is an archival 2016 photograph by Naturalis of the former Earth gallery with its giant globes.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Exhibition Earth 12 - Huge globes - panorama - 360 3D.jpg"
+     ]
+    }
+   }
+  },
+  "audio": {
+   "vi": {
+    "transcript": "Bạn đang ở phòng Trái Đất. Hãy nhìn những quả địa cầu lớn: chúng nhắc rằng hành tinh của chúng ta không đứng yên. Bên dưới lớp vỏ mỏng, đá nóng chảy chuyển động chậm rãi, đẩy các mảng kiến tạo xô vào nhau hoặc tách xa nhau. Nơi các mảng gặp nhau, núi lửa phun trào và động đất xảy ra. Trong tủ kính, bạn sẽ thấy đá núi lửa từ Iceland, nơi hai mảng kiến tạo đang tách rời, và những khoáng vật kết tinh tuyệt đẹp được khai thác ở Brazil, Madagascar hay Congo. Mỗi tinh thể là kết quả của hàng nghìn năm nguyên tử xếp chồng lên nhau theo một trật tự nhất định. Trái Đất còn lưu giữ dấu vết sự sống trong đá: hãy tìm cá vây thùy Tiktaalik, sinh vật giúp các nhà khoa học hiểu cách cá tiến lên cạn, và chiếc răng của cá mập megalodon, kẻ săn mồi khổng lồ của đại dương cổ đại.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   },
+   "en": {
+    "transcript": "You are in the Earth gallery. Look at the giant globes: they remind us that our planet never stands still. Beneath the thin crust, hot rock moves slowly, pushing tectonic plates together or pulling them apart. Where plates meet, volcanoes erupt and earthquakes strike. In the display cases you will see volcanic rock from Iceland, where two plates are drifting apart, and beautiful crystals mined in Brazil, Madagascar and Congo. Every crystal is the result of atoms stacking in a precise order over thousands of years. The Earth also keeps traces of life in its rocks: look for Tiktaalik, the lobe-finned fish that helps scientists understand how fish moved onto land, and a tooth of the megalodon, the giant predatory shark of ancient oceans.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   }
+  },
+  "tags": [
+   "phong-earth",
+   "chu-de-dia-chat"
+  ]
+ },
+ {
+  "code": "life",
+  "slug": "life",
+  "floor": 1,
+  "sort_order": 7,
+  "panorama": "seed-assets/panoramas/life.jpg",
+  "is_simulated": false,
+  "panorama_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Exhibition_Life_17_-_Panorama_360_3D.jpg",
+   "file_title": "File:Naturalis Biodiversity Center - Museum - Exhibition Life 17 - Panorama 360 3D.jpg",
+   "author": "Henk Caspers/Naturalis Biodiversity Center",
+   "license": "cc_by_sa_3",
+   "captured_at": "2016-05-13",
+   "note": "Ảnh gốc 360° 3D (stereo trên–dưới 8192×8192); đã cắt nửa trên (mắt trái) thành equirectangular 2:1 và thu về 6144×3072, JPEG q85. Ảnh tư liệu năm 2016, trước khi Naturalis cải tạo."
+  },
+  "preview": "seed-assets/scenes/life-preview.jpg",
+  "preview_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Exhibition_Life_11_-_Overview_including_zebra,_hyena,_kangaroo,_seabirds.jpg",
+   "file_title": "File:Naturalis Biodiversity Center - Museum - Exhibition Life 11 - Overview including zebra, hyena, kangaroo, seabirds.jpg",
+   "author": "Henk Caspers/Naturalis",
+   "license": "cc_by_sa_3"
+  },
+  "hfov_default": 100,
+  "pitch_default": 0,
+  "yaw_default": 0,
+  "north_offset": 0,
+  "minimap": {
+   "x": 0.37,
+   "y": 0.33
+  },
+  "status": "published",
+  "interp": {
+   "vi": {
+    "1": {
+     "title": "Sự sống",
+     "summary": "Phòng về đa dạng sinh học: từ vượn lớn, voi và rùa da tới cá vây tay, cua nhện và bọt biển thủy tinh.",
+     "body": "Phòng Sự sống (Het Leven) tôn vinh sự đa dạng phi thường của sinh vật trên Trái Đất. Các tiêu bản thú, chim, bò sát, cá và động vật không xương sống được sắp xếp để khách so sánh hình dạng, kích thước và cách chúng thích nghi với môi trường. Khách có thể đứng trước khỉ đột và đười ươi, những họ hàng gần của loài người; ngắm cá vây tay Latimeria, loài cá từng được cho là đã tuyệt chủng; hay quan sát bọt biển thủy tinh với bộ khung silic tinh xảo. Nhiều mẫu vật đến từ Indonesia, Suriname và châu Phi, phản ánh lịch sử thu thập lâu dài của các bảo tàng tiền thân của Naturalis. Thông điệp của phòng là mọi loài đều có quan hệ họ hàng và đều cần được bảo vệ. Ảnh 360° là ảnh tư liệu năm 2016 do Naturalis chụp tại gian Leven cũ.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Exhibition Life 17 - Panorama 360 3D.jpg"
+     ]
+    }
+   },
+   "en": {
+    "1": {
+     "title": "Life",
+     "summary": "A gallery about biodiversity: from great apes, elephants and leatherback turtles to the coelacanth, the spider crab and glass sponges.",
+     "body": "The Life gallery (Het Leven) celebrates the extraordinary diversity of organisms on Earth. Specimens of mammals, birds, reptiles, fishes and invertebrates are arranged so that visitors can compare shapes, sizes and the ways they have adapted to their environments. Visitors can stand face to face with a gorilla and orangutans, our close relatives; admire the coelacanth Latimeria, a fish once thought long extinct; or study a glass sponge with its delicate silica skeleton. Many specimens come from Indonesia, Suriname and Africa, reflecting the long collecting history of the museums that merged into Naturalis. The message of the gallery is that all species are related and all deserve protection. The 360° image is an archival 2016 photograph by Naturalis of the former Life gallery.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis Biodiversity Center - Museum - Exhibition Life 17 - Panorama 360 3D.jpg"
+     ]
+    }
+   }
+  },
+  "audio": {
+   "vi": {
+    "transcript": "Chào mừng bạn đến phòng Sự sống. Hãy nhìn quanh: thú, chim, bò sát, cá và vô số động vật không xương sống đang chờ bạn. Mỗi loài là một lời giải riêng cho bài toán sinh tồn. Khỉ đột và đười ươi là họ hàng gần của chúng ta, chia sẻ phần lớn bộ gen với con người. Rùa da là loài rùa lớn nhất còn sống, có thể lặn sâu và vượt đại dương. Cua nhện Nhật Bản có đôi chân dài nhất trong thế giới chân khớp. Còn cá vây tay Latimeria từng được coi là đã tuyệt chủng cùng thời khủng long, cho đến khi một con được bắt ở ngoài khơi Nam Phi năm 1938. Nhiều tiêu bản trong phòng được thu thập ở Indonesia và Suriname từ thế kỷ mười chín. Khi xem, hãy thử so sánh: chân của thằn lằn Komodo khác gì chân của rùa? Mỏ của hồng hạc khác gì mỏ của chim cắt? Những khác biệt nhỏ ấy kể câu chuyện lớn về tiến hóa.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   },
+   "en": {
+    "transcript": "Welcome to the Life gallery. Look around: mammals, birds, reptiles, fishes and countless invertebrates are waiting for you. Each species is its own solution to the problem of survival. The gorilla and the orangutan are our close relatives and share most of their genome with us. The leatherback is the largest living turtle, able to dive deep and cross oceans. The Japanese spider crab has the longest legs of any arthropod. And the coelacanth Latimeria was thought to have died out in the age of the dinosaurs, until one was caught off South Africa in 1938. Many specimens in this room were collected in Indonesia and Suriname during the nineteenth century. As you look, try comparing: how does the leg of a Komodo dragon differ from that of a tortoise? How does a flamingo's bill differ from a falcon's? Those small differences tell a big story about evolution.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   }
+  },
+  "tags": [
+   "phong-life",
+   "chu-de-tien-hoa"
+  ]
+ },
+ {
+  "code": "ice_age",
+  "slug": "ice-age",
+  "floor": 2,
+  "sort_order": 8,
+  "panorama": "seed-assets/panoramas/ice_age.jpg",
+  "is_simulated": true,
+  "panorama_source": {
+   "source_name": "BaoTang360 – make_panorama.py",
+   "source_url": null,
+   "author": "Nhóm 08 – BaoTang360",
+   "license": "simulated",
+   "note": "Ảnh equirectangular mô phỏng 4096×2048 sinh bằng .claude/skills/bt360-content/scripts/make_panorama.py"
+  },
+  "preview": "seed-assets/scenes/ice_age-preview.jpg",
+  "preview_source": {
+   "source_name": "Wikimedia Commons",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_028.jpg",
+   "file_title": "File:Naturalis 028.jpg",
+   "author": "Hnapel",
+   "license": "cc_by_sa_4"
+  },
+  "hfov_default": 100,
+  "pitch_default": 0,
+  "yaw_default": 0,
+  "north_offset": 0,
+  "minimap": {
+   "x": 0.86,
+   "y": 0.33
+  },
+  "status": "published",
+  "interp": {
+   "vi": {
+    "1": {
+     "title": "Kỷ Băng Hà",
+     "summary": "Phòng về thế Pleistocen: voi ma mút, tê giác lông, hươu khổng lồ từ đáy Biển Bắc và hóa thạch Java của Eugène Dubois.",
+     "body": "Phòng Kỷ Băng Hà (IJstijd) đưa khách về thế Pleistocen, khi các đợt băng hà luân phiên bao phủ Bắc Âu. Mực nước biển khi đó thấp hơn nhiều, nên vùng nay là Biển Bắc từng là thảo nguyên lạnh nơi voi ma mút lông, tê giác lông, bò rừng thảo nguyên và hươu khổng lồ sinh sống. Ngư dân Hà Lan đến nay vẫn kéo lưới được xương của chúng, và nhiều mẫu đã về bộ sưu tập Naturalis. Phòng còn giới thiệu gấu hang, mèo răng kiếm Homotherium và các bản đúc hộp sọ người cổ. Một góc đặc biệt dành cho hóa thạch Trinil ở Java do Eugène Dubois thu thập cuối thế kỷ XIX, gồm voi Stegodon, hổ cổ và tê tê khổng lồ; ở bảo tàng thật, hóa thạch Homo erectus của Dubois được trưng bày trong một gian riêng về người tiền sử. Ảnh 360° của phòng là ảnh mô phỏng.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis 028.jpg"
+     ]
+    }
+   },
+   "en": {
+    "1": {
+     "title": "Ice Age",
+     "summary": "A gallery about the Pleistocene: mammoths, woolly rhinos and giant deer from the North Sea floor, and Eugène Dubois's fossils from Java.",
+     "body": "The Ice Age gallery (IJstijd) takes visitors back to the Pleistocene, when repeated glaciations covered northern Europe. Sea level was much lower then, so today's North Sea was a cold steppe where woolly mammoths, woolly rhinos, steppe bison and giant deer lived. Dutch fishermen still haul up their bones in their nets, and many have ended up in the Naturalis collection. The gallery also presents the cave bear, the scimitar-toothed cat Homotherium and casts of early human skulls. A special corner is devoted to the Trinil fossils from Java collected by Eugène Dubois in the late nineteenth century, including Stegodon, an ancient tiger and a giant pangolin; in the real museum, Dubois's Homo erectus fossils are shown in a separate gallery about early humans. The 360° image of this room is simulated.",
+     "sources": [
+      "Naturalis Biodiversity Center – naturalis.nl",
+      "Wikipedia – Naturalis Biodiversity Center",
+      "Wikimedia Commons – File:Naturalis 028.jpg"
+     ]
+    }
+   }
+  },
+  "audio": {
+   "vi": {
+    "transcript": "Bạn đang ở Kỷ Băng Hà. Hãy tưởng tượng Hà Lan cách đây vài chục nghìn năm: không có biển ở phía tây, chỉ có một thảo nguyên lạnh, lộng gió trải dài tới nước Anh. Trên vùng đất đó, voi ma mút lông gặm cỏ, tê giác lông với hai chiếc sừng đi thành đàn nhỏ, còn hươu khổng lồ mang cặp gạc rộng hơn ba mét. Khi băng tan, nước biển dâng lên và nhấn chìm vùng đất này, mà ngày nay các nhà khoa học gọi là Doggerland. Ngư dân Hà Lan vẫn thường kéo được xương ma mút trong lưới, và nhiều mẫu như thế đang nằm trong bộ sưu tập của Naturalis. Ở góc bên kia, bạn sẽ gặp những hóa thạch từ đảo Java do nhà giải phẫu học Eugène Dubois đào được ở Trinil vào những năm 1890, nơi ông tìm ra người vượn Java. Lưu ý: ảnh toàn cảnh của phòng này là ảnh mô phỏng.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   },
+   "en": {
+    "transcript": "You are in the Ice Age. Imagine the Netherlands a few tens of thousands of years ago: no sea to the west, only a cold, windswept steppe stretching all the way to Britain. On that land woolly mammoths grazed, woolly rhinos with two horns roamed in small groups, and giant deer carried antlers more than three metres wide. When the ice melted, the sea rose and drowned this land, which scientists now call Doggerland. Dutch fishermen still regularly find mammoth bones in their nets, and many such finds are now in the Naturalis collection. In the far corner you will meet fossils from the island of Java, excavated at Trinil in the 1890s by the anatomist Eugène Dubois, where he discovered Java Man. Please note that the panorama of this room is a simulated image.",
+    "file": null,
+    "license": "simulated",
+    "note": "Chưa sinh MP3 (máy không có espeak-ng/ffmpeg); giao diện dùng TTS trình duyệt."
+   }
+  },
+  "tags": [
+   "phong-ice-age",
+   "chu-de-bang-ha"
+  ]
+ }
+]

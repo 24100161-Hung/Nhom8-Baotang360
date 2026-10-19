@@ -1,0 +1,537 @@
+@import 'tailwindcss';
+/* Font tự host nằm trong resources/css/fonts.css, nạp sau lần vẽ đầu (xem app.blade.php) */
+
+@source '../**/*.blade.php';
+@source '../**/*.js';
+@source '../**/*.vue';
+
+/* Theme chọn bằng data-theme trên <html>, không theo prefers-color-scheme của Tailwind */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Ánh xạ token → utility Tailwind (bg-surface, text-muted, border-border...) */
+@theme inline {
+    --color-bg: var(--ds-bg);
+    --color-surface: var(--ds-surface);
+    --color-surface-2: var(--ds-surface-2);
+    --color-text: var(--ds-text);
+    --color-muted: var(--ds-muted);
+    --color-border: var(--ds-border);
+    --color-primary: var(--ds-primary);
+    --color-primary-hover: var(--ds-primary-hover);
+    --color-on-primary: var(--ds-on-primary);
+    --color-primary-soft: var(--ds-primary-soft);
+    --color-accent: var(--ds-accent);
+    --color-accent-strong: var(--ds-accent-strong);
+    --color-accent-soft: var(--ds-accent-soft);
+    --color-success: var(--ds-success);
+    --color-success-soft: var(--ds-success-soft);
+    --color-warning: var(--ds-warning);
+    --color-warning-soft: var(--ds-warning-soft);
+    --color-danger: var(--ds-danger);
+    --color-danger-soft: var(--ds-danger-soft);
+    --color-info: var(--ds-info);
+    --color-info-soft: var(--ds-info-soft);
+    --color-overlay: var(--ds-overlay);
+    --color-hero-scrim: var(--ds-hero-scrim);
+    --color-on-hero: var(--ds-on-hero);
+    --color-viewer-bg: var(--ds-viewer-bg);
+    --color-viewer-panel: var(--ds-viewer-panel);
+    --color-viewer-text: var(--ds-viewer-text);
+    --color-viewer-muted: var(--ds-viewer-muted);
+    --color-viewer-line: var(--ds-viewer-line);
+    --font-display: 'Playfair Display Variable', 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --font-body: 'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif;
+    --font-sans: 'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif;
+    --radius-ds: var(--radius);
+    --radius-ds-lg: var(--radius-lg);
+    --shadow-ds: var(--shadow);
+    --shadow-ds-lg: var(--shadow-lg);
+}
+
+/* Theme "Sáng – Naturalis": nền giấy ngà, xanh rêu sâu (thực vật, khoáng vật) + hổ phách (hóa thạch) */
+:root,
+:root[data-theme="light"] {
+    color-scheme: light;
+    --ds-bg: #F5F4EE;
+    --ds-surface: #FFFFFF;
+    --ds-surface-2: #EBEAE1;
+    --ds-text: #17201D;
+    --ds-muted: #4F5D57;
+    --ds-border: #D5D6CB;
+    --ds-primary: #1D5C4B;
+    --ds-primary-hover: #154638;
+    --ds-on-primary: #FFFFFF;
+    --ds-primary-soft: #DCEBE4;
+    --ds-accent: #C9811C;
+    --ds-accent-strong: #8A5508; /* dùng khi accent là chữ: đạt AA trên nền ngà */
+    --ds-accent-soft: #F6E8CF;
+    --ds-success: #2C6B3A;
+    --ds-success-soft: #E0EFE2;
+    --ds-warning: #8A5508;
+    --ds-warning-soft: #FAEDD5;
+    --ds-danger: #A3262A;
+    --ds-danger-soft: #F8E0E0;
+    --ds-info: #24577F;
+    --ds-info-soft: #E0ECF5;
+    --ds-overlay: rgb(16 22 20 / 0.62);
+    /* Hero ảnh bìa: nền phủ luôn tối ở cả hai theme để chữ trắng đạt AA (>= 4.5:1) */
+    --ds-hero-scrim: #0F1A17;
+    --ds-hero-scrim-strong: rgb(8 14 12 / 0.88);
+    --ds-hero-scrim-soft: rgb(8 14 12 / 0.65);
+    --ds-on-hero: #FFFFFF;
+    /* Khung tham quan 360: luôn tối để ảnh toàn cảnh nổi bật */
+    --ds-viewer-bg: #0B1110;
+    --ds-viewer-panel: rgb(14 22 20 / 0.86);
+    --ds-viewer-text: #F2F5F3;
+    --ds-viewer-muted: #B9C6C0;
+    --ds-viewer-line: rgb(255 255 255 / 0.18);
+    --radius: 0.75rem;
+    --radius-lg: 1.25rem;
+    --shadow: 0 1px 2px rgb(20 30 26 / 0.06), 0 4px 14px rgb(20 30 26 / 0.08);
+    --shadow-lg: 0 10px 30px rgb(20 30 26 / 0.16);
+    --focus-ring: #1D5C4B;
+}
+
+/* Theme "Tối – Đêm bảo tàng" */
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --ds-bg: #0E1413;
+    --ds-surface: #161E1C;
+    --ds-surface-2: #1F2926;
+    --ds-text: #E6EEEA;
+    --ds-muted: #A8B7B0;
+    --ds-border: #2E3A36;
+    --ds-primary: #63C7A6;
+    --ds-primary-hover: #82D5B9;
+    --ds-on-primary: #0B1210;
+    --ds-primary-soft: #183229;
+    --ds-accent: #E5A84A;
+    --ds-accent-strong: #F0BE6E;
+    --ds-accent-soft: #33281A;
+    --ds-success: #7CC48A;
+    --ds-success-soft: #1A3022;
+    --ds-warning: #F0BE6E;
+    --ds-warning-soft: #33281A;
+    --ds-danger: #F08A8A;
+    --ds-danger-soft: #3A1E1E;
+    --ds-info: #8EC0EA;
+    --ds-info-soft: #192A38;
+    --ds-overlay: rgb(0 0 0 / 0.72);
+    --ds-hero-scrim: #070B0A;
+    --ds-hero-scrim-strong: rgb(0 0 0 / 0.88);
+    --ds-hero-scrim-soft: rgb(0 0 0 / 0.65);
+    --ds-on-hero: #FFFFFF;
+    --ds-viewer-bg: #050807;
+    --ds-viewer-panel: rgb(10 16 14 / 0.88);
+    --ds-viewer-text: #F2F5F3;
+    --ds-viewer-muted: #B9C6C0;
+    --ds-viewer-line: rgb(255 255 255 / 0.16);
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 4px 14px rgb(0 0 0 / 0.35);
+    --shadow-lg: 0 10px 30px rgb(0 0 0 / 0.55);
+    --focus-ring: #E5A84A;
+}
+
+@layer base {
+    /* Phần tử con của grid mặc định min-width:auto làm tràn ngang ở 375px khi có chữ dài/truncate */
+    :where(.grid) > * {
+        min-width: 0;
+    }
+    html {
+        -webkit-text-size-adjust: 100%;
+    }
+    body {
+        background-color: var(--ds-bg);
+        color: var(--ds-text);
+        font-family: var(--font-body);
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+    h1, h2, h3, h4 {
+        font-family: var(--font-display);
+        line-height: 1.25;
+        color: var(--ds-text);
+    }
+    a {
+        color: inherit;
+    }
+    img {
+        max-width: 100%;
+    }
+    :focus-visible {
+        outline: 3px solid var(--focus-ring);
+        outline-offset: 2px;
+        border-radius: 4px;
+    }
+    ::selection {
+        background: var(--ds-accent-soft);
+        color: var(--ds-text);
+    }
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}
+
+@layer components {
+    .container-page {
+        width: 100%;
+        max-width: 80rem;
+        margin-inline: auto;
+        padding-inline: 1rem;
+    }
+    @media (min-width: 768px) {
+        .container-page { padding-inline: 1.5rem; }
+    }
+
+    .card {
+        background: var(--ds-surface);
+        border: 1px solid var(--ds-border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+    }
+    .card-hover {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-hover:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        min-height: 2.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 999px;
+        border: 1px solid var(--ds-border);
+        background: var(--ds-surface);
+        color: var(--ds-text);
+        font-weight: 600;
+        font-size: 0.9375rem;
+        line-height: 1.2;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+        white-space: nowrap;
+    }
+    .btn:hover { background: var(--ds-surface-2); }
+    .btn:disabled, .btn[aria-disabled="true"] {
+        opacity: 0.55;
+        cursor: not-allowed;
+    }
+    .btn-primary {
+        background: var(--ds-primary);
+        border-color: var(--ds-primary);
+        color: var(--ds-on-primary);
+    }
+    .btn-primary:hover { background: var(--ds-primary-hover); border-color: var(--ds-primary-hover); }
+    .btn-accent {
+        background: var(--ds-accent);
+        border-color: var(--ds-accent);
+        color: #1A1206;
+    }
+    .btn-accent:hover { filter: brightness(1.05); background: var(--ds-accent); }
+    .btn-ghost {
+        background: transparent;
+        border-color: transparent;
+    }
+    .btn-ghost:hover { background: var(--ds-surface-2); }
+    .btn-danger {
+        background: var(--ds-danger);
+        border-color: var(--ds-danger);
+        color: var(--ds-on-primary);
+    }
+    .btn-danger:hover { filter: brightness(0.95); background: var(--ds-danger); }
+    .btn-sm { min-height: 2rem; padding: 0.25rem 0.75rem; font-size: 0.8125rem; }
+    .btn-icon { width: 2.5rem; height: 2.5rem; padding: 0; }
+
+    .label {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 0.375rem;
+        color: var(--ds-text);
+    }
+    .input {
+        display: block;
+        width: 100%;
+        min-height: 2.5rem;
+        padding: 0.5rem 0.75rem;
+        border-radius: calc(var(--radius) - 0.25rem);
+        border: 1px solid var(--ds-border);
+        background: var(--ds-surface);
+        color: var(--ds-text);
+        font: inherit;
+        font-size: 0.9375rem;
+    }
+    .input::placeholder { color: var(--ds-muted); opacity: 0.85; }
+    .input:focus {
+        outline: none;
+        border-color: var(--ds-primary);
+        box-shadow: 0 0 0 3px var(--ds-primary-soft);
+    }
+    .input[aria-invalid="true"] { border-color: var(--ds-danger); }
+    textarea.input { min-height: 6rem; resize: vertical; }
+    select.input { padding-right: 2rem; }
+    .field-error { margin-top: 0.25rem; font-size: 0.8125rem; color: var(--ds-danger); }
+    .field-hint { margin-top: 0.25rem; font-size: 0.8125rem; color: var(--ds-muted); }
+
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.125rem 0.625rem;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        line-height: 1.5;
+        background: var(--ds-surface-2);
+        color: var(--ds-text);
+        border: 1px solid var(--ds-border);
+        white-space: nowrap;
+    }
+    .badge-primary { background: var(--ds-primary-soft); color: var(--ds-primary); border-color: transparent; }
+    .badge-accent { background: var(--ds-accent-soft); color: var(--ds-accent-strong); border-color: transparent; }
+    .badge-success { background: var(--ds-success-soft); color: var(--ds-success); border-color: transparent; }
+    .badge-warning { background: var(--ds-warning-soft); color: var(--ds-warning); border-color: transparent; }
+    .badge-danger { background: var(--ds-danger-soft); color: var(--ds-danger); border-color: transparent; }
+    .badge-info { background: var(--ds-info-soft); color: var(--ds-info); border-color: transparent; }
+
+    .link {
+        color: var(--ds-primary);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 1px;
+    }
+    .link:hover { text-decoration-thickness: 2px; }
+
+    .section-title {
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    @media (min-width: 768px) {
+        .section-title { font-size: 1.875rem; }
+    }
+    .eyebrow {
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ds-accent-strong);
+    }
+
+    .skeleton {
+        background: linear-gradient(90deg, var(--ds-surface-2) 25%, var(--ds-border) 37%, var(--ds-surface-2) 63%);
+        background-size: 400% 100%;
+        animation: ds-shimmer 1.4s ease infinite;
+        border-radius: calc(var(--radius) - 0.25rem);
+    }
+
+    .table-ds {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.875rem;
+    }
+    .table-ds th {
+        text-align: left;
+        font-weight: 700;
+        color: var(--ds-muted);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 0.625rem 0.75rem;
+        border-bottom: 1px solid var(--ds-border);
+        background: var(--ds-surface-2);
+    }
+    .table-ds td {
+        padding: 0.625rem 0.75rem;
+        border-bottom: 1px solid var(--ds-border);
+        vertical-align: top;
+    }
+    .table-ds tbody tr:hover { background: var(--ds-surface-2); }
+
+    .tab {
+        padding: 0.5rem 1rem;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 0.875rem;
+        border: 1px solid var(--ds-border);
+        background: var(--ds-surface);
+        color: var(--ds-text);
+        text-decoration: none;
+    }
+    .tab[aria-current="page"], .tab[aria-selected="true"], .tab[aria-pressed="true"] {
+        background: var(--ds-primary);
+        border-color: var(--ds-primary);
+        color: var(--ds-on-primary);
+    }
+    .tab[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; }
+
+    /* Nội dung diễn giải (body_html đã lọc ở backend) */
+    .prose-museum {
+        font-size: 1.0625rem;
+        line-height: 1.8;
+        color: var(--ds-text);
+        max-width: 72ch;
+        overflow-wrap: anywhere;
+    }
+    .prose-museum > * + * { margin-top: 1em; }
+    .prose-museum h2 { font-size: 1.5rem; font-weight: 700; margin-top: 1.75em; }
+    .prose-museum h3 { font-size: 1.25rem; font-weight: 700; margin-top: 1.5em; }
+    .prose-museum h4 { font-size: 1.0625rem; font-weight: 700; margin-top: 1.25em; }
+    .prose-museum p:first-of-type::first-letter {
+        font-family: var(--font-display);
+        float: left;
+        font-size: 3.2em;
+        line-height: 0.9;
+        padding-right: 0.08em;
+        color: var(--ds-primary);
+    }
+    .prose-museum a { color: var(--ds-primary); text-decoration: underline; text-underline-offset: 3px; }
+    .prose-museum strong { font-weight: 700; }
+    .prose-museum em { font-style: italic; }
+    .prose-museum ul { list-style: disc; padding-left: 1.5em; }
+    .prose-museum ol { list-style: decimal; padding-left: 1.5em; }
+    .prose-museum li + li { margin-top: 0.35em; }
+    .prose-museum blockquote {
+        border-left: 4px solid var(--ds-accent);
+        padding: 0.25em 0 0.25em 1em;
+        color: var(--ds-muted);
+        font-style: italic;
+        font-family: var(--font-display);
+        font-size: 1.125em;
+    }
+    .prose-museum table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; display: block; overflow-x: auto; }
+    .prose-museum th, .prose-museum td { border: 1px solid var(--ds-border); padding: 0.4em 0.6em; }
+    .prose-museum hr { border: 0; border-top: 1px solid var(--ds-border); }
+    .prose-museum code { background: var(--ds-surface-2); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; }
+
+    .ornament {
+        height: 6px;
+        background:
+            radial-gradient(circle at 3px 3px, var(--ds-accent) 2px, transparent 2.5px) 0 0 / 18px 6px repeat-x;
+        opacity: 0.7;
+    }
+
+    /*
+     * Hero trang chi tiết. Ảnh minh họa có thể in sẵn chữ ở giữa ảnh (qa_r2_2):
+     * dưới 1024px khối tiêu đề nằm DƯỚI ảnh trên nền tối đặc để không bao giờ chồng chữ;
+     * từ 1024px mới phủ lên đáy ảnh với gradient >= 0.65 sau chữ (trắng trên nền đó >= 4.5:1).
+     */
+    .hero-cover {
+        position: relative;
+        background: var(--ds-hero-scrim);
+        color: var(--ds-on-hero);
+    }
+    .hero-cover__media { position: relative; }
+    .hero-cover__fade {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(to top, var(--ds-hero-scrim) 0%, transparent 35%);
+    }
+    .hero-cover__body {
+        position: relative;
+        padding-top: 1.25rem;
+        padding-bottom: 1.75rem;
+    }
+    .hero-cover__body :where(h1, p) { color: var(--ds-on-hero); }
+    @media (min-width: 768px) {
+        .hero-cover__body { padding-top: 1.75rem; padding-bottom: 2.25rem; }
+    }
+    @media (min-width: 1024px) {
+        .hero-cover__fade {
+            background: linear-gradient(to top, var(--ds-hero-scrim-soft) 0%, transparent 55%);
+        }
+        .hero-cover__body {
+            position: absolute;
+            inset-inline: 0;
+            bottom: 0;
+            padding-top: 5rem;
+            padding-bottom: 2.5rem;
+            background: linear-gradient(
+                to top,
+                var(--ds-hero-scrim-strong) 0%,
+                var(--ds-hero-scrim-soft) 65%,
+                transparent 100%
+            );
+        }
+        .hero-cover__body h1 { text-shadow: 0 1px 3px rgb(0 0 0 / 0.6); }
+    }
+}
+
+@keyframes ds-shimmer {
+    0% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+/*
+ * Pannellum (chunk riêng của trang tham quan 360): hotspot do pannellum tạo bằng createTooltipFunc,
+ * nằm ngoài cây Vue nên style để toàn cục với tiền tố .bt-hs.
+ */
+.bt-pano .pnlm-container { background: var(--ds-viewer-bg); font-family: var(--font-body); }
+.bt-pano .pnlm-load-box { background: var(--ds-viewer-panel); border-radius: var(--radius); }
+.bt-pano .pnlm-about-msg { display: none !important; }
+.bt-hs {
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+.bt-hs__btn {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 0.45);
+    transition: transform 0.15s ease;
+    cursor: pointer;
+    padding: 0;
+}
+.bt-hs__btn:hover, .bt-hs__btn:focus-visible { transform: scale(1.12); }
+.bt-hs__btn:focus-visible { outline: 3px solid var(--ds-accent); outline-offset: 3px; }
+.bt-hs--info .bt-hs__btn { background: #24577F; }
+.bt-hs--artifact .bt-hs__btn { background: #9A5A06; }
+.bt-hs--scene .bt-hs__btn { background: #1D5C4B; }
+.bt-hs__label {
+    position: absolute;
+    left: 50%;
+    top: 26px;
+    transform: translateX(-50%);
+    max-width: 14rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: rgb(10 16 14 / 0.82);
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+.bt-hs:hover .bt-hs__label, .bt-hs:focus-within .bt-hs__label, .bt-hs--labels .bt-hs__label { opacity: 1; }
+@media (hover: none) { .bt-hs__label { opacity: 1; } }
+/* Hotspot của bước tour hiện tại: nhấp nháy để dẫn hướng */
+.bt-hs--pulse .bt-hs__btn { animation: bt-pulse 1.6s ease-out infinite; border-color: #F0BE6E; }
+.bt-hs--pulse .bt-hs__label { opacity: 1; background: #8A5508; }
+@keyframes bt-pulse {
+    0% { box-shadow: 0 0 0 0 rgb(240 190 110 / 0.85); }
+    70% { box-shadow: 0 0 0 18px rgb(240 190 110 / 0); }
+    100% { box-shadow: 0 0 0 0 rgb(240 190 110 / 0); }
+}

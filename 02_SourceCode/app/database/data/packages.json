@@ -1,0 +1,102 @@
+[
+ {
+  "code": "regular",
+  "package_type": "single",
+  "price_vnd": 150000,
+  "validity_days": 1,
+  "max_per_order": 10,
+  "is_featured": true,
+  "sort_order": 1,
+  "status": "published",
+  "is_simulated": false,
+  "vi": {
+   "name": "Vé Regular",
+   "description": "Vé tham quan một ngày cho toàn bộ 8 không gian 360° của bảo tàng ảo, chọn ngày tham quan trên lịch.",
+   "benefits": [
+    "Tham quan tự do cả 8 phòng 360° trong ngày đã chọn",
+    "Thuyết minh âm thanh tiếng Việt và tiếng Anh tại mỗi phòng",
+    "Tham gia 6 tour có hướng dẫn với thanh tiến trình",
+    "Xem trang chi tiết gần 200 hiện vật thật của Naturalis",
+    "Vé điện tử có mã QR, tải về qua đường dẫn bảo mật"
+   ]
+  },
+  "en": {
+   "name": "Regular Ticket",
+   "description": "A one-day ticket to all 8 360° spaces of the virtual museum; choose your visit date on the calendar.",
+   "benefits": [
+    "Free exploration of all 8 360° galleries on the chosen day",
+    "Vietnamese and English audio guide in every room",
+    "Access to 6 guided tours with progress tracking",
+    "Detail pages for almost 200 real Naturalis specimens",
+    "E-ticket with QR code, downloadable via a secure link"
+   ]
+  }
+ },
+ {
+  "code": "premium",
+  "package_type": "membership",
+  "price_vnd": 590000,
+  "validity_days": 365,
+  "max_per_order": 1,
+  "is_featured": true,
+  "sort_order": 2,
+  "status": "published",
+  "is_simulated": false,
+  "vi": {
+   "name": "Hội viên Premium",
+   "description": "Hội viên một năm: tham quan không giới hạn, tour có hướng dẫn trực tuyến và nội dung chuyên sâu.",
+   "benefits": [
+    "Tham quan không giới hạn trong 365 ngày, không cần đặt ngày",
+    "Ưu tiên tham gia các buổi tour trực tuyến cùng nhóm biên tập",
+    "Mở khóa diễn giải chuyên sâu (cấp độ 2) của các hiện vật nổi bật",
+    "Lưu tiến trình tour và danh sách yêu thích không giới hạn",
+    "Nhận bản tin hằng tháng về sự kiện và bài viết mới"
+   ]
+  },
+  "en": {
+   "name": "Premium Membership",
+   "description": "A one-year membership: unlimited visits, live guided tours online and in-depth content.",
+   "benefits": [
+    "Unlimited visits for 365 days, no date booking needed",
+    "Priority access to online tours with the editorial team",
+    "Unlocks in-depth (level 2) interpretations of highlight objects",
+    "Unlimited saved tour progress and favourites",
+    "Monthly newsletter about events and new articles"
+   ]
+  }
+ },
+ {
+  "code": "student",
+  "package_type": "single",
+  "price_vnd": 100000,
+  "validity_days": 1,
+  "max_per_order": 10,
+  "is_featured": false,
+  "sort_order": 3,
+  "status": "published",
+  "is_simulated": true,
+  "note": "Gói mô phỏng do nhóm bổ sung để kiểm thử, không có trong yêu cầu gốc và không phải giá vé thật của Naturalis.",
+  "vi": {
+   "name": "Vé Học sinh – Sinh viên (mô phỏng)",
+   "description": "Vé một ngày ưu đãi cho học sinh, sinh viên; gói mô phỏng để kiểm thử giỏ hàng và thanh toán.",
+   "benefits": [
+    "Quyền lợi như vé Regular trong ngày đã chọn",
+    "Giá ưu đãi cho học sinh, sinh viên",
+    "Gợi ý tour “Hành trình sự sống” phục vụ học tập",
+    "Thuyết minh song ngữ Việt – Anh",
+    "Gói mô phỏng, chỉ dùng cho mục đích kiểm thử"
+   ]
+  },
+  "en": {
+   "name": "Student Ticket (simulated)",
+   "description": "A discounted one-day ticket for pupils and students; a simulated package for testing the cart and checkout.",
+   "benefits": [
+    "Same benefits as the Regular ticket on the chosen day",
+    "Discounted price for pupils and students",
+    "Suggested 'Journey of Life' tour for learning",
+    "Bilingual Vietnamese–English narration",
+    "Simulated package for testing purposes only"
+   ]
+  }
+ }
+]

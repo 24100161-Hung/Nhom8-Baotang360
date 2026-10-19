@@ -1,0 +1,69 @@
+# BaoTang360 – image "tất cả trong một" cho nền tảng PaaS (Railway, Render, Fly…):
+# nginx + php-fpm 8.3 + scheduler + dịch vụ Python (uvicorn) trong MỘT container, dùng MỘT volume (/var/www/html/storage/app).
+# Lý do: PaaS không chia sẻ ổ đĩa giữa các service, trong khi Python ghi tiles 360° vào storage của Laravel.
+# Build context = GỐC KHO GIT (thư mục chứa 02_SourceCode), như deploy/Dockerfile.web của DiSanSo. Railway: RAILWAY_DOCKERFILE_PATH=02_SourceCode/deploy/Dockerfile.web
+# Cổng HTTP đọc từ biến PORT (Railway/Render đặt sẵn), mặc định 8080.
+
+# ---------- Stage 1: assets (Vite) ----------
+FROM node:20-alpine AS assets
+WORKDIR /app
+COPY 02_SourceCode/app/package.json 02_SourceCode/app/package-lock.json ./
+RUN npm ci --no-audit --no-fund
+COPY 02_SourceCode/app/vite.config.js ./
+COPY 02_SourceCode/app/resources ./resources
+COPY 02_SourceCode/app/public ./public
+COPY 02_SourceCode/app/lang ./lang
+RUN npm run build
+
+# ---------- Stage 2: PHP vendor ----------
+FROM composer:2 AS vendor
+WORKDIR /app
+COPY 02_SourceCode/app/composer.json 02_SourceCode/app/composer.lock ./
+RUN composer install --no-dev --no-scripts --no-autoloader --prefer-dist --no-interaction --ignore-platform-req=ext-intl --ignore-platform-req=ext-gd
+COPY 02_SourceCode/app/ .
+RUN composer dump-autoload --optimize --no-dev --classmap-authoritative
+
+# ---------- Stage 3: Python deps (giống docker/python.Dockerfile để tái dùng cache) ----------
+FROM python:3.12-slim AS pydeps
+WORKDIR /srv
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 STORAGE_ROOT=/srv/storage
+RUN apt-get update && apt-get install -y --no-install-recommends curl && rm -rf /var/lib/apt/lists/*
+COPY 02_SourceCode/python-service/requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt
+
+# ---------- Stage 4: runtime ----------
+FROM php:8.3-fpm
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends nginx supervisor gettext-base \
+      libzip-dev libpng-dev libjpeg62-turbo-dev libwebp-dev libfreetype6-dev libicu-dev default-mysql-client curl unzip \
+ && docker-php-ext-configure gd --with-jpeg --with-webp --with-freetype \
+ && docker-php-ext-install -j"$(nproc)" pdo_mysql intl zip gd opcache bcmath \
+ && rm -rf /var/lib/apt/lists/* /etc/nginx/sites-enabled/default
+COPY 02_SourceCode/app/docker/php.ini /usr/local/etc/php/conf.d/app.ini
+COPY 02_SourceCode/app/docker/php-fpm.conf /usr/local/etc/php-fpm.d/zz-app.conf
+
+# Python 3.12 + thư viện đã cài từ stage pydeps (cùng nền Debian bookworm)
+COPY --from=pydeps /usr/local/bin/python3.12 /usr/local/bin/python3.12
+COPY --from=pydeps /usr/local/lib/python3.12 /usr/local/lib/python3.12
+COPY --from=pydeps /usr/local/lib/libpython3.12.so.1.0 /usr/local/lib/libpython3.12.so.1.0
+RUN ldconfig && ln -sf /usr/local/bin/python3.12 /usr/local/bin/python3 \
+ && useradd --system --uid 10001 --no-create-home analytics
+COPY --chown=analytics:analytics 02_SourceCode/python-service/app /srv/analytics/app
+COPY --chown=analytics:analytics 02_SourceCode/python-service/kiem_dinh_du_lieu.py /srv/analytics/
+
+WORKDIR /var/www/html
+COPY --from=vendor --chown=www-data:www-data /app /var/www/html
+COPY --from=assets --chown=www-data:www-data /app/public/build /var/www/html/public/build
+COPY 02_SourceCode/app/docker/nginx.conf /etc/nginx/templates/default.conf.template
+COPY 02_SourceCode/deploy/supervisord.paas.conf /etc/supervisor/conf.d/baotang360.conf
+COPY 02_SourceCode/deploy/entrypoint.paas.sh /usr/local/bin/paas-entrypoint
+COPY 02_SourceCode/app/docker/backup.sh /usr/local/bin/backup.sh
+RUN chmod +x /usr/local/bin/paas-entrypoint /usr/local/bin/backup.sh \
+ && chown -R www-data:www-data storage bootstrap/cache \
+ && mkdir -p /var/log/supervisor /run/nginx
+
+ENV PORT=8080 ANALYTICS_URL=http://127.0.0.1:8001
+EXPOSE 8080
+HEALTHCHECK --interval=30s --timeout=5s --start-period=180s CMD curl -fsS "http://127.0.0.1:${PORT}/healthz" || exit 1
+ENTRYPOINT ["paas-entrypoint"]
+CMD ["supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]

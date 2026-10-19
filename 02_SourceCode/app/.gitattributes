@@ -1,0 +1,14 @@
+# Chuẩn hóa kết thúc dòng để nhóm dùng Windows/macOS/Linux không tạo diff giả
+* text=auto eol=lf
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.mp3 binary
+*.glb binary
+*.xlsx binary
+*.pdf binary
+*.docx binary

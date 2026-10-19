@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120" font-family="DejaVu Sans, Arial, sans-serif">
+  <title>Bảo tàng 360° – logo chữ tự tạo (không phải logo chính thức của Naturalis)</title>
+  <rect width="480" height="120" rx="16" fill="#ffffff"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="#1f5f7a" stroke-width="6"/>
+  <ellipse cx="60" cy="60" rx="38" ry="14" fill="none" stroke="#e4572e" stroke-width="5"/>
+  <text x="60" y="68" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f5f7a">360°</text>
+  <text x="115" y="58" font-size="34" font-weight="bold" fill="#1d2b36">BẢO TÀNG 360°</text>
+  <text x="117" y="88" font-size="16" fill="#4a5a66">Naturalis Biodiversity Center · Leiden</text>
+</svg>

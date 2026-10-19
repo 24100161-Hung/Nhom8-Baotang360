@@ -1,0 +1,109 @@
+# BaoTang360 – Bảo tàng ảo Naturalis 360° (CSE703073 ĐT-16, Nhóm 08)
+# Cấu trúc như DiSanSo: app/ (Laravel + Inertia/Vue, image app = nginx + php-fpm) · python-service/ (FastAPI) · db (MySQL)
+# Chạy: docker compose up --build   (lần đầu ~5-10 phút)
+# Web (Nginx): http://localhost:${APP_FORWARD_PORT:-8080}   Python: http://127.0.0.1:${ANALYTICS_FORWARD_PORT:-8001}/healthz
+# MySQL: 127.0.0.1:${DB_FORWARD_PORT:-3307}. Kiến trúc: app (nginx 1.27 + php-fpm 8.3, một container) → db (mysql 8) + analytics (FastAPI)
+name: baotang360
+
+services:
+  db:
+    image: mysql:8.0
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE:-baotang360}
+      MYSQL_USER: ${DB_USERNAME:-baotang360}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-baotang360_secret}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-root_secret}
+      TZ: Asia/Ho_Chi_Minh
+    ports:
+      - "127.0.0.1:${DB_FORWARD_PORT:-3307}:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_ROOT_PASSWORD:-root_secret}"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  analytics:
+    build: ./python-service
+    image: baotang360-analytics
+    environment:
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: ${DB_DATABASE:-baotang360}
+      DB_USERNAME: ${DB_USERNAME:-baotang360}
+      DB_PASSWORD: ${DB_PASSWORD:-baotang360_secret}
+      ANALYTICS_TOKEN: ${ANALYTICS_TOKEN:-dev-analytics-token}   # đổi trong .env khi triển khai thật
+      APP_ENV: ${APP_ENV:-production}
+      # Thư mục storage/app của Laravel: Python đọc panoramas/ và ghi tiles/<scene>/ trong STORAGE_ROOT/public
+      STORAGE_ROOT: /srv/storage
+    ports:
+      - "127.0.0.1:${ANALYTICS_FORWARD_PORT:-8001}:8001"   # chỉ máy cục bộ, Laravel gọi qua mạng docker
+    volumes:
+      - app_storage:/srv/storage
+    depends_on:
+      db:
+        condition: service_healthy
+
+  app:
+    build:
+      context: ./app
+      dockerfile: docker/Dockerfile
+    image: baotang360-app
+    environment:
+      APP_NAME: BaoTang360
+      APP_VERSION: ${APP_VERSION:-1.0.0}
+      APP_ENV: ${APP_ENV:-production}
+      APP_DEBUG: ${APP_DEBUG:-false}
+      APP_URL: ${APP_URL:-http://localhost:${APP_FORWARD_PORT:-8080}}
+      APP_KEY: ${APP_KEY:-}
+      APP_LOCALE: vi
+      APP_FALLBACK_LOCALE: en
+      LOG_CHANNEL: stack
+      LOG_STACK: ${LOG_STACK:-daily}    # laravel-YYYY-MM-DD.log; nhật ký nghiệp vụ riêng: nghiepvu-YYYY-MM-DD.log
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: ${DB_DATABASE:-baotang360}
+      DB_USERNAME: ${DB_USERNAME:-baotang360}
+      DB_PASSWORD: ${DB_PASSWORD:-baotang360_secret}
+      SESSION_DRIVER: database
+      SESSION_LIFETIME: 120
+      SESSION_SECURE_COOKIE: ${SESSION_SECURE_COOKIE:-false}
+      SESSION_SAME_SITE: ${SESSION_SAME_SITE:-lax}
+      CACHE_STORE: database
+      QUEUE_CONNECTION: sync
+      MAIL_MAILER: log                 # quên mật khẩu, xác nhận đơn: kênh 'mail' → storage/logs/laravel-YYYY-MM-DD.log
+      MAIL_FROM_ADDRESS: ${MAIL_FROM_ADDRESS:-no-reply@baotang360.test}
+      ANALYTICS_URL: http://analytics:8001
+      ANALYTICS_TOKEN: ${ANALYTICS_TOKEN:-dev-analytics-token}
+      PAYMENT_GATEWAY: sandbox
+      PAYMENT_SANDBOX_SECRET: ${PAYMENT_SANDBOX_SECRET:-}   # rỗng = entrypoint tự sinh và lưu trong volume
+      ORDER_HOLD_MINUTES: ${ORDER_HOLD_MINUTES:-15}
+      SEED_DEMO_PASSWORD: ${SEED_DEMO_PASSWORD:-BaoTang@2026}
+      TRUSTED_PROXIES: ${TRUSTED_PROXIES:-}   # Nginx cùng mạng docker; đặt "*" khi chạy sau proxy PaaS
+      FORCE_HTTPS: ${FORCE_HTTPS:-false}    # true: chuyển http → https (sau proxy TLS đặt X-Forwarded-Proto)
+    ports:
+      - "${APP_FORWARD_PORT:-8080}:80"
+    volumes:
+      - app_storage:/var/www/html/storage/app
+      - app_logs:/var/www/html/storage/logs
+    depends_on:
+      db:
+        condition: service_healthy
+      analytics:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1/healthz"]
+      interval: 30s
+      timeout: 5s
+      start_period: 180s
+      retries: 3
+
+volumes:
+  db_data:
+  app_storage:
+  app_logs:

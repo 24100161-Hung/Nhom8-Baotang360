@@ -1,0 +1,34 @@
+# Render Blueprint – BaoTang360 (web service Docker "tất cả trong một").
+# Render không có MySQL quản lý: dùng MySQL ngoài (Railway MySQL, Aiven, PlanetScale, TiDB Cloud…) và đặt DB_URL.
+services:
+  - type: web
+    name: baotang360
+    runtime: docker
+    dockerfilePath: ./02_SourceCode/deploy/Dockerfile.web   # image "tất cả trong một" (nginx + php-fpm + Python), ngữ cảnh = gốc kho
+    dockerContext: .
+    plan: starter           # free tier ngủ sau 15 phút; bản starter không ngủ
+    healthCheckPath: /healthz
+    disk:
+      name: storage
+      mountPath: /var/www/html/storage/app
+      sizeGB: 2
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      # APP_KEY: để trống – entrypoint tự sinh dạng base64:... và lưu trong disk /var/www/html/storage/app/.appkey
+      - key: DB_URL
+        sync: false                  # mysql://user:pass@host:3306/baotang360  (điền trên dashboard)
+      - key: ANALYTICS_TOKEN
+        generateValue: true
+      - key: PAYMENT_SANDBOX_SECRET
+        generateValue: true
+      - key: TRUSTED_PROXIES
+        value: "*"
+      - key: SESSION_SECURE_COOKIE
+        value: "true"
+      - key: FORCE_HTTPS
+        value: "true"
+      - key: SEED_DEMO_PASSWORD
+        sync: false

@@ -1,0 +1,88 @@
+{
+ "slug": "naturalis",
+ "name": "Naturalis Biodiversity Center",
+ "city": "Leiden",
+ "country": "NL",
+ "address": "Darwinweg 2, 2333 CR Leiden, Nederland",
+ "website": "https://www.naturalis.nl",
+ "license": "cc_by_sa_3",
+ "attribution_text": "Ảnh và dữ liệu: Naturalis Biodiversity Center, CC BY-SA 3.0",
+ "attribution_text_en": "Images and data: Naturalis Biodiversity Center, CC BY-SA 3.0",
+ "logo": {
+  "path": "seed-assets/logo.svg",
+  "source_url": null,
+  "author": "Nhóm 08 – BaoTang360 (logo chữ tự tạo, không phải logo chính thức của Naturalis)",
+  "license": "cc0"
+ },
+ "lat": 52.1647,
+ "lng": 4.474,
+ "status": "published",
+ "floorplan": {
+  "image": "seed-assets/floorplan.svg",
+  "width": 1000,
+  "height": 500,
+  "is_simulated": true,
+  "note": "Sơ đồ 2 tầng mô phỏng, không theo tỉ lệ; tọa độ minimap 0..1 tính trên ảnh 1000×500.",
+  "rooms": [
+   {
+    "code": "main_hall",
+    "floor": 1,
+    "x": 0.14,
+    "y": 0.33
+   },
+   {
+    "code": "dinosaur",
+    "floor": 2,
+    "x": 0.63,
+    "y": 0.33
+   },
+   {
+    "code": "seduction",
+    "floor": 2,
+    "x": 0.63,
+    "y": 0.75
+   },
+   {
+    "code": "death",
+    "floor": 2,
+    "x": 0.86,
+    "y": 0.75
+   },
+   {
+    "code": "live_science",
+    "floor": 1,
+    "x": 0.14,
+    "y": 0.75
+   },
+   {
+    "code": "earth",
+    "floor": 1,
+    "x": 0.37,
+    "y": 0.75
+   },
+   {
+    "code": "life",
+    "floor": 1,
+    "x": 0.37,
+    "y": 0.33
+   },
+   {
+    "code": "ice_age",
+    "floor": 2,
+    "x": 0.86,
+    "y": 0.33
+   }
+  ]
+ },
+ "vi": {
+  "description": "Naturalis Biodiversity Center ở Leiden (Hà Lan) là viện nghiên cứu đa dạng sinh học quốc gia kiêm bảo tàng lịch sử tự nhiên, hình thành từ sự hợp nhất của Bảo tàng Lịch sử Tự nhiên Quốc gia (Rijksmuseum van Natuurlijke Historie, thành lập năm 1820), Bảo tàng Động vật học Amsterdam và Vườn Thực vật Quốc gia (Nationaal Herbarium). Naturalis lưu giữ một trong những bộ sưu tập lịch sử tự nhiên lớn nhất thế giới, với hàng chục triệu mẫu vật thực vật, động vật, hóa thạch, khoáng vật và đá. Tòa nhà mới do Neutelings Riedijk Architects thiết kế mở cửa năm 2019 với các phòng trưng bày theo chủ đề như Thời đại khủng long, Kỷ Băng Hà, Sự sống, Trái Đất, Quyến rũ, Cái chết và phòng thí nghiệm mở LiveScience. Bảo tàng 360° này là dự án học phần, sử dụng dữ liệu mở của Naturalis (Netherlands Biodiversity API, CC0) và ảnh trên Wikimedia Commons theo giấy phép CC BY-SA/CC BY/CC0; một số ảnh 360° là ảnh mô phỏng và được ghi rõ."
+ },
+ "en": {
+  "description": "Naturalis Biodiversity Center in Leiden, the Netherlands, is the national research institute for biodiversity and a natural history museum. It grew out of the merger of the National Museum of Natural History (Rijksmuseum van Natuurlijke Historie, founded in 1820), the Zoological Museum Amsterdam and the National Herbarium. Naturalis holds one of the largest natural history collections in the world, with tens of millions of plants, animals, fossils, minerals and rocks. The new building by Neutelings Riedijk Architects opened in 2019, with themed galleries such as Dinosaur Era, Ice Age, Life, Earth, Seduction, Death and the open laboratory LiveScience. This 360° museum is a student project that uses Naturalis open data (Netherlands Biodiversity API, CC0) and Wikimedia Commons images under CC BY-SA/CC BY/CC0 licences; some 360° images are simulated and clearly labelled."
+ },
+ "sources": [
+  "Naturalis Biodiversity Center – naturalis.nl",
+  "Wikipedia – Naturalis Biodiversity Center",
+  "Netherlands Biodiversity API – api.biodiversitydata.nl"
+ ]
+}

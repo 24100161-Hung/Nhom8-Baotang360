@@ -1,0 +1,1179 @@
+[
+ {
+  "scene": "main-hall",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": -150,
+  "artifact": null,
+  "target": {
+   "scene": "dinosaur-era",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 1,
+  "vi": {
+   "title": "Đến Thời đại khủng long",
+   "text": "Chuyển sang phòng Thời đại khủng long."
+  },
+  "en": {
+   "title": "Go to Dinosaur Era",
+   "text": "Move to the Dinosaur Era gallery."
+  }
+ },
+ {
+  "scene": "main-hall",
+  "type": "scene",
+  "pitch": -6,
+  "yaw": -40,
+  "artifact": null,
+  "target": {
+   "scene": "life",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 2,
+  "vi": {
+   "title": "Đến Sự sống",
+   "text": "Chuyển sang phòng Sự sống."
+  },
+  "en": {
+   "title": "Go to Life",
+   "text": "Move to the Life gallery."
+  }
+ },
+ {
+  "scene": "main-hall",
+  "type": "scene",
+  "pitch": -10,
+  "yaw": 95,
+  "artifact": null,
+  "target": {
+   "scene": "live-science",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 3,
+  "vi": {
+   "title": "Đến LiveScience",
+   "text": "Chuyển sang phòng LiveScience."
+  },
+  "en": {
+   "title": "Go to LiveScience",
+   "text": "Move to the LiveScience gallery."
+  }
+ },
+ {
+  "scene": "main-hall",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": 160,
+  "artifact": null,
+  "target": {
+   "scene": "earth",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 4,
+  "vi": {
+   "title": "Đến Trái Đất",
+   "text": "Chuyển sang phòng Trái Đất."
+  },
+  "en": {
+   "title": "Go to Earth",
+   "text": "Move to the Earth gallery."
+  }
+ },
+ {
+  "scene": "main-hall",
+  "type": "artifact",
+  "pitch": 2,
+  "yaw": 20,
+  "artifact": "sumatran-elephant",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 5,
+  "vi": {
+   "title": "Ngà voi Sumatra",
+   "text": "Ngà voi thu gần Palembang trước năm 1906."
+  },
+  "en": {
+   "title": "Sumatran elephant tusk",
+   "text": "An elephant tusk collected near Palembang before 1906."
+  }
+ },
+ {
+  "scene": "main-hall",
+  "type": "artifact",
+  "pitch": 8,
+  "yaw": -95,
+  "artifact": "japanese-spider-crab",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 6,
+  "vi": {
+   "title": "Cua nhện Nhật Bản",
+   "text": "Sải chân dài nhất thế giới chân khớp; mẫu do Siebold thu."
+  },
+  "en": {
+   "title": "Japanese spider crab",
+   "text": "The longest leg span of any arthropod; collected by Siebold."
+  }
+ },
+ {
+  "scene": "main-hall",
+  "type": "artifact",
+  "pitch": -4,
+  "yaw": 60,
+  "artifact": "neptunes-cup-sponge",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 7,
+  "vi": {
+   "title": "Bọt biển chén Neptune",
+   "text": "Từng bị coi là tuyệt chủng, tìm lại năm 2011."
+  },
+  "en": {
+   "title": "Neptune's cup sponge",
+   "text": "Once presumed extinct, rediscovered in 2011."
+  }
+ },
+ {
+  "scene": "main-hall",
+  "type": "info",
+  "pitch": 25,
+  "yaw": 0,
+  "artifact": null,
+  "target": null,
+  "icon": "info",
+  "sort_order": 8,
+  "vi": {
+   "title": "Kiến trúc Neutelings Riedijk",
+   "text": "Tòa nhà mới mở cửa năm 2019, nối với tháp lưu trữ và Pesthuis thế kỷ XVII. Ảnh 360° là ảnh tư liệu năm 2016."
+  },
+  "en": {
+   "title": "Neutelings Riedijk architecture",
+   "text": "The new building opened in 2019, linked to the collection tower and the 17th-century Pesthuis. The 360° image is an archival 2016 photo."
+  }
+ },
+ {
+  "scene": "dinosaur-era",
+  "type": "scene",
+  "pitch": -10,
+  "yaw": 170,
+  "artifact": null,
+  "target": {
+   "scene": "main-hall",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 1,
+  "vi": {
+   "title": "Đến Sảnh chính",
+   "text": "Chuyển sang phòng Sảnh chính."
+  },
+  "en": {
+   "title": "Go to Main Hall",
+   "text": "Move to the Main Hall gallery."
+  }
+ },
+ {
+  "scene": "dinosaur-era",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": 110,
+  "artifact": null,
+  "target": {
+   "scene": "ice-age",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 2,
+  "vi": {
+   "title": "Đến Kỷ Băng Hà",
+   "text": "Chuyển sang phòng Kỷ Băng Hà."
+  },
+  "en": {
+   "title": "Go to Ice Age",
+   "text": "Move to the Ice Age gallery."
+  }
+ },
+ {
+  "scene": "dinosaur-era",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": -70,
+  "artifact": null,
+  "target": {
+   "scene": "seduction",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 3,
+  "vi": {
+   "title": "Đến Quyến rũ",
+   "text": "Chuyển sang phòng Quyến rũ."
+  },
+  "en": {
+   "title": "Go to Seduction",
+   "text": "Move to the Seduction gallery."
+  }
+ },
+ {
+  "scene": "dinosaur-era",
+  "type": "artifact",
+  "pitch": 5,
+  "yaw": -10,
+  "artifact": "trix-tyrannosaurus-rex",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 4,
+  "vi": {
+   "title": "Trix – T. rex",
+   "text": "Bộ xương T. rex do Naturalis khai quật ở Montana."
+  },
+  "en": {
+   "title": "Trix – T. rex",
+   "text": "The T. rex skeleton excavated by Naturalis in Montana."
+  }
+ },
+ {
+  "scene": "dinosaur-era",
+  "type": "artifact",
+  "pitch": 15,
+  "yaw": -127,
+  "artifact": "camarasaurus-supremus",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 5,
+  "vi": {
+   "title": "Camarasaurus cổ dài",
+   "text": "Khủng long chân thằn lằn cuối kỷ Jura."
+  },
+  "en": {
+   "title": "Long-necked Camarasaurus",
+   "text": "A Late Jurassic sauropod."
+  }
+ },
+ {
+  "scene": "dinosaur-era",
+  "type": "artifact",
+  "pitch": -2,
+  "yaw": -53,
+  "artifact": "triceratops-horridus-a",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 6,
+  "vi": {
+   "title": "Triceratops ba sừng",
+   "text": "Hàng xóm cùng thời với Trix."
+  },
+  "en": {
+   "title": "Three-horned Triceratops",
+   "text": "A contemporary of Trix."
+  }
+ },
+ {
+  "scene": "dinosaur-era",
+  "type": "artifact",
+  "pitch": -15,
+  "yaw": 31,
+  "artifact": "archaeopteryx-lithographica",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 7,
+  "vi": {
+   "title": "Archaeopteryx",
+   "text": "Mắt xích giữa khủng long và chim."
+  },
+  "en": {
+   "title": "Archaeopteryx",
+   "text": "The link between dinosaurs and birds."
+  }
+ },
+ {
+  "scene": "dinosaur-era",
+  "type": "info",
+  "pitch": 30,
+  "yaw": 60,
+  "artifact": null,
+  "target": null,
+  "icon": "info",
+  "sort_order": 8,
+  "vi": {
+   "title": "Đại Trung sinh",
+   "text": "Khoảng 252–66 triệu năm trước; ảnh 360° là gian cổ sinh vật cũ (2016)."
+  },
+  "en": {
+   "title": "The Mesozoic Era",
+   "text": "About 252–66 million years ago; the 360° image shows the former fossil hall (2016)."
+  }
+ },
+ {
+  "scene": "ice-age",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": -160,
+  "artifact": null,
+  "target": {
+   "scene": "dinosaur-era",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 1,
+  "vi": {
+   "title": "Đến Thời đại khủng long",
+   "text": "Chuyển sang phòng Thời đại khủng long."
+  },
+  "en": {
+   "title": "Go to Dinosaur Era",
+   "text": "Move to the Dinosaur Era gallery."
+  }
+ },
+ {
+  "scene": "ice-age",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": 100,
+  "artifact": null,
+  "target": {
+   "scene": "death",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 2,
+  "vi": {
+   "title": "Đến Cái chết",
+   "text": "Chuyển sang phòng Cái chết."
+  },
+  "en": {
+   "title": "Go to Death",
+   "text": "Move to the Death gallery."
+  }
+ },
+ {
+  "scene": "ice-age",
+  "type": "artifact",
+  "pitch": 5,
+  "yaw": 0,
+  "artifact": "woolly-mammoth-olburgen",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 3,
+  "vi": {
+   "title": "Ma mút sông IJssel",
+   "text": "Tìm thấy ở Olburgen năm 1968."
+  },
+  "en": {
+   "title": "IJssel woolly mammoth",
+   "text": "Found at Olburgen in 1968."
+  }
+ },
+ {
+  "scene": "ice-age",
+  "type": "artifact",
+  "pitch": 8,
+  "yaw": 45,
+  "artifact": "giant-deer-ireland",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 4,
+  "vi": {
+   "title": "Hươu khổng lồ",
+   "text": "Gạc rộng tới khoảng 3,5 m."
+  },
+  "en": {
+   "title": "Giant deer",
+   "text": "Antlers up to about 3.5 m across."
+  }
+ },
+ {
+  "scene": "ice-age",
+  "type": "artifact",
+  "pitch": 0,
+  "yaw": -60,
+  "artifact": "java-man-trinil",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 5,
+  "vi": {
+   "title": "Người vượn Java",
+   "text": "Xương đùi Trinil do Dubois thu thập."
+  },
+  "en": {
+   "title": "Java Man",
+   "text": "The Trinil femur collected by Dubois."
+  }
+ },
+ {
+  "scene": "ice-age",
+  "type": "info",
+  "pitch": 20,
+  "yaw": -110,
+  "artifact": null,
+  "target": null,
+  "icon": "info",
+  "sort_order": 6,
+  "vi": {
+   "title": "Doggerland",
+   "text": "Đáy Biển Bắc từng là thảo nguyên băng hà; ngư dân vẫn kéo lưới được xương ma mút."
+  },
+  "en": {
+   "title": "Doggerland",
+   "text": "The North Sea floor was once an Ice Age steppe; fishermen still net mammoth bones."
+  }
+ },
+ {
+  "scene": "ice-age",
+  "type": "info",
+  "pitch": -25,
+  "yaw": 150,
+  "artifact": null,
+  "target": null,
+  "icon": "info",
+  "sort_order": 7,
+  "vi": {
+   "title": "Ảnh mô phỏng",
+   "text": "Ảnh toàn cảnh phòng này là ảnh mô phỏng, không phải ảnh chụp thật."
+  },
+  "en": {
+   "title": "Simulated image",
+   "text": "This room's panorama is simulated, not a real photograph."
+  }
+ },
+ {
+  "scene": "seduction",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": 120,
+  "artifact": null,
+  "target": {
+   "scene": "dinosaur-era",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 1,
+  "vi": {
+   "title": "Đến Thời đại khủng long",
+   "text": "Chuyển sang phòng Thời đại khủng long."
+  },
+  "en": {
+   "title": "Go to Dinosaur Era",
+   "text": "Move to the Dinosaur Era gallery."
+  }
+ },
+ {
+  "scene": "seduction",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": -120,
+  "artifact": null,
+  "target": {
+   "scene": "death",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 2,
+  "vi": {
+   "title": "Đến Cái chết",
+   "text": "Chuyển sang phòng Cái chết."
+  },
+  "en": {
+   "title": "Go to Death",
+   "text": "Move to the Death gallery."
+  }
+ },
+ {
+  "scene": "seduction",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": 180,
+  "artifact": null,
+  "target": {
+   "scene": "life",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 3,
+  "vi": {
+   "title": "Đến Sự sống",
+   "text": "Chuyển sang phòng Sự sống."
+  },
+  "en": {
+   "title": "Go to Life",
+   "text": "Move to the Life gallery."
+  }
+ },
+ {
+  "scene": "seduction",
+  "type": "artifact",
+  "pitch": 6,
+  "yaw": 0,
+  "artifact": "greater-bird-of-paradise",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 4,
+  "vi": {
+   "title": "Chim thiên đường lớn",
+   "text": "Lông sườn vàng óng để tán tỉnh."
+  },
+  "en": {
+   "title": "Greater bird-of-paradise",
+   "text": "Golden flank plumes for courtship."
+  }
+ },
+ {
+  "scene": "seduction",
+  "type": "artifact",
+  "pitch": 0,
+  "yaw": 45,
+  "artifact": "paper-nautilus-egg-case",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 5,
+  "vi": {
+   "title": "Vỏ trứng bạch tuộc giấy",
+   "text": "Buồng ấp di động do con cái tiết ra."
+  },
+  "en": {
+   "title": "Paper nautilus egg case",
+   "text": "A floating brood chamber made by the female."
+  }
+ },
+ {
+  "scene": "seduction",
+  "type": "artifact",
+  "pitch": 0,
+  "yaw": -45,
+  "artifact": "atlas-beetle",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 6,
+  "vi": {
+   "title": "Bọ hung Atlas",
+   "text": "Sừng dùng để tranh giành con cái."
+  },
+  "en": {
+   "title": "Atlas beetle",
+   "text": "Horns used in fights over females."
+  }
+ },
+ {
+  "scene": "seduction",
+  "type": "info",
+  "pitch": 22,
+  "yaw": 90,
+  "artifact": null,
+  "target": null,
+  "icon": "info",
+  "sort_order": 7,
+  "vi": {
+   "title": "Chọn lọc giới tính",
+   "text": "Darwin giải thích bộ lông sặc sỡ bằng sự lựa chọn bạn đời."
+  },
+  "en": {
+   "title": "Sexual selection",
+   "text": "Darwin explained showy plumage through mate choice."
+  }
+ },
+ {
+  "scene": "death",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": 120,
+  "artifact": null,
+  "target": {
+   "scene": "seduction",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 1,
+  "vi": {
+   "title": "Đến Quyến rũ",
+   "text": "Chuyển sang phòng Quyến rũ."
+  },
+  "en": {
+   "title": "Go to Seduction",
+   "text": "Move to the Seduction gallery."
+  }
+ },
+ {
+  "scene": "death",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": -120,
+  "artifact": null,
+  "target": {
+   "scene": "ice-age",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 2,
+  "vi": {
+   "title": "Đến Kỷ Băng Hà",
+   "text": "Chuyển sang phòng Kỷ Băng Hà."
+  },
+  "en": {
+   "title": "Go to Ice Age",
+   "text": "Move to the Ice Age gallery."
+  }
+ },
+ {
+  "scene": "death",
+  "type": "scene",
+  "pitch": -10,
+  "yaw": 180,
+  "artifact": null,
+  "target": {
+   "scene": "main-hall",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 3,
+  "vi": {
+   "title": "Đến Sảnh chính",
+   "text": "Chuyển sang phòng Sảnh chính."
+  },
+  "en": {
+   "title": "Go to Main Hall",
+   "text": "Move to the Main Hall gallery."
+  }
+ },
+ {
+  "scene": "death",
+  "type": "artifact",
+  "pitch": 2,
+  "yaw": 0,
+  "artifact": "dodo-mauritius",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 4,
+  "vi": {
+   "title": "Chim dodo",
+   "text": "Biến mất cuối thế kỷ XVII."
+  },
+  "en": {
+   "title": "Dodo",
+   "text": "Gone by the late 17th century."
+  }
+ },
+ {
+  "scene": "death",
+  "type": "artifact",
+  "pitch": 6,
+  "yaw": 40,
+  "artifact": "passenger-pigeon",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 5,
+  "vi": {
+   "title": "Bồ câu viễn khách",
+   "text": "Con cuối cùng chết năm 1914."
+  },
+  "en": {
+   "title": "Passenger pigeon",
+   "text": "The last one died in 1914."
+  }
+ },
+ {
+  "scene": "death",
+  "type": "artifact",
+  "pitch": 0,
+  "yaw": -40,
+  "artifact": "thylacine",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 6,
+  "vi": {
+   "title": "Sói Tasmania",
+   "text": "Tuyệt chủng năm 1936."
+  },
+  "en": {
+   "title": "Thylacine",
+   "text": "Extinct since 1936."
+  }
+ },
+ {
+  "scene": "death",
+  "type": "artifact",
+  "pitch": 4,
+  "yaw": -80,
+  "artifact": "quagga",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 7,
+  "vi": {
+   "title": "Ngựa vằn quagga",
+   "text": "Con cuối cùng chết ở Artis, Amsterdam."
+  },
+  "en": {
+   "title": "Quagga",
+   "text": "The last one died at Artis, Amsterdam."
+  }
+ },
+ {
+  "scene": "death",
+  "type": "info",
+  "pitch": 22,
+  "yaw": 75,
+  "artifact": null,
+  "target": null,
+  "icon": "info",
+  "sort_order": 8,
+  "vi": {
+   "title": "Vòng đời và phân hủy",
+   "text": "Cái chết trả chất dinh dưỡng về hệ sinh thái. Ảnh 360° của phòng là ảnh mô phỏng."
+  },
+  "en": {
+   "title": "Life cycle and decay",
+   "text": "Death returns nutrients to ecosystems. This room's 360° image is simulated."
+  }
+ },
+ {
+  "scene": "life",
+  "type": "scene",
+  "pitch": -10,
+  "yaw": 150,
+  "artifact": null,
+  "target": {
+   "scene": "main-hall",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 1,
+  "vi": {
+   "title": "Đến Sảnh chính",
+   "text": "Chuyển sang phòng Sảnh chính."
+  },
+  "en": {
+   "title": "Go to Main Hall",
+   "text": "Move to the Main Hall gallery."
+  }
+ },
+ {
+  "scene": "life",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": -100,
+  "artifact": null,
+  "target": {
+   "scene": "seduction",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 2,
+  "vi": {
+   "title": "Đến Quyến rũ",
+   "text": "Chuyển sang phòng Quyến rũ."
+  },
+  "en": {
+   "title": "Go to Seduction",
+   "text": "Move to the Seduction gallery."
+  }
+ },
+ {
+  "scene": "life",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": 60,
+  "artifact": null,
+  "target": {
+   "scene": "earth",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 3,
+  "vi": {
+   "title": "Đến Trái Đất",
+   "text": "Chuyển sang phòng Trái Đất."
+  },
+  "en": {
+   "title": "Go to Earth",
+   "text": "Move to the Earth gallery."
+  }
+ },
+ {
+  "scene": "life",
+  "type": "artifact",
+  "pitch": 2,
+  "yaw": -20,
+  "artifact": "gorilla-congo",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 4,
+  "vi": {
+   "title": "Khỉ đột",
+   "text": "Bộ xương dựng, họ hàng gần của người."
+  },
+  "en": {
+   "title": "Gorilla",
+   "text": "A mounted skeleton of our close relative."
+  }
+ },
+ {
+  "scene": "life",
+  "type": "artifact",
+  "pitch": -5,
+  "yaw": 20,
+  "artifact": "coelacanth",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 5,
+  "vi": {
+   "title": "Cá vây tay",
+   "text": "Hóa thạch sống, tìm lại năm 1938."
+  },
+  "en": {
+   "title": "Coelacanth",
+   "text": "A living fossil, found again in 1938."
+  }
+ },
+ {
+  "scene": "life",
+  "type": "artifact",
+  "pitch": 0,
+  "yaw": 100,
+  "artifact": "venus-flower-basket",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 6,
+  "vi": {
+   "title": "Giỏ hoa Venus",
+   "text": "Bọt biển thủy tinh từ Philippines."
+  },
+  "en": {
+   "title": "Venus' flower basket",
+   "text": "A glass sponge from the Philippines."
+  }
+ },
+ {
+  "scene": "life",
+  "type": "info",
+  "pitch": 25,
+  "yaw": -160,
+  "artifact": null,
+  "target": null,
+  "icon": "info",
+  "sort_order": 7,
+  "vi": {
+   "title": "Đa dạng sinh học",
+   "text": "Mọi loài đều có quan hệ họ hàng; ảnh 360° là gian Leven cũ (2016)."
+  },
+  "en": {
+   "title": "Biodiversity",
+   "text": "All species are related; the 360° image shows the former Life gallery (2016)."
+  }
+ },
+ {
+  "scene": "earth",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": -60,
+  "artifact": null,
+  "target": {
+   "scene": "life",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 1,
+  "vi": {
+   "title": "Đến Sự sống",
+   "text": "Chuyển sang phòng Sự sống."
+  },
+  "en": {
+   "title": "Go to Life",
+   "text": "Move to the Life gallery."
+  }
+ },
+ {
+  "scene": "earth",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": 120,
+  "artifact": null,
+  "target": {
+   "scene": "live-science",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 2,
+  "vi": {
+   "title": "Đến LiveScience",
+   "text": "Chuyển sang phòng LiveScience."
+  },
+  "en": {
+   "title": "Go to LiveScience",
+   "text": "Move to the LiveScience gallery."
+  }
+ },
+ {
+  "scene": "earth",
+  "type": "scene",
+  "pitch": -10,
+  "yaw": 180,
+  "artifact": null,
+  "target": {
+   "scene": "main-hall",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 3,
+  "vi": {
+   "title": "Đến Sảnh chính",
+   "text": "Chuyển sang phòng Sảnh chính."
+  },
+  "en": {
+   "title": "Go to Main Hall",
+   "text": "Move to the Main Hall gallery."
+  }
+ },
+ {
+  "scene": "earth",
+  "type": "artifact",
+  "pitch": 0,
+  "yaw": 30,
+  "artifact": "diepenveen-meteorite",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 4,
+  "vi": {
+   "title": "Thiên thạch Diepenveen",
+   "text": "Rơi xuống Hà Lan năm 1873."
+  },
+  "en": {
+   "title": "Diepenveen meteorite",
+   "text": "Fell in the Netherlands in 1873."
+  }
+ },
+ {
+  "scene": "earth",
+  "type": "artifact",
+  "pitch": 4,
+  "yaw": -20,
+  "artifact": "tiktaalik-roseae",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 5,
+  "vi": {
+   "title": "Tiktaalik",
+   "text": "Cá vây thùy bước lên cạn."
+  },
+  "en": {
+   "title": "Tiktaalik",
+   "text": "The fish that headed for land."
+  }
+ },
+ {
+  "scene": "earth",
+  "type": "artifact",
+  "pitch": -6,
+  "yaw": 70,
+  "artifact": "megalodon-tooth",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 6,
+  "vi": {
+   "title": "Răng megalodon",
+   "text": "Cá mập săn mồi lớn nhất."
+  },
+  "en": {
+   "title": "Megalodon tooth",
+   "text": "The largest predatory shark."
+  }
+ },
+ {
+  "scene": "earth",
+  "type": "info",
+  "pitch": 20,
+  "yaw": -100,
+  "artifact": null,
+  "target": null,
+  "icon": "info",
+  "sort_order": 7,
+  "vi": {
+   "title": "Kiến tạo mảng",
+   "text": "Các mảng dịch chuyển tạo núi lửa, động đất và đại dương mới."
+  },
+  "en": {
+   "title": "Plate tectonics",
+   "text": "Moving plates create volcanoes, earthquakes and new oceans."
+  }
+ },
+ {
+  "scene": "live-science",
+  "type": "scene",
+  "pitch": -10,
+  "yaw": 180,
+  "artifact": null,
+  "target": {
+   "scene": "main-hall",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 1,
+  "vi": {
+   "title": "Đến Sảnh chính",
+   "text": "Chuyển sang phòng Sảnh chính."
+  },
+  "en": {
+   "title": "Go to Main Hall",
+   "text": "Move to the Main Hall gallery."
+  }
+ },
+ {
+  "scene": "live-science",
+  "type": "scene",
+  "pitch": -8,
+  "yaw": -90,
+  "artifact": null,
+  "target": {
+   "scene": "earth",
+   "pitch": 0,
+   "yaw": 0,
+   "hfov": 100
+  },
+  "icon": "arrow",
+  "sort_order": 2,
+  "vi": {
+   "title": "Đến Trái Đất",
+   "text": "Chuyển sang phòng Trái Đất."
+  },
+  "en": {
+   "title": "Go to Earth",
+   "text": "Move to the Earth gallery."
+  }
+ },
+ {
+  "scene": "live-science",
+  "type": "artifact",
+  "pitch": 0,
+  "yaw": 20,
+  "artifact": "wallaces-giant-bee",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 3,
+  "vi": {
+   "title": "Ong khổng lồ Wallace",
+   "text": "Loài ong lớn nhất, tìm lại năm 2019."
+  },
+  "en": {
+   "title": "Wallace's giant bee",
+   "text": "The largest bee, rediscovered in 2019."
+  }
+ },
+ {
+  "scene": "live-science",
+  "type": "artifact",
+  "pitch": 4,
+  "yaw": -30,
+  "artifact": "homo-floresiensis-cast",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 4,
+  "vi": {
+   "title": "Người Flores",
+   "text": "Bản đúc hộp sọ “người hobbit”."
+  },
+  "en": {
+   "title": "Homo floresiensis",
+   "text": "Skull cast of the 'hobbit'."
+  }
+ },
+ {
+  "scene": "live-science",
+  "type": "artifact",
+  "pitch": -4,
+  "yaw": 70,
+  "artifact": "deinogalerix-giant-hedgehog",
+  "target": null,
+  "icon": "specimen",
+  "sort_order": 5,
+  "vi": {
+   "title": "Deinogalerix",
+   "text": "Khổng lồ hóa trên đảo, mô tả ở Leiden."
+  },
+  "en": {
+   "title": "Deinogalerix",
+   "text": "Island giant described in Leiden."
+  }
+ },
+ {
+  "scene": "live-science",
+  "type": "info",
+  "pitch": 22,
+  "yaw": 120,
+  "artifact": null,
+  "target": null,
+  "icon": "info",
+  "sort_order": 6,
+  "vi": {
+   "title": "Số hóa bộ sưu tập",
+   "text": "Dữ liệu mở của Naturalis là nguồn của bảo tàng ảo này."
+  },
+  "en": {
+   "title": "Digitising the collection",
+   "text": "Naturalis open data is the source of this virtual museum."
+  }
+ },
+ {
+  "scene": "live-science",
+  "type": "info",
+  "pitch": -20,
+  "yaw": -150,
+  "artifact": null,
+  "target": null,
+  "icon": "info",
+  "sort_order": 7,
+  "vi": {
+   "title": "Khán đài gỗ",
+   "text": "Nơi khách ngồi xem trình diễn và trò chuyện với nhà nghiên cứu."
+  },
+  "en": {
+   "title": "Wooden tiers",
+   "text": "Where visitors sit to watch demonstrations and talk to researchers."
+  }
+ }
+]

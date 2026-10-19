@@ -1,0 +1,830 @@
+[
+ {
+  "slug": "khung-long-45-phut",
+  "theme_tag": "chu-de-khung-long",
+  "duration_minutes": 45,
+  "difficulty": "de",
+  "mode": "both",
+  "is_featured": true,
+  "sort_order": 1,
+  "cover": {
+   "path": "seed-assets/scenes/dinosaur-preview.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Kopie_van_Dinotijd_Trex_Mike_Bink_Fotografie.jpg",
+   "author": "Museum Naturalis",
+   "license": "cc_by_sa_4"
+  },
+  "vi": {
+   "name": "Khủng long trong 45 phút",
+   "description": "Tour ngắn dành cho người yêu khủng long: gặp Trix, Triceratops, Camarasaurus và chim cổ Archaeopteryx, rồi kết thúc bằng chiếc răng megalodon.",
+   "highlights": "Trix T. rex; Triceratops; Camarasaurus; Archaeopteryx; răng megalodon"
+  },
+  "en": {
+   "name": "Dinosaurs in 45 minutes",
+   "description": "A short tour for dinosaur lovers: meet Trix, Triceratops, Camarasaurus and the early bird Archaeopteryx, then finish with a megalodon tooth.",
+   "highlights": "Trix T. rex; Triceratops; Camarasaurus; Archaeopteryx; megalodon tooth"
+  },
+  "steps": [
+   {
+    "scene": "main-hall",
+    "hotspot": null,
+    "focus_artifact": null,
+    "pitch": 0,
+    "yaw": -150,
+    "hfov": 90,
+    "dwell_seconds": 40,
+    "auto_advance": false,
+    "vi": {
+     "title": "Xuất phát từ sảnh chính",
+     "narration": "Chào mừng bạn đến với tour khủng long. Từ sảnh chính, chúng ta sẽ đi lên phòng Thời đại khủng long, nơi trưng bày những sinh vật thống trị Trái Đất trong hơn 150 triệu năm. Hãy chuẩn bị gặp kẻ săn mồi nổi tiếng nhất của Naturalis."
+    },
+    "en": {
+     "title": "Start in the Main Hall",
+     "narration": "Welcome to the dinosaur tour. From the Main Hall we will head to the Dinosaur Era gallery, home to the animals that ruled the Earth for more than 150 million years. Get ready to meet the most famous predator at Naturalis."
+    }
+   },
+   {
+    "scene": "dinosaur-era",
+    "hotspot": null,
+    "focus_artifact": "trix-tyrannosaurus-rex",
+    "pitch": 5,
+    "yaw": -10,
+    "hfov": 70,
+    "dwell_seconds": 90,
+    "auto_advance": false,
+    "vi": {
+     "title": "Gặp Trix",
+     "narration": "Đây là Trix, một Tyrannosaurus rex do chính đội của Naturalis khai quật ở Montana từ năm 2013 đến 2015. Bộ xương được bảo tồn rất tốt, kể cả hộp sọ. Hãy chú ý chiếc đầu khổng lồ và hàm răng dài như những con dao, công cụ của kẻ săn mồi đỉnh cao cuối kỷ Phấn trắng."
+    },
+    "en": {
+     "title": "Meet Trix",
+     "narration": "This is Trix, a Tyrannosaurus rex excavated by the Naturalis team in Montana between 2013 and 2015. The skeleton is exceptionally well preserved, including the skull. Look at the huge head and the knife-like teeth, the tools of the top predator of the Late Cretaceous."
+    }
+   },
+   {
+    "scene": "dinosaur-era",
+    "hotspot": null,
+    "focus_artifact": "triceratops-horridus-a",
+    "pitch": -2,
+    "yaw": -53,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Triceratops ba sừng",
+     "narration": "Triceratops sống cùng thời với Trix. Ba chiếc sừng và diềm xương sau đầu có thể dùng để tự vệ, phô diễn và nhận biết đồng loại. Các nhà khoa học còn tìm thấy dấu răng T. rex trên xương Triceratops ở Bắc Mỹ."
+    },
+    "en": {
+     "title": "Three-horned Triceratops",
+     "narration": "Triceratops lived at the same time as Trix. Its three horns and bony frill may have served for defence, display and recognising its own kind. Scientists have even found T. rex tooth marks on Triceratops bones in North America. Zoom in to study the surface of the specimen, then open its page to read the registration number and data source."
+    }
+   },
+   {
+    "scene": "dinosaur-era",
+    "hotspot": null,
+    "focus_artifact": "camarasaurus-supremus",
+    "pitch": 15,
+    "yaw": -127,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Khủng long cổ dài",
+     "narration": "Camarasaurus sống sớm hơn, vào cuối kỷ Jura. Đốt sống của nó có các hốc khí giống chim, giúp bộ xương khổng lồ nhẹ hơn. Đây là loài khủng long chân thằn lằn phổ biến nhất của thành hệ Morrison ở Hoa Kỳ."
+    },
+    "en": {
+     "title": "The long-necked giant",
+     "narration": "Camarasaurus lived earlier, in the Late Jurassic. Its vertebrae had air spaces like those of birds, which made the giant skeleton lighter. It is the most common sauropod of the Morrison Formation in the United States. You can listen to the audio guide in Vietnamese or English, and press Next when you are ready for the following stop."
+    }
+   },
+   {
+    "scene": "dinosaur-era",
+    "hotspot": null,
+    "focus_artifact": "archaeopteryx-lithographica",
+    "pitch": -15,
+    "yaw": 31,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Khủng long biết bay?",
+     "narration": "Archaeopteryx từ đá vôi Solnhofen có cánh lông vũ nhưng vẫn còn răng, vuốt và đuôi xương. Nó cho thấy chim tiến hóa từ khủng long nhỏ có lông, nên chim sẻ ngoài cửa sổ cũng là họ hàng của Trix."
+    },
+    "en": {
+     "title": "A flying dinosaur?",
+     "narration": "Archaeopteryx from the Solnhofen limestone had feathered wings but still kept teeth, claws and a bony tail. It shows that birds evolved from small feathered dinosaurs, so the sparrow outside your window is a relative of Trix. Notice how the museum records where, when and by whom each object was collected: this information turns a specimen into scientific data."
+    }
+   },
+   {
+    "scene": "earth",
+    "hotspot": null,
+    "focus_artifact": "megalodon-tooth",
+    "pitch": -6,
+    "yaw": 70,
+    "hfov": 70,
+    "dwell_seconds": 45,
+    "auto_advance": false,
+    "vi": {
+     "title": "Kết thúc với megalodon",
+     "narration": "Tour kết thúc ở phòng Trái Đất với chiếc răng của megalodon, cá mập khổng lồ sống sau thời khủng long. Răng cá mập hóa thạch rất phổ biến vì cá mập thay răng suốt đời. Cảm ơn bạn đã tham gia tour."
+    },
+    "en": {
+     "title": "Finish with megalodon",
+     "narration": "The tour ends in the Earth gallery with a tooth of the megalodon, a giant shark that lived long after the dinosaurs. Fossil shark teeth are common because sharks replace their teeth throughout life. Thank you for joining the tour."
+    }
+   }
+  ]
+ },
+ {
+  "slug": "hanh-trinh-su-song",
+  "theme_tag": "chu-de-tien-hoa",
+  "duration_minutes": 60,
+  "difficulty": "vua",
+  "mode": "both",
+  "is_featured": true,
+  "sort_order": 2,
+  "cover": {
+   "path": "seed-assets/scenes/life-preview.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Exhibition_Life_11_-_Overview_including_zebra,_hyena,_kangaroo,_seabirds.jpg",
+   "author": "Henk Caspers/Naturalis",
+   "license": "cc_by_sa_3"
+  },
+  "vi": {
+   "name": "Hành trình sự sống",
+   "description": "Theo dấu tiến hóa qua sáu hiện vật: từ cá bước lên cạn, khủng long hóa chim đến những loài người cổ.",
+   "highlights": "Tiktaalik; Archaeopteryx; cá vây tay; khỉ đột; người vượn Java; người Flores"
+  },
+  "en": {
+   "name": "The Journey of Life",
+   "description": "Follow evolution through six objects: from fish moving onto land and dinosaurs becoming birds to early human species.",
+   "highlights": "Tiktaalik; Archaeopteryx; coelacanth; gorilla; Java Man; Homo floresiensis"
+  },
+  "steps": [
+   {
+    "scene": "earth",
+    "hotspot": null,
+    "focus_artifact": "tiktaalik-roseae",
+    "pitch": 4,
+    "yaw": -20,
+    "hfov": 70,
+    "dwell_seconds": 70,
+    "auto_advance": false,
+    "vi": {
+     "title": "Cá bước lên cạn",
+     "narration": "Hành trình bắt đầu khoảng 375 triệu năm trước với Tiktaalik, loài cá có cổ cử động được và vây có xương giống cổ tay. Nó cho thấy những bước đầu tiên của động vật có xương sống khi rời nước để lên cạn."
+    },
+    "en": {
+     "title": "A fish heading for land",
+     "narration": "Our journey begins about 375 million years ago with Tiktaalik, a fish with a mobile neck and fins containing wrist-like bones. It shows the first steps vertebrates took as they left the water for land. If you like this object, tap the heart icon to save it to your list of favourites."
+    }
+   },
+   {
+    "scene": "dinosaur-era",
+    "hotspot": null,
+    "focus_artifact": "archaeopteryx-lithographica",
+    "pitch": -15,
+    "yaw": 31,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Từ khủng long đến chim",
+     "narration": "Hơn 200 triệu năm sau, Archaeopteryx mang cả đặc điểm khủng long lẫn chim. Hóa thạch chuyển tiếp như thế giúp ta thấy tiến hóa không nhảy cóc mà diễn ra qua nhiều dạng trung gian. Hãy phóng to ảnh để quan sát chi tiết bề mặt mẫu vật, rồi mở trang hiện vật để đọc số đăng ký và nguồn dữ liệu."
+    },
+    "en": {
+     "title": "From dinosaur to bird",
+     "narration": "More than 200 million years later, Archaeopteryx combined features of dinosaurs and birds. Transitional fossils like this show that evolution does not leap but proceeds through many intermediate forms. Zoom in to study the surface of the specimen, then open its page to read the registration number and data source."
+    }
+   },
+   {
+    "scene": "life",
+    "hotspot": null,
+    "focus_artifact": "coelacanth",
+    "pitch": -5,
+    "yaw": 20,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Hóa thạch sống",
+     "narration": "Cá vây tay từng bị coi là đã tuyệt chủng cùng khủng long, cho đến khi một con được bắt năm 1938. Là cá vây thùy, nó có quan hệ gần với tổ tiên động vật bốn chân, kể cả chúng ta."
+    },
+    "en": {
+     "title": "A living fossil",
+     "narration": "The coelacanth was thought to have died out with the dinosaurs until one was caught in 1938. As a lobe-finned fish, it is closely related to the ancestors of four-legged animals, including us. You can listen to the audio guide in Vietnamese or English, and press Next when you are ready for the following stop."
+    }
+   },
+   {
+    "scene": "life",
+    "hotspot": null,
+    "focus_artifact": "gorilla-congo",
+    "pitch": 2,
+    "yaw": -20,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Họ hàng gần",
+     "narration": "Bộ xương khỉ đột cho phép so sánh với bộ xương người: xương chậu, cột sống và bàn chân cho thấy những thay đổi khi tổ tiên loài người chuyển sang đi thẳng đứng. Hãy để ý cách bảo tàng ghi nơi thu, năm thu và người thu: đó là những thông tin biến mẫu vật thành dữ liệu khoa học."
+    },
+    "en": {
+     "title": "A close relative",
+     "narration": "The gorilla skeleton invites comparison with our own: the pelvis, spine and feet reveal the changes that came when human ancestors began to walk upright. Notice how the museum records where, when and by whom each object was collected: this information turns a specimen into scientific data."
+    }
+   },
+   {
+    "scene": "ice-age",
+    "hotspot": null,
+    "focus_artifact": "java-man-trinil",
+    "pitch": 0,
+    "yaw": -60,
+    "hfov": 70,
+    "dwell_seconds": 70,
+    "auto_advance": false,
+    "vi": {
+     "title": "Người vượn Java",
+     "narration": "Năm 1891–1892, Eugène Dubois tìm thấy hóa thạch Homo erectus ở Trinil trên đảo Java. Xương đùi này cho thấy loài người cổ ấy đã đi thẳng như chúng ta, dù bộ não còn nhỏ hơn nhiều. Nếu thích hiện vật này, bạn có thể bấm biểu tượng trái tim để lưu vào danh sách yêu thích của mình."
+    },
+    "en": {
+     "title": "Java Man",
+     "narration": "In 1891–1892 Eugène Dubois found Homo erectus fossils at Trinil on Java. This thigh bone shows that this early human walked upright like us, even though its brain was much smaller. If you like this object, tap the heart icon to save it to your list of favourites."
+    }
+   },
+   {
+    "scene": "live-science",
+    "hotspot": null,
+    "focus_artifact": "homo-floresiensis-cast",
+    "pitch": 4,
+    "yaw": -30,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Người Flores bé nhỏ",
+     "narration": "Tour kết thúc với Homo floresiensis, loài người cao khoảng một mét sống trên đảo Flores. Nó nhắc rằng nhiều loài người từng cùng tồn tại, và Homo sapiens chỉ là nhánh duy nhất còn lại. Hãy phóng to ảnh để quan sát chi tiết bề mặt mẫu vật, rồi mở trang hiện vật để đọc số đăng ký và nguồn dữ liệu."
+    },
+    "en": {
+     "title": "The small people of Flores",
+     "narration": "The tour ends with Homo floresiensis, a human species about one metre tall that lived on Flores. It reminds us that several human species once coexisted, and Homo sapiens is the only branch left. Zoom in to study the surface of the specimen, then open its page to read the registration number and data source."
+    }
+   }
+  ]
+ },
+ {
+  "slug": "ky-bang-ha",
+  "theme_tag": "chu-de-bang-ha",
+  "duration_minutes": 30,
+  "difficulty": "de",
+  "mode": "both",
+  "is_featured": true,
+  "sort_order": 3,
+  "cover": {
+   "path": "seed-assets/scenes/ice_age-preview.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_028.jpg",
+   "author": "Hnapel",
+   "license": "cc_by_sa_4"
+  },
+  "vi": {
+   "name": "Kỷ Băng Hà",
+   "description": "Khám phá thảo nguyên băng giá nay nằm dưới Biển Bắc: ma mút, hươu khổng lồ, sói và người cổ.",
+   "highlights": "Ma mút sông IJssel; hươu khổng lồ; Người vượn Java; đá bọt Laacher See"
+  },
+  "en": {
+   "name": "The Ice Age",
+   "description": "Explore the frozen steppe that now lies beneath the North Sea: mammoths, giant deer, wolves and early humans.",
+   "highlights": "IJssel mammoth; giant deer; Java Man; Laacher See pumice"
+  },
+  "steps": [
+   {
+    "scene": "ice-age",
+    "hotspot": null,
+    "focus_artifact": null,
+    "pitch": 10,
+    "yaw": -110,
+    "hfov": 90,
+    "dwell_seconds": 45,
+    "auto_advance": false,
+    "vi": {
+     "title": "Bước vào Kỷ Băng Hà",
+     "narration": "Hãy tưởng tượng Hà Lan khi băng hà bao phủ Bắc Âu: mực nước biển thấp hơn hàng chục mét và Biển Bắc là đồng cỏ lạnh. Lưu ý rằng ảnh toàn cảnh của phòng này là ảnh mô phỏng."
+    },
+    "en": {
+     "title": "Enter the Ice Age",
+     "narration": "Imagine the Netherlands when ice sheets covered northern Europe: sea level was tens of metres lower and the North Sea was a cold grassland. Please note that this room's panorama is simulated. You can listen to the audio guide in Vietnamese or English, and press Next when you are ready for the following stop."
+    }
+   },
+   {
+    "scene": "ice-age",
+    "hotspot": null,
+    "focus_artifact": "woolly-mammoth-olburgen",
+    "pitch": 5,
+    "yaw": 0,
+    "hfov": 70,
+    "dwell_seconds": 70,
+    "auto_advance": false,
+    "vi": {
+     "title": "Voi ma mút lông",
+     "narration": "Hộp sọ ma mút này được tìm thấy năm 1968 ở Olburgen bên sông IJssel. Lông dày, tai nhỏ và răng nghiền cỏ giúp ma mút sống được trên thảo nguyên băng giá. Hãy để ý cách bảo tàng ghi nơi thu, năm thu và người thu: đó là những thông tin biến mẫu vật thành dữ liệu khoa học."
+    },
+    "en": {
+     "title": "The woolly mammoth",
+     "narration": "This mammoth skull was found in 1968 at Olburgen on the river IJssel. Thick fur, small ears and grass-grinding teeth helped mammoths survive on the frozen steppe. Notice how the museum records where, when and by whom each object was collected: this information turns a specimen into scientific data."
+    }
+   },
+   {
+    "scene": "ice-age",
+    "hotspot": null,
+    "focus_artifact": "giant-deer-ireland",
+    "pitch": 8,
+    "yaw": 45,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Hươu khổng lồ",
+     "narration": "Hươu khổng lồ mang cặp gạc rộng tới khoảng 3,5 mét và thay gạc mỗi năm. Nó biến mất khỏi Tây Âu khi khí hậu và thảm thực vật thay đổi vào cuối kỷ Băng Hà. Nếu thích hiện vật này, bạn có thể bấm biểu tượng trái tim để lưu vào danh sách yêu thích của mình."
+    },
+    "en": {
+     "title": "The giant deer",
+     "narration": "The giant deer carried antlers up to about 3.5 metres wide and shed them every year. It disappeared from western Europe as climate and vegetation changed at the end of the Ice Age. If you like this object, tap the heart icon to save it to your list of favourites."
+    }
+   },
+   {
+    "scene": "ice-age",
+    "hotspot": null,
+    "focus_artifact": "java-man-trinil",
+    "pitch": 0,
+    "yaw": -60,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Người cổ ở Java",
+     "narration": "Trong khi châu Âu lạnh giá, Homo erectus sống ở Java. Hóa thạch Trinil do Eugène Dubois đào được là một phần quan trọng của bộ sưu tập Naturalis. Hãy phóng to ảnh để quan sát chi tiết bề mặt mẫu vật, rồi mở trang hiện vật để đọc số đăng ký và nguồn dữ liệu."
+    },
+    "en": {
+     "title": "Early humans on Java",
+     "narration": "While Europe was freezing, Homo erectus lived on Java. The Trinil fossils excavated by Eugène Dubois are a key part of the Naturalis collection. Zoom in to study the surface of the specimen, then open its page to read the registration number and data source."
+    }
+   },
+   {
+    "scene": "earth",
+    "hotspot": null,
+    "focus_artifact": "diepenveen-meteorite",
+    "pitch": 0,
+    "yaw": 30,
+    "hfov": 70,
+    "dwell_seconds": 45,
+    "auto_advance": false,
+    "vi": {
+     "title": "Ra khỏi băng giá",
+     "narration": "Tour kết thúc ở phòng Trái Đất, nơi đá núi lửa Laacher See nhắc về vụ phun trào khoảng 13.000 năm trước, ngay cuối kỷ Băng Hà, và thiên thạch Diepenveen kể câu chuyện còn xưa hơn nữa. Bạn có thể nghe thuyết minh bằng tiếng Việt hoặc tiếng Anh, và nhấn Tiếp theo khi đã sẵn sàng sang điểm dừng mới."
+    },
+    "en": {
+     "title": "Out of the cold",
+     "narration": "The tour ends in the Earth gallery, where pumice from the Laacher See recalls an eruption about 13,000 years ago at the very end of the Ice Age, and the Diepenveen meteorite tells an even older story. You can listen to the audio guide in Vietnamese or English, and press Next when you are ready for the following stop."
+    }
+   }
+  ]
+ },
+ {
+  "slug": "cho-gia-dinh",
+  "theme_tag": "chu-de-gia-dinh",
+  "duration_minutes": 40,
+  "difficulty": "de",
+  "mode": "both",
+  "is_featured": true,
+  "sort_order": 4,
+  "cover": {
+   "path": "seed-assets/scenes/main_hall-preview.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis-Leiden-2019-1.jpg",
+   "author": "Hay Kranen",
+   "license": "cc_by_4"
+  },
+  "vi": {
+   "name": "Cho cả gia đình",
+   "description": "Tour vui nhộn cho trẻ em và phụ huynh: những con vật khổng lồ, kỳ lạ và sặc sỡ nhất bảo tàng.",
+   "highlights": "Cua nhện Nhật Bản; Trix; chim thiên đường; giỏ hoa Venus; ong khổng lồ"
+  },
+  "en": {
+   "name": "For the whole family",
+   "description": "A playful tour for children and parents: the biggest, strangest and most colourful animals in the museum.",
+   "highlights": "Japanese spider crab; Trix; bird-of-paradise; Venus' flower basket; giant bee"
+  },
+  "steps": [
+   {
+    "scene": "main-hall",
+    "hotspot": null,
+    "focus_artifact": "japanese-spider-crab",
+    "pitch": 8,
+    "yaw": -95,
+    "hfov": 70,
+    "dwell_seconds": 50,
+    "auto_advance": false,
+    "vi": {
+     "title": "Con cua chân dài nhất",
+     "narration": "Đố bạn: con vật nào có chân dài nhất trong thế giới cua, tôm, côn trùng? Đó là cua nhện Nhật Bản, sải chân có thể dài hơn một chiếc ô tô nhỏ! Mẫu này được Siebold mang từ Nhật Bản về."
+    },
+    "en": {
+     "title": "The longest legs",
+     "narration": "Quiz time: which animal has the longest legs of all crabs, shrimps and insects? The Japanese spider crab, whose leg span can be longer than a small car! Siebold brought this one from Japan. Notice how the museum records where, when and by whom each object was collected: this information turns a specimen into scientific data."
+    }
+   },
+   {
+    "scene": "dinosaur-era",
+    "hotspot": null,
+    "focus_artifact": "trix-tyrannosaurus-rex",
+    "pitch": 5,
+    "yaw": -10,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Chào Trix!",
+     "narration": "Trix là khủng long bạo chúa nổi tiếng nhất Hà Lan. Hãy đếm xem bạn thấy bao nhiêu chiếc răng, và thử so sánh chiều dài cánh tay ngắn của Trix với cánh tay của chính bạn. Nếu thích hiện vật này, bạn có thể bấm biểu tượng trái tim để lưu vào danh sách yêu thích của mình."
+    },
+    "en": {
+     "title": "Say hello to Trix!",
+     "narration": "Trix is the most famous T. rex in the Netherlands. Count how many teeth you can see, and compare Trix's short arms with your own. If you like this object, tap the heart icon to save it to your list of favourites."
+    }
+   },
+   {
+    "scene": "seduction",
+    "hotspot": null,
+    "focus_artifact": "greater-bird-of-paradise",
+    "pitch": 6,
+    "yaw": 0,
+    "hfov": 70,
+    "dwell_seconds": 50,
+    "auto_advance": false,
+    "vi": {
+     "title": "Con chim diện nhất",
+     "narration": "Chim thiên đường trống khoác bộ lông vàng óng và nhảy múa để chinh phục chim mái. Ngày xưa người châu Âu còn tưởng loài chim này không có chân! Hãy phóng to ảnh để quan sát chi tiết bề mặt mẫu vật, rồi mở trang hiện vật để đọc số đăng ký và nguồn dữ liệu."
+    },
+    "en": {
+     "title": "The best-dressed bird",
+     "narration": "The male bird-of-paradise wears golden plumes and dances to win over a female. Long ago Europeans even believed these birds had no feet! Zoom in to study the surface of the specimen, then open its page to read the registration number and data source."
+    }
+   },
+   {
+    "scene": "life",
+    "hotspot": null,
+    "focus_artifact": "venus-flower-basket",
+    "pitch": 0,
+    "yaw": 100,
+    "hfov": 70,
+    "dwell_seconds": 50,
+    "auto_advance": false,
+    "vi": {
+     "title": "Ngôi nhà thủy tinh",
+     "narration": "Giỏ hoa Venus là bọt biển có bộ khung bằng thủy tinh tự nhiên. Bên trong thường có một cặp tôm nhỏ sống suốt đời, vì vậy ở Nhật Bản nó từng là món quà cưới. Bạn có thể nghe thuyết minh bằng tiếng Việt hoặc tiếng Anh, và nhấn Tiếp theo khi đã sẵn sàng sang điểm dừng mới."
+    },
+    "en": {
+     "title": "A glass house",
+     "narration": "Venus' flower basket is a sponge with a skeleton of natural glass. A pair of tiny shrimps often lives inside for life, which is why it was once a wedding gift in Japan. You can listen to the audio guide in Vietnamese or English, and press Next when you are ready for the following stop."
+    }
+   },
+   {
+    "scene": "live-science",
+    "hotspot": null,
+    "focus_artifact": "wallaces-giant-bee",
+    "pitch": 0,
+    "yaw": 20,
+    "hfov": 70,
+    "dwell_seconds": 50,
+    "auto_advance": false,
+    "vi": {
+     "title": "Ong to bằng ngón tay cái",
+     "narration": "Ong khổng lồ Wallace là loài ong lớn nhất thế giới. Các nhà khoa học tưởng đã mất dấu nó, nhưng năm 2019 nó được chụp ảnh sống trở lại. Tour kết thúc tại đây, hẹn gặp lại! Hãy để ý cách bảo tàng ghi nơi thu, năm thu và người thu: đó là những thông tin biến mẫu vật thành dữ liệu khoa học."
+    },
+    "en": {
+     "title": "A bee as big as a thumb",
+     "narration": "Wallace's giant bee is the largest bee in the world. Scientists thought they had lost track of it, but in 2019 it was photographed alive again. The tour ends here, see you next time! Notice how the museum records where, when and by whom each object was collected: this information turns a specimen into scientific data."
+    }
+   }
+  ]
+ },
+ {
+  "slug": "nha-nghien-cuu",
+  "theme_tag": "chu-de-nghien-cuu",
+  "duration_minutes": 75,
+  "difficulty": "kho",
+  "mode": "guided",
+  "is_featured": false,
+  "sort_order": 5,
+  "cover": {
+   "path": "seed-assets/scenes/live_science-preview.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Life_Science_03_-_Wooden_amphitheater.jpg",
+   "author": "Henk Caspers/Naturalis",
+   "license": "cc_by_sa_3"
+  },
+  "vi": {
+   "name": "Góc nhìn nhà nghiên cứu",
+   "description": "Tour chuyên sâu về vai trò khoa học của bộ sưu tập: mẫu chuẩn, mẫu lịch sử, số hóa và những phát hiện mới từ mẫu cũ.",
+   "highlights": "Ong khổng lồ Wallace; Deinogalerix; mẫu chuẩn Maaradactylus; thiên thạch Diepenveen; bộ sưu tập Dubois; bọt biển chén Neptune"
+  },
+  "en": {
+   "name": "Through a researcher's eyes",
+   "description": "An in-depth tour on the scientific role of collections: type specimens, historical specimens, digitisation and new discoveries from old material.",
+   "highlights": "Wallace's giant bee; Deinogalerix; Maaradactylus holotype; Diepenveen meteorite; Dubois collection; Neptune's cup sponge"
+  },
+  "steps": [
+   {
+    "scene": "live-science",
+    "hotspot": null,
+    "focus_artifact": null,
+    "pitch": 10,
+    "yaw": 120,
+    "hfov": 90,
+    "dwell_seconds": 50,
+    "auto_advance": false,
+    "vi": {
+     "title": "Phòng thí nghiệm mở",
+     "narration": "Ở LiveScience, khách thấy các nhà nghiên cứu làm việc với mẫu vật thật. Tour này đặt câu hỏi: vì sao một bảo tàng cần giữ hàng chục triệu mẫu vật, và những mẫu đó được dùng như thế nào trong khoa học?"
+    },
+    "en": {
+     "title": "The open laboratory",
+     "narration": "In LiveScience, visitors see researchers at work on real specimens. This tour asks: why does a museum need to keep tens of millions of specimens, and how are they used in science? If you like this object, tap the heart icon to save it to your list of favourites."
+    }
+   },
+   {
+    "scene": "live-science",
+    "hotspot": null,
+    "focus_artifact": "wallaces-giant-bee",
+    "pitch": 0,
+    "yaw": 20,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Ảnh số hóa thay cho mẫu mới",
+     "narration": "Mẫu ong khổng lồ Wallace được chụp nhiều góc và công bố mở. Nhờ vậy nhà nghiên cứu khắp nơi có thể nhận dạng loài mà không cần bắt thêm cá thể từ một quần thể hiếm. Hãy phóng to ảnh để quan sát chi tiết bề mặt mẫu vật, rồi mở trang hiện vật để đọc số đăng ký và nguồn dữ liệu."
+    },
+    "en": {
+     "title": "Digital images instead of new specimens",
+     "narration": "The Wallace's giant bee specimen was photographed from many angles and published openly, so researchers anywhere can identify the species without collecting more individuals from a rare population. Zoom in to study the surface of the specimen, then open its page to read the registration number and data source."
+    }
+   },
+   {
+    "scene": "live-science",
+    "hotspot": null,
+    "focus_artifact": "deinogalerix-giant-hedgehog",
+    "pitch": -4,
+    "yaw": 70,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Nghiên cứu ở Leiden",
+     "narration": "Deinogalerix được nhà cổ sinh vật học Matthijs Freudenthal ở Leiden mô tả năm 1972. Đây là ví dụ về khổng lồ hóa trên đảo, chủ đề nghiên cứu vẫn được Naturalis theo đuổi. Bạn có thể nghe thuyết minh bằng tiếng Việt hoặc tiếng Anh, và nhấn Tiếp theo khi đã sẵn sàng sang điểm dừng mới."
+    },
+    "en": {
+     "title": "Research in Leiden",
+     "narration": "Deinogalerix was described in 1972 by Matthijs Freudenthal, a palaeontologist in Leiden. It is an example of island gigantism, a research theme Naturalis still pursues. You can listen to the audio guide in Vietnamese or English, and press Next when you are ready for the following stop."
+    }
+   },
+   {
+    "scene": "dinosaur-era",
+    "hotspot": null,
+    "focus_artifact": "maaradactylus-spielbergi",
+    "pitch": 5,
+    "yaw": 90,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Giá trị của mẫu chuẩn",
+     "narration": "Thằn lằn bay này là mẫu chuẩn của loài: mọi nhà khoa học muốn so sánh với loài này phải tham chiếu mẫu ở Leiden. Tên chi đã đổi khi hiểu biết phân loại thay đổi, nhưng mẫu chuẩn vẫn giữ nguyên."
+    },
+    "en": {
+     "title": "Why type specimens matter",
+     "narration": "This pterosaur is the type specimen of its species: any scientist comparing it with other forms must refer to the specimen in Leiden. Its genus name changed as classification improved, but the type specimen remains the anchor. Notice how the museum records where, when and by whom each object was collected: this information turns a specimen into scientific data."
+    }
+   },
+   {
+    "scene": "earth",
+    "hotspot": null,
+    "focus_artifact": "diepenveen-meteorite",
+    "pitch": 0,
+    "yaw": 30,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Phân tích lại mẫu cũ",
+     "narration": "Thiên thạch Diepenveen rơi năm 1873. Các phân tích hiện đại cho thấy nó là chondrit cacbon hiếm, chứa vật chất từ thuở sơ khai của Hệ Mặt Trời. Nếu thích hiện vật này, bạn có thể bấm biểu tượng trái tim để lưu vào danh sách yêu thích của mình."
+    },
+    "en": {
+     "title": "Re-analysing old specimens",
+     "narration": "The Diepenveen meteorite fell in 1873. Modern analyses show that it is a rare carbonaceous chondrite holding material from the earliest Solar System. If you like this object, tap the heart icon to save it to your list of favourites."
+    }
+   },
+   {
+    "scene": "ice-age",
+    "hotspot": null,
+    "focus_artifact": "java-man-trinil",
+    "pitch": 0,
+    "yaw": -60,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Bộ sưu tập Dubois",
+     "narration": "Các hóa thạch Dubois thu ở Java hơn 125 năm trước vẫn mang lại phát hiện mới, như vỏ trai có hình khắc của Homo erectus công bố năm 2014. Hãy phóng to ảnh để quan sát chi tiết bề mặt mẫu vật, rồi mở trang hiện vật để đọc số đăng ký và nguồn dữ liệu."
+    },
+    "en": {
+     "title": "The Dubois collection",
+     "narration": "Fossils that Dubois collected on Java more than 125 years ago still yield new findings, such as the engraved shell made by Homo erectus published in 2014. Zoom in to study the surface of the specimen, then open its page to read the registration number and data source."
+    }
+   },
+   {
+    "scene": "main-hall",
+    "hotspot": null,
+    "focus_artifact": "neptunes-cup-sponge",
+    "pitch": -4,
+    "yaw": 60,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Từ bảo tàng đến bảo tồn",
+     "narration": "Khi bọt biển chén Neptune được tìm lại năm 2011, các mẫu cũ trong bảo tàng giúp xác nhận danh tính loài. Bộ sưu tập là thư viện sự sống cho cả hôm nay và tương lai. Bạn có thể nghe thuyết minh bằng tiếng Việt hoặc tiếng Anh, và nhấn Tiếp theo khi đã sẵn sàng sang điểm dừng mới."
+    },
+    "en": {
+     "title": "From museum to conservation",
+     "narration": "When Neptune's cup sponge was rediscovered in 2011, old museum specimens helped confirm its identity. Collections are a library of life for today and for the future. You can listen to the audio guide in Vietnamese or English, and press Next when you are ready for the following stop."
+    }
+   }
+  ]
+ },
+ {
+  "slug": "toan-canh-8-phong",
+  "theme_tag": null,
+  "duration_minutes": 90,
+  "difficulty": "vua",
+  "mode": "both",
+  "is_featured": true,
+  "sort_order": 6,
+  "cover": {
+   "path": "seed-assets/scenes/earth-preview.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Museum_-_Exhibition_Earth_01_-_Huge_globe,_structure_of_the_Earth.jpg",
+   "author": "Henk Caspers/Naturalis Biodiversity Center",
+   "license": "cc_by_sa_3"
+  },
+  "vi": {
+   "name": "Toàn cảnh 8 phòng",
+   "description": "Tour đầy đủ đi qua cả tám không gian của bảo tàng ảo, mỗi phòng dừng tại một hiện vật tiêu biểu.",
+   "highlights": "Tám phòng; tám hiện vật tiêu biểu"
+  },
+  "en": {
+   "name": "All 8 galleries",
+   "description": "A complete tour through all eight spaces of the virtual museum, stopping at one signature object in each gallery.",
+   "highlights": "Eight galleries; eight signature objects"
+  },
+  "steps": [
+   {
+    "scene": "main-hall",
+    "hotspot": null,
+    "focus_artifact": "neptunes-cup-sponge",
+    "pitch": -4,
+    "yaw": 60,
+    "hfov": 70,
+    "dwell_seconds": 45,
+    "auto_advance": false,
+    "vi": {
+     "title": "Sảnh chính",
+     "narration": "Bắt đầu ở sảnh chính với bọt biển chén Neptune, loài từng bị coi là tuyệt chủng. Từ đây ta sẽ đi qua cả tám phòng, mỗi phòng một câu chuyện về tự nhiên và khoa học. Hãy để ý cách bảo tàng ghi nơi thu, năm thu và người thu: đó là những thông tin biến mẫu vật thành dữ liệu khoa học."
+    },
+    "en": {
+     "title": "Main Hall",
+     "narration": "We start in the Main Hall with Neptune's cup sponge, a species once presumed extinct. From here we will pass through all eight galleries, each with its own story about nature and science. Notice how the museum records where, when and by whom each object was collected: this information turns a specimen into scientific data."
+    }
+   },
+   {
+    "scene": "dinosaur-era",
+    "hotspot": null,
+    "focus_artifact": "trix-tyrannosaurus-rex",
+    "pitch": 5,
+    "yaw": -10,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Thời đại khủng long",
+     "narration": "Trong phòng Thời đại khủng long, Trix là ngôi sao. Bộ xương T. rex này do Naturalis khai quật ở Montana và là một trong những bộ xương được bảo tồn tốt nhất thế giới. Nếu thích hiện vật này, bạn có thể bấm biểu tượng trái tim để lưu vào danh sách yêu thích của mình."
+    },
+    "en": {
+     "title": "Dinosaur Era",
+     "narration": "In the Dinosaur Era gallery, Trix is the star. This T. rex skeleton was excavated by Naturalis in Montana and is one of the best preserved in the world. If you like this object, tap the heart icon to save it to your list of favourites."
+    }
+   },
+   {
+    "scene": "ice-age",
+    "hotspot": null,
+    "focus_artifact": "woolly-mammoth-olburgen",
+    "pitch": 5,
+    "yaw": 0,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Kỷ Băng Hà",
+     "narration": "Tiếp theo là Kỷ Băng Hà với hộp sọ ma mút từ sông IJssel. Khi đó Biển Bắc là thảo nguyên lạnh, nơi ma mút và tê giác lông gặm cỏ. Hãy phóng to ảnh để quan sát chi tiết bề mặt mẫu vật, rồi mở trang hiện vật để đọc số đăng ký và nguồn dữ liệu."
+    },
+    "en": {
+     "title": "Ice Age",
+     "narration": "Next comes the Ice Age with a mammoth skull from the river IJssel. At that time the North Sea was a cold steppe where mammoths and woolly rhinos grazed. Zoom in to study the surface of the specimen, then open its page to read the registration number and data source."
+    }
+   },
+   {
+    "scene": "death",
+    "hotspot": null,
+    "focus_artifact": "dodo-mauritius",
+    "pitch": 2,
+    "yaw": 0,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Cái chết",
+     "narration": "Trong phòng Cái chết, chim dodo nhắc rằng con người có thể xóa sổ một loài chỉ trong vài thập kỷ. Phòng cũng nói về kẻ săn mồi, ký sinh và vòng tuần hoàn dinh dưỡng. Bạn có thể nghe thuyết minh bằng tiếng Việt hoặc tiếng Anh, và nhấn Tiếp theo khi đã sẵn sàng sang điểm dừng mới."
+    },
+    "en": {
+     "title": "Death",
+     "narration": "In the Death gallery, the dodo reminds us that people can wipe out a species within a few decades. The room also covers predators, parasites and the recycling of nutrients. You can listen to the audio guide in Vietnamese or English, and press Next when you are ready for the following stop."
+    }
+   },
+   {
+    "scene": "seduction",
+    "hotspot": null,
+    "focus_artifact": "greater-bird-of-paradise",
+    "pitch": 6,
+    "yaw": 0,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Quyến rũ",
+     "narration": "Phòng Quyến rũ nói về sinh sản. Bộ lông chim thiên đường là ví dụ kinh điển của chọn lọc giới tính: chim mái chọn, chim trống phô diễn. Hãy để ý cách bảo tàng ghi nơi thu, năm thu và người thu: đó là những thông tin biến mẫu vật thành dữ liệu khoa học."
+    },
+    "en": {
+     "title": "Seduction",
+     "narration": "The Seduction gallery is about reproduction. The plumage of the bird-of-paradise is a classic example of sexual selection: females choose, males display. Notice how the museum records where, when and by whom each object was collected: this information turns a specimen into scientific data."
+    }
+   },
+   {
+    "scene": "life",
+    "hotspot": null,
+    "focus_artifact": "coelacanth",
+    "pitch": -5,
+    "yaw": 20,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Sự sống",
+     "narration": "Ở phòng Sự sống, cá vây tay đại diện cho sự đa dạng và lịch sử lâu dài của sự sống. Hãy dành thời gian ngắm các tiêu bản thú, chim, bò sát và động vật biển xung quanh. Nếu thích hiện vật này, bạn có thể bấm biểu tượng trái tim để lưu vào danh sách yêu thích của mình."
+    },
+    "en": {
+     "title": "Life",
+     "narration": "In the Life gallery, the coelacanth stands for the diversity and long history of life. Take time to look at the mammals, birds, reptiles and sea creatures around it. If you like this object, tap the heart icon to save it to your list of favourites."
+    }
+   },
+   {
+    "scene": "earth",
+    "hotspot": null,
+    "focus_artifact": "diepenveen-meteorite",
+    "pitch": 0,
+    "yaw": 30,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "Trái Đất",
+     "narration": "Phòng Trái Đất giới thiệu khoáng vật, đá núi lửa và thiên thạch Diepenveen rơi xuống Hà Lan năm 1873, mang theo vật chất từ thuở sơ khai của Hệ Mặt Trời. Hãy phóng to ảnh để quan sát chi tiết bề mặt mẫu vật, rồi mở trang hiện vật để đọc số đăng ký và nguồn dữ liệu."
+    },
+    "en": {
+     "title": "Earth",
+     "narration": "The Earth gallery presents minerals, volcanic rocks and the Diepenveen meteorite, which fell in the Netherlands in 1873 carrying material from the early Solar System. Zoom in to study the surface of the specimen, then open its page to read the registration number and data source."
+    }
+   },
+   {
+    "scene": "live-science",
+    "hotspot": null,
+    "focus_artifact": "wallaces-giant-bee",
+    "pitch": 0,
+    "yaw": 20,
+    "hfov": 70,
+    "dwell_seconds": 60,
+    "auto_advance": false,
+    "vi": {
+     "title": "LiveScience",
+     "narration": "Tour kết thúc ở LiveScience, nơi bộ sưu tập được nghiên cứu và số hóa. Dữ liệu mở của Naturalis chính là nền tảng của bảo tàng ảo này. Cảm ơn bạn đã đồng hành. Bạn có thể nghe thuyết minh bằng tiếng Việt hoặc tiếng Anh, và nhấn Tiếp theo khi đã sẵn sàng sang điểm dừng mới."
+    },
+    "en": {
+     "title": "LiveScience",
+     "narration": "The tour ends in LiveScience, where the collection is studied and digitised. Naturalis open data is the foundation of this virtual museum. Thank you for joining us. You can listen to the audio guide in Vietnamese or English, and press Next when you are ready for the following stop."
+    }
+   }
+  ]
+ }
+]
