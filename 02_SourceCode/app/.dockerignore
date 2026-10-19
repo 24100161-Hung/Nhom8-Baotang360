@@ -24,3 +24,4 @@ test-results
 .env
 .git
 **/__pycache__
+storage/framework/testing
