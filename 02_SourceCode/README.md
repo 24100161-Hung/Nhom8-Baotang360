@@ -31,7 +31,7 @@ Script tự tạo `.env` từ `.env.example`, dựng 3 dịch vụ (db, analytic
 Vue 3.5 + Inertia 2 (frontend) — Laravel 12.70 trên PHP-FPM 8.3 (backend) — Nginx 1.27 — MySQL 8.0 — FastAPI (python-service, Python 3.12).
 
 ```
- Trình duyệt (Vue 3 + Inertia + Pannellum 2.5.6)
+ Trình duyệt (Vue 3 + Inertia + Pannellum 2.5.7)
         │ HTTP(S)
         ▼
  ┌────────────┐  FastCGI  ┌───────────────────────────────┐   HTTP + token   ┌─────────────────────────┐
@@ -164,7 +164,7 @@ Chi tiết và tỷ lệ đóng góp: `07_QuanTriDuAn/PhanCong.md` trong gói n�
   - gói vé Học sinh – Sinh viên, sự kiện trong blog;
   - tài khoản, đơn hàng, thanh toán.
 - **Thư viện:**
-  - Pannellum 2.5.6 (MIT); thuật toán sinh tiles viết lại từ `generate.py` của Pannellum (MIT, có ghi công);
+  - Pannellum 2.5.7 (MIT); thuật toán sinh tiles viết lại từ `generate.py` của Pannellum (MIT, có ghi công);
   - Laravel, Vue, Inertia, Tailwind (MIT);
   - FastAPI, scikit-learn, pandas (BSD/MIT).
 - Mã nguồn của nhóm là sản phẩm học thuật của học phần CSE703073.
@@ -211,6 +211,4 @@ Tài liệu kỹ thuật lấy ví dụ bằng Laravel 11 và CSS thuần/Bootst
 - **Nginx + PHP-FPM thay cho `php artisan serve`.**
   - Cách này đúng mô hình triển khai mà tài liệu khuyến nghị.
   - Tệp tĩnh và tiles 360° được Nginx phục vụ trực tiếp với cache 1 năm, không đi qua PHP.
-- **Pannellum 2.5.6, sai khác so với tài liệu yêu cầu.**
-  - Tài liệu yêu cầu của nhóm ghi Pannellum 2.5.7 và Laravel 11; mã nguồn hiện khóa `pannellum@2.5.6` (`app/package.json`). Trên npm đã có bản 2.5.7.
-  - Nhóm cần chọn một trong hai hướng: nâng lên 2.5.7 rồi chạy lại kiểm thử trình xem, hoặc ghi lý do giữ 2.5.6 vào báo cáo. `[CẬP NHẬT]`
+- **Pannellum 2.5.7 đúng tài liệu yêu cầu; Laravel 12.70 thay cho Laravel 11 (Laravel 11 hết hỗ trợ bảo mật, Composer chặn cài đặt vì advisory) – giải trình trong 00_INFO.md.**

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * Kiểm tra vai trò ở máy chủ: `role:admin,manager`. Khách hoặc vai trò không khớp → 403.
+ * Kiểm tra vai trò ở máy chủ: `role:admin,curator`. Khách hoặc vai trò không khớp → 403.
  */
 class EnsureRole
 {
