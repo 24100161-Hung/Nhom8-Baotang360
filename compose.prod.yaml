@@ -1,0 +1,101 @@
+# ---------------------------------------------------------------------------
+# BaoTang360 – cấu hình chạy thật trên máy ảo Oracle Cloud "Always Free"
+# (Ampere A1 / ARM64, Ubuntu 22.04 hoặc 24.04).
+#
+# Đặt tệp này ở GỐC KHO (cùng cấp với render.yaml) vì Dockerfile.web dùng ngữ
+# cảnh build là gốc kho.
+#
+# Ba dịch vụ:
+#   db    – MySQL 8.0, dữ liệu trong volume db_data (bền vững).
+#   web   – image "tất cả trong một" (nginx + php-fpm + scheduler + FastAPI).
+#           KHÔNG mở cổng ra ngoài; chỉ Caddy gọi tới qua mạng nội bộ Docker.
+#   caddy – proxy TLS, tự xin chứng thư Let's Encrypt/ZeroSSL cho APP_DOMAIN.
+#
+# Chạy:  docker compose -f compose.prod.yaml --env-file .env.prod up -d --build
+# ---------------------------------------------------------------------------
+name: baotang360-prod
+
+services:
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    command: >
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+      --innodb-buffer-pool-size=512M
+      --max-connections=100
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE:-baotang360}
+      MYSQL_USER: ${DB_USERNAME:-baotang360}
+      MYSQL_PASSWORD: ${DB_PASSWORD:?Thiếu DB_PASSWORD trong .env.prod}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?Thiếu DB_ROOT_PASSWORD trong .env.prod}
+      TZ: Asia/Ho_Chi_Minh
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./02_SourceCode/db-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_ROOT_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    networks: [internal]
+
+  web:
+    build:
+      context: .
+      dockerfile: 02_SourceCode/deploy/Dockerfile.web
+    image: baotang360-web:prod
+    restart: unless-stopped
+    environment:
+      PORT: "8080"
+      APP_URL: https://${APP_DOMAIN:?Thiếu APP_DOMAIN trong .env.prod}
+      APP_ENV: production
+      APP_DEBUG: "false"
+      APP_LOCALE: vi
+      APP_KEY: ${APP_KEY:-}                      # để trống: entrypoint sinh và lưu trong volume app_storage
+      DB_URL: mysql://${DB_USERNAME:-baotang360}:${DB_PASSWORD}@db:3306/${DB_DATABASE:-baotang360}
+      ANALYTICS_ENABLED: "true"                  # VM đủ RAM: bật tìm kiếm ngữ nghĩa + sinh tiles 360°
+      ANALYTICS_TOKEN: ${ANALYTICS_TOKEN:-}
+      PAYMENT_GATEWAY: sandbox
+      PAYMENT_SANDBOX_SECRET: ${PAYMENT_SANDBOX_SECRET:-}
+      SEED_DEMO_PASSWORD: ${SEED_DEMO_PASSWORD:?Thiếu SEED_DEMO_PASSWORD trong .env.prod}
+      TRUSTED_PROXIES: "*"                       # đứng sau Caddy
+      SESSION_SECURE_COOKIE: "true"
+      FORCE_HTTPS: "true"
+      ORDER_HOLD_MINUTES: ${ORDER_HOLD_MINUTES:-15}
+    volumes:
+      - app_storage:/var/www/html/storage/app
+      - app_logs:/var/www/html/storage/logs
+    depends_on:
+      db:
+        condition: service_healthy
+    networks: [internal]
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"                            # HTTP/3
+    environment:
+      APP_DOMAIN: ${APP_DOMAIN}
+      ACME_EMAIL: ${ACME_EMAIL:-}
+    volumes:
+      - ./02_SourceCode/deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data                          # chứng thư TLS – phải bền vững
+      - caddy_config:/config
+    depends_on:
+      - web
+    networks: [internal]
+
+volumes:
+  db_data:
+  app_storage:
+  app_logs:
+  caddy_data:
+  caddy_config:
+
+networks:
+  internal:
+    driver: bridge
