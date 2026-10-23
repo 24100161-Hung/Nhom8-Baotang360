@@ -1,34 +1,74 @@
-# Render Blueprint – BaoTang360 (web service Docker "tất cả trong một").
-# Render không có MySQL quản lý: dùng MySQL ngoài (Railway MySQL, Aiven, PlanetScale, TiDB Cloud…) và đặt DB_URL.
+# ---------------------------------------------------------------------------
+# Render Blueprint – BaoTang360 (CSE703073 – Nhóm 08)
+# Bản hiệu chỉnh cho GÓI MIỄN PHÍ (Free instance type) của Render.
+#
+# Khác biệt so với bản gốc và lý do kỹ thuật:
+#   1. plan: free           – gói starter là gói TRẢ PHÍ (7 USD/tháng).
+#   2. Bỏ khối "disk:"      – Render KHÔNG cho phép gắn ổ đĩa bền vững trên
+#                             gói free; mọi thay đổi trên hệ thống tệp bị mất
+#                             khi dịch vụ ngủ hoặc khởi động lại.
+#   3. APP_KEY: sync: false – do không có ổ đĩa, khoá không thể lưu trong
+#                             storage/app/.appkey. Phải sinh sẵn một khoá
+#                             base64 và dán cố định trên Dashboard, nếu không
+#                             toàn bộ phiên đăng nhập sẽ mất sau mỗi lần ngủ.
+#   4. ANALYTICS_ENABLED=false – gói free chỉ có 512 MB RAM. Tiến trình
+#                             uvicorn kèm pandas/numpy/scikit-learn chiếm
+#                             khoảng 250–400 MB, cộng nginx + php-fpm sẽ vượt
+#                             hạn mức và bị huỷ tiến trình (OOM). Ứng dụng đã
+#                             có cơ chế dự phòng: tìm kiếm FULLTEXT của MySQL
+#                             và ảnh toàn cảnh equirectangular.
+#   5. SEED_DOWNLOAD_IMAGES=false – chặn việc tải ảnh từ nguồn ngoài trong lúc
+#                             khởi tạo dữ liệu, rút ngắn thời gian khởi động.
+#
+# CSDL: Render không cung cấp MySQL. Dùng dịch vụ MySQL miễn phí bên ngoài
+# (Aiven for MySQL – gói Free 1 GB) và điền DB_URL trên Dashboard theo dạng:
+#   mysql://<user>:<password>@<host>:<port>/<database>
+# ---------------------------------------------------------------------------
 services:
   - type: web
     name: baotang360
     runtime: docker
-    dockerfilePath: ./02_SourceCode/deploy/Dockerfile.web   # image "tất cả trong một" (nginx + php-fpm + Python), ngữ cảnh = gốc kho
-    dockerContext: .
-    plan: starter           # free tier ngủ sau 15 phút; bản starter không ngủ
+    region: singapore                  # trung tâm dữ liệu gần Việt Nam nhất
+    plan: free
+    dockerfilePath: ./02_SourceCode/deploy/Dockerfile.web
+    dockerContext: .                   # ngữ cảnh build = gốc kho Git
     healthCheckPath: /healthz
-    disk:
-      name: storage
-      mountPath: /var/www/html/storage/app
-      sizeGB: 2
+    autoDeploy: true
     envVars:
       - key: APP_ENV
         value: production
       - key: APP_DEBUG
         value: "false"
-      # APP_KEY: để trống – entrypoint tự sinh dạng base64:... và lưu trong disk /var/www/html/storage/app/.appkey
+      - key: APP_LOCALE
+        value: vi
+
+      # Sinh bằng: php -r "echo 'base64:'.base64_encode(random_bytes(32));"
+      # hoặc: openssl rand -base64 32  (thêm tiền tố "base64:")
+      - key: APP_KEY
+        sync: false
+
+      # mysql://user:password@host:port/database  (Aiven / TiDB / Railway…)
       - key: DB_URL
-        sync: false                  # mysql://user:pass@host:3306/baotang360  (điền trên dashboard)
+        sync: false
+
+      # Tắt dịch vụ Python để vừa hạn mức 512 MB RAM của gói free
+      - key: ANALYTICS_ENABLED
+        value: "false"
+      - key: SEED_DOWNLOAD_IMAGES
+        value: "false"
+
       - key: ANALYTICS_TOKEN
         generateValue: true
       - key: PAYMENT_SANDBOX_SECRET
         generateValue: true
+
       - key: TRUSTED_PROXIES
         value: "*"
       - key: SESSION_SECURE_COOKIE
         value: "true"
       - key: FORCE_HTTPS
         value: "true"
+
+      # Mật khẩu các tài khoản mẫu (admin/editor/visitor) do seeder tạo
       - key: SEED_DEMO_PASSWORD
         sync: false
