@@ -1,0 +1,42 @@
+# ---------------------------------------------------------------------------
+# Caddy 2 – lớp TLS cho BaoTang360 trên máy ảo Oracle Cloud Always Free.
+#
+# Caddy tự xin và tự gia hạn chứng thư. Thứ tự nhà cung cấp mặc định là
+# Let's Encrypt, nếu thất bại sẽ tự chuyển sang ZeroSSL. Điều này quan trọng khi
+# dùng tên miền dạng <IP>.sslip.io: sslip.io/nip.io dùng chung một hạn mức cấp
+# chứng thư toàn cục của Let's Encrypt và có thời điểm bị cạn hạn mức.
+#
+# Biến môi trường do compose.prod.yaml truyền vào:
+#   APP_DOMAIN  – ví dụ 152-67-10-20.sslip.io hoặc baotang360.id.vn
+#   ACME_EMAIL  – thư điện tử nhận cảnh báo hết hạn chứng thư (nên điền)
+# ---------------------------------------------------------------------------
+{
+	email {$ACME_EMAIL}
+	# Gỡ chú thích hai dòng sau để thử nghiệm với máy chủ staging của Let's Encrypt
+	# (không bị tính hạn mức, nhưng chứng thư không được trình duyệt tin cậy):
+	# acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
+
+{$APP_DOMAIN} {
+	encode zstd gzip
+
+	# Giới hạn kích thước thân yêu cầu, khớp với client_max_body_size 50M của nginx
+	request_body {
+		max_size 50MB
+	}
+
+	reverse_proxy web:8080 {
+		header_up X-Forwarded-Proto {scheme}
+		header_up X-Forwarded-Host {host}
+		health_uri /healthz
+		health_interval 30s
+		health_timeout 5s
+	}
+
+	log {
+		output file /data/access.log {
+			roll_size 10MiB
+			roll_keep 5
+		}
+	}
+}
